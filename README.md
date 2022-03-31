@@ -37,4 +37,4 @@ Theme comes packed with CLI commands tailored for WordPress theme development :
 - `git clone` : clone a repository into your website themes directory => '/wp-content/themes/'.
 - `git pull` : pull files from master to have everything up to date.
 - `git commit` : commit your changes and describe what you did.
-- `git push` : commit your changes and describe what you did.
+- `git push` : push your changes to master branch.
