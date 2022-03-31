@@ -1,12 +1,5 @@
-raw
-node_modules
-*.log
-.idea
-*.swp
-nyc_output
-coverage
-test-treeshake/*-umd.js
-amd
-cjs
+/node_modules/
+/*.log
+/.idea/
 /underscore-node-*-pre*
-vendor
+/vendor/
