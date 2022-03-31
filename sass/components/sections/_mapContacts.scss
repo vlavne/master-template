@@ -1,0 +1,68 @@
+// MAP WITH CONTACTS
+.mapContacts{
+  position: relative;
+  padding: 8.75rem 0;
+  @media (max-width: $table){
+    padding: 0;
+  }
+  iframe{
+    @extend %absolute;
+    @media (max-width: $table){
+      position: initial;
+      height: 440px;
+      @include toRem(height,440);
+    }
+  }
+  &Block{
+    @include toRem(max-width,422);
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    background: #ffffff;
+    padding: 3.75rem 3.125rem;
+    @media (max-width: $table){
+      max-width: 100%;
+      padding: 0;
+      @include toRem(margin-bottom,90);
+    }
+    .title2{
+      text-align: center;
+    }
+    &Contacts{
+      @include toRem(margin-top,60);
+      @include toRem(margin-bottom,50);
+      @media (max-width: $table){
+        @include toRem(margin-top,30);
+        @include toRem(margin-bottom,20);
+      }
+      &Item{
+        @include toRem(margin-bottom,25);
+        position: relative;
+        @include toRem(padding-left,70);
+        @include toRem(min-height,45);
+        @extend %flex-center;
+        text-decoration: none;
+        font-weight: 500;
+        line-height: 155%;
+        letter-spacing: -0.005em;
+        &:last-child{
+          margin-bottom: 0;
+        }
+        &Icon{
+          background: #F1F4EF;
+          @extend %flex-center;
+          justify-content: center;
+          @include toRem(width,45);
+          @include toRem(height,45);
+          position: absolute;
+          left: 0;
+          top: 50%;
+          @include toRem(margin-top,-22);
+        }
+      }
+    }
+    .btn{
+      width: 100%;
+    }
+  }
+}

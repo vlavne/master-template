@@ -1,0 +1,32 @@
+// PARTNERS
+.partners{
+  &Block{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    padding: 4.375rem 5.938rem;
+    @include toRem(grid-gap,78);
+    @media (max-width: $table){
+      grid-template-columns: 100%;
+      padding: 3.125rem 5.625rem;
+    }
+    &Item{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      span::before{
+        content: '';
+        position: absolute;
+        width: calc(100% + 82px);
+        left: -41px;
+        height: calc(100% + 53px);
+        top: -31px;
+        @extend %transition25;
+      }
+      &:hover span::before{
+        box-shadow: 0px 45px 80px rgba(0, 0, 0, 0.04);
+      }
+    }
+  }
+}

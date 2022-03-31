@@ -1,0 +1,49 @@
+// TOP
+.top{
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  min-height: 37.917vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media (max-width: $tablemin) {
+    min-height: 120vw;
+  }
+  &::before{
+    content: '';
+    @extend %absolute;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    z-index: 1;
+  }
+  img.attachment-full{
+    @extend %absolute;
+    object-fit: cover;
+  }
+  .container{
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+    .title{
+      @include toRem(margin-bottom,15);
+    }
+    .btn{
+      @include toRem(margin-top,50);
+      &:hover{
+        color: #ffffff;
+      }
+    }
+  }
+  &Text{
+    font-weight: 500;
+    @include toRem(font-size,20);
+    @include toRem(max-width,786);
+    line-height: 140%;
+    margin: 0 auto;
+    @media (max-width: $table){
+      font-size: 1rem;
+      line-height: 175%;
+      max-width: 100%;
+    }
+  }
+}

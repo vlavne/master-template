@@ -1,0 +1,131 @@
+// SITE FOOTER
+.site{
+  &Footer{
+    @include toRem(padding-top,80);
+    @include toRem(padding-bottom,60);
+    color: #ffffff;
+    @media (max-width: $table){
+      @include toRem(padding-top,50);
+      @include toRem(padding-bottom,40);
+    }
+    &Top{
+      display: flex;
+      justify-content: space-between;
+      @include toRem(margin-bottom,66);
+      @media (max-width: $tablemin){
+        display: block;
+        @include toRem(margin-bottom,89);
+      }
+      &Info{
+        margin-right: auto;
+        @media (max-width: $tablemin){
+          @include toRem(margin-bottom,70);
+        }
+        &Logo{
+          display: flex;
+          flex-direction: column;
+          @include toRem(margin-bottom,30);
+        }
+        &Text{
+          letter-spacing: -0.005em;
+          @include toRem(max-width,314);
+          @media (max-width: $tablemin){
+            max-width: 100%;
+          }
+        }
+      }
+      &Menu{
+        @include toRem(margin-right,93);
+        @media (max-width: $tablemin){
+          margin-right: 0;
+          @include toRem(margin-bottom,55);
+        }
+        &Title{
+          font-weight: 600;
+          @include toRem(font-size,20);
+          @include toRem(line-height,24);
+          letter-spacing: -0.02em;
+          @include toRem(margin-bottom,37);
+          @media (max-width: $tablemin){
+            @include toRem(margin-bottom,15);
+          }
+        }
+        ul{
+          padding: 0;
+          margin: 0;
+          list-style: none;
+          li{
+            @include toRem(margin-bottom,15);
+            &:last-child{
+              margin-bottom: 0;
+            }
+            a{
+              text-decoration: none;
+              letter-spacing: -0.005em;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+      &Contacts{
+        display: flex;
+        flex-direction: column;
+        &Title{
+          font-weight: 600;
+          @include toRem(font-size,20);
+          @include toRem(line-height,24);
+          letter-spacing: -0.02em;
+          @include toRem(margin-bottom,37);
+          @media (max-width: $tablemin){
+            @include toRem(margin-bottom,15);
+          }
+        }
+        a{
+          text-decoration: none;
+          letter-spacing: -0.005em;
+          color: #ffffff;
+        }
+      }
+    }
+    &Bottom{
+      @include toRem(padding-top,30);
+      border-top: 1px solid rgba(255,255,255,0.1);
+      @extend %flex-center;
+      justify-content: space-between;
+      @media (max-width: $tablemin){
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+      &Copyright{
+        letter-spacing: -0.005em;
+      }
+      ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        @extend %flex-center;
+        @media (max-width: $tablemin){
+          @include toRem(margin-bottom,40);
+          display: block;
+        }
+        li{
+          @include toRem(margin-right,30);
+          @media (max-width: $tablemin){
+            margin-right: 0;
+            @include toRem(margin-bottom,15);
+          }
+          &:last-child{
+            margin-right: 0;
+            margin-bottom: 0;
+          }
+          a{
+            color: #ffffff;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}

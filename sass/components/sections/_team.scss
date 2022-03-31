@@ -1,0 +1,113 @@
+// TEAM
+.team{
+  text-align: center;
+  .title2{
+    @media (max-width: $table){
+      line-height: 193%;
+      @include toRem(margin-bottom,5);
+    }
+  }
+  &Text{
+    letter-spacing: -0.005em;
+    @media (max-width: $mob){
+      br{
+        display: none;
+      }
+    }
+  }
+  &Block{
+    @include toRem(margin-top,80);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    @include toRem(grid-gap,45);
+    @media (max-width: $table){
+      @include toRem(margin-top,40);
+    }
+    @media (max-width: $tablemin){
+      grid-template-columns: 100%;
+      @include toRem(grid-gap,20);
+    }
+    &Item{
+      background: #FFFFFF;
+      border: 1px solid #E5EFF4;
+      border-radius: 6px;
+      overflow: hidden;
+      @media (max-width: $table){
+        border: 1.2px solid #F3F3F3;
+        border-radius: 2px;
+      }
+      &Img{
+        width: 100%;
+        position: relative;
+        background: #F5F7F8;
+        padding-top: 64.656%;
+        @media (max-width: $table){
+          padding-top: 67.647%;
+        }
+        img{
+          position: absolute;
+          max-height: 95%;
+          bottom: 0;
+          left: 0;
+          top: auto;
+          right: 0;
+          width: auto;
+          margin: auto;
+        }
+      }
+      &Content{
+        padding: 2.5rem 3.313rem 2.375rem 3.313rem;
+        @media (max-width: $table){
+          padding: 1.875rem 2.813rem 2.5rem 2.75rem;
+        }
+        &Name{
+          font-weight: 600;
+          @include toRem(font-size,24);
+          @include toRem(line-height,29);
+          letter-spacing: -0.01em;
+          @include toRem(margin-bottom,14);
+          @media (max-width: $table){
+            @include toRem(font-size,20);
+            @include toRem(line-height,24);
+            letter-spacing: -0.02em;
+          }
+        }
+        &Position{
+          font-weight: 500;
+          line-height: 75%;
+          color: #858C97;
+        }
+        &Info{
+          border-top: 1px solid #F2F2F2;
+          @include toRem(padding-top,25);
+          @include toRem(margin-top,30);
+          letter-spacing: -0.005em;
+          @media (max-width: $table){
+            @include toRem(margin-top,20);
+          }
+        }
+        &Social{
+          @extend %flex-center;
+          align-items: center;
+          justify-content: center;
+          @include toRem(margin-top,45);
+          @media (max-width: $table){
+            @include toRem(margin-top,30);
+          }
+          a{
+            @include toRem(width,42);
+            @include toRem(height,42);
+            @extend %flex-center;
+            justify-content: center;
+            @include toRem(margin-right,12);
+            background: #F7F7F9;
+            border-radius: 4px;
+            &:last-child{
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
