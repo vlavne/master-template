@@ -1,5 +1,3 @@
-/node_modules/
-/*.log
-/.idea/
-/underscore-node-*-pre*
 /vendor/
+/node_modules/
+/.idea/
