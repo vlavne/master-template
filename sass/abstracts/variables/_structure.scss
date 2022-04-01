@@ -1,11 +1,12 @@
-$container: 71.25rem;
-$containermin: 35rem;
-$containermax: 80rem;
+$container: 71.25rem; // 1140px
+$containermin: 35rem; // 560px
+$containermax: 80rem; // 1280px
 $halfcontainer: calc((100vw - 71.25rem)/2);
 $halfcontainerminus: calc(((100vw - 71.25rem)/2)*-1);
-$maxcontainer: 90rem;
-$table: 64rem;
-$tablemin: 48rem;
-$mob: 31.25rem;
+$maxcontainer: 90rem; // 1440px
+$table: 64rem; // 1024px
+$tablemin: 48rem; // 768px
+$mob: 31.25rem; // 500px
+
 $margin_bottom: 9.375rem;
 $margin_bottom_mob: 5.625rem;
