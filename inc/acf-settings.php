@@ -39,7 +39,7 @@ function my_acf_op_init() {
 
 // UNIQUE ID FIELD FOR ACF
 function create_unique_id_acf_field($field){
-    if (empty($value)) {
+    if (empty($field['value'])) {
         $uniqueid_length = 8;
         $uniqueid = crypt(uniqid(rand(), 1));
         $uniqueid = strip_tags(stripslashes($uniqueid));
