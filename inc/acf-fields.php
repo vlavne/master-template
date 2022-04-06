@@ -1201,6 +1201,9 @@ if( function_exists('acf_add_local_field_group') ):
                                         'append' => '',
                                         'maxlength' => '',
                                     ),
+									
+									
+									
                                     array(
                                         'key' => 'field_624435e1b9249',
                                         'label' => 'Info',
@@ -1221,7 +1224,32 @@ if( function_exists('acf_add_local_field_group') ):
                                         'maxlength' => '',
                                     ),
                                 ),
+								
                             ),
+							
+							array(
+                                'key' => 'field_624c6ea5147b7',
+                                'label' => 'Portfolio Type',
+                                'name' => 'portfolio_type',
+                                'type' => 'button_group',
+                                'instructions' => '',
+                                'required' => 1,
+                                'conditional_logic' => 0,
+                                'wrapper' => array(
+                                    'width' => '',
+                                    'class' => '',
+                                    'id' => '',
+                                ),
+                                'choices' => array(
+                                    'blocks' => 'Blöcke',
+                                    'slider' => 'Schieberegler',
+                                ),
+                                'allow_null' => 0,
+                                'default_value' => 'blocks : Blöcke',
+                                'layout' => 'horizontal',
+                                'return_format' => 'value',
+                            ),
+
                             array(
                                 'key' => 'field_624435ffa7e9f',
                                 'label' => 'Schaltflächentitel',
