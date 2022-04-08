@@ -2960,6 +2960,121 @@ textarea {
 	margin-right: auto;
 }
 
+.servicesWI .title2, .servicesWI .subtitle {
+	text-align: center;
+	margin: auto;
+}
+
+.servicesWI .title2 {
+	margin-bottom: 3.75rem;
+}
+
+@media (max-width: 64rem) {
+	.servicesWI .title2 {
+		line-height: 193%;
+		margin-bottom: 0.875rem;
+	}
+}
+
+.servicesWI .container {
+	display: flex;
+	flex-direction: column;
+}
+
+.servicesWI .container .btn {
+	margin-top: 50px;
+	width: 222px;
+	align-self: center;
+	color: #fff;
+	transition: .5s;
+}
+
+.servicesWI .container .btn:visited, .servicesWI .container .btn:active, .servicesWI .container .btn:focus, .servicesWI .container .btn:hover {
+	color: #000;
+}
+
+.servicesWIBlock.slick-slider {
+	display: flex;
+	align-items: center;
+}
+
+.servicesWIBlock.slick-slider .slick-arrow {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 2.5rem;
+}
+
+.servicesWIBlock.slick-slider .slick-arrow img {
+	width: 100%;
+}
+
+.servicesWIBlockItem {
+	text-decoration: none;
+	text-align: center;
+}
+
+.servicesWIBlockItemWrap {
+	border: 0.125rem solid #0001;
+	max-width: 20rem;
+	margin-right: 0.9375rem;
+	margin-left: 0.9375rem;
+	padding-bottom: 1.25rem;
+}
+
+@media (max-width: 86rem) {
+	.servicesWIBlockItemWrap {
+		margin-right: 0.625rem;
+		margin-left: 0.625rem;
+	}
+}
+
+.servicesWIBlockItemImg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 9.375rem;
+}
+
+.servicesWIBlockItemContent {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-right: 0.9375rem;
+	padding-left: 0.9375rem;
+}
+
+.servicesWIBlockItemContentTitle {
+	font-weight: 700;
+	font-size: 1.25rem;
+	margin-bottom: 1.25rem;
+	line-height: 130%;
+	letter-spacing: -0.015em;
+}
+
+@media (max-width: 83rem) {
+	.servicesWIBlockItemContentTitle {
+		font-size: 1rem;
+		line-height: 1.125rem;
+		letter-spacing: -0.02em;
+		margin-bottom: 0.625rem;
+	}
+}
+
+.servicesWIBlockItemContentInfo {
+	letter-spacing: -0.005em;
+	font-weight: 400;
+	font-size: 0.9375rem;
+	margin-bottom: 1.5625rem;
+}
+
+@media (max-width: 83rem) {
+	.servicesWIBlockItemContentInfo {
+		margin-bottom: 0.75rem;
+	}
+}
+
 .processBlock {
 	padding: 4.375rem;
 	padding-right: 5rem;
