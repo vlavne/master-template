@@ -7,17 +7,11 @@
   @include toRem(font-size,15);
   line-height: 187%;
   padding: 0.875rem 2.438rem 0.938rem 2.438rem;
-  border: 1px solid #000;
+  border: 1px solid;
   text-decoration: none;
-  color: #000;
   text-transform: uppercase;
   text-align: center;
-  &:visited, &:active, &:focus{
-    color: #000;
-  }
-  &:hover{
-    background: rgba(0,0,0,0);
-  }
+  
   &.btnWhite{
     background: #ffffff;
     border-color: #ffffff;
