@@ -7,6 +7,12 @@ $main = get_field('color_main', 'options');
 $grey = get_field('color_grey', 'options');
 $light_grey = get_field('color_light_grey', 'options');
 
+// COLORS BUTTONS
+$background_color_btns = get_field('background_color_btns', 'options');
+$text_color_btns = get_field('text_color_btns', 'options');  
+$background_color_btns_hover = get_field('background_color_btns_hover', 'options');
+$text_color_btns_hover = get_field('text_color_btns_hover', 'options');
+    
 // DISTANCES
 $outer_padding_desk = get_field('outer_padding_desk', 'options');
 $outer_padding_mob = get_field('outer_padding_mob', 'options');
@@ -78,16 +84,27 @@ $h5 = get_field('h5', 'options');
     a, a:visited, a:hover, a:focus, a:active, .siteNavigation > ul > li > a:hover {
         color: <?php echo $main;?>;
     }
-    .siteNavigation > ul > li > a, .btn, .btn:hover{
+    .siteNavigation > ul > li > a{
         color: <?php echo $black;?>;
     }
     .page-template-default article p{
         color: <?php echo $grey;?>;
     }
-    .btn{
-        border-color: <?php echo $main;?>;
+    a.btn, .btn{
+        border-color: <?php echo $background_color_btns;?>;
+        color: <?php echo $text_color_btns;?>;
+        background: <?php echo $background_color_btns;?>;
     }
-    .btn, .testimonials .slick-arrow:hover{
+    
+    .btn:active, a.btn:active{
+    color: <?php echo $text_color_btns_hover;?>;
+    }
+    
+    a.btn:hover, .btn:hover{ 
+        color: <?php echo $text_color_btns_hover;?>;
+        background: <?php echo $background_color_btns_hover;?>;}
+    
+    .testimonials .slick-arrow:hover{
         background: <?php echo $main;?>;
     }
     @media (max-width: 768px){
