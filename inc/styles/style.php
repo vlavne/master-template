@@ -95,7 +95,9 @@ $h5 = get_field('h5', 'options');
         color: <?php echo $text_color_btns;?>;
         background: <?php echo $background_color_btns;?>;
     }
-    
+    .btn.btnWhite{
+        color: <?php echo $black;?>;
+    }
     .btn:active, a.btn:active{
     color: <?php echo $text_color_btns_hover;?>;
     }

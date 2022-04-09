@@ -642,19 +642,10 @@ a:hover, a:active {
 	font-size: 0.9375rem;
 	line-height: 187%;
 	padding: 0.875rem 2.438rem 0.938rem 2.438rem;
-	border: 1px solid #000;
+	border: 1px solid;
 	text-decoration: none;
-	color: #000;
 	text-transform: uppercase;
 	text-align: center;
-}
-
-.btn:visited, .btn:active, .btn:focus {
-	color: #000;
-}
-
-.btn:hover {
-	background: rgba(0, 0, 0, 0);
 }
 
 .btn.btnWhite {
@@ -1985,6 +1976,10 @@ textarea {
 	margin-bottom: 0;
 }
 
+.siteNavigationContactsItem.phoneHeaderBtn {
+	margin-left: 6.25rem;
+}
+
 .siteNavigationContactsItem svg {
 	margin-right: 0.625rem;
 }
@@ -2983,14 +2978,8 @@ textarea {
 
 .servicesWI .container .btn {
 	margin-top: 50px;
-	width: 222px;
 	align-self: center;
-	color: #fff;
 	transition: .5s;
-}
-
-.servicesWI .container .btn:visited, .servicesWI .container .btn:active, .servicesWI .container .btn:focus, .servicesWI .container .btn:hover {
-	color: #000;
 }
 
 .servicesWIBlock.slick-slider {
@@ -3034,7 +3023,14 @@ textarea {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 9.375rem;
+	height: 2.5rem;
+	margin-top: 3.125rem;
+	margin-bottom: 3.125rem;
+}
+
+.servicesWIBlockItemImg img {
+	height: 100%;
+	width: auto;
 }
 
 .servicesWIBlockItemContent {
