@@ -21,14 +21,9 @@
         
         .btn{
             margin-top: 50px;
-            width: 222px;
-    align-self: center;
-          color: #fff;
+            align-self: center;
             transition: .5s;
             
-            &:visited, &:active, &:focus, &:hover{
-    color: #000;
-  }
         }
         
     }
@@ -73,7 +68,13 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                @include toRem(height,150);
+                @include toRem(height,40);
+                @include toRem(margin-top,50);
+                @include toRem(margin-bottom,50);
+                img{
+                    height: 100%;
+                    width: auto;
+                }
             }
             &Content{
                     display: flex;
@@ -105,7 +106,6 @@
           }
         }
             }
-        
         
         
     }}

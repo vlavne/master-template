@@ -35,6 +35,11 @@
 				&:last-child{
 					margin-bottom: 0;
 				}
+                
+                &.phoneHeaderBtn {
+                @include toRem(margin-left,100);
+            }
+                
 				svg{
 					@include toRem(margin-right,10);
 				}

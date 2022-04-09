@@ -17,10 +17,10 @@ $btn = get_sub_field( 'btn' );
                        class="servicesWIBlockItem">
                         
                         <div class="servicesWIBlockItemImg">
-                        <?php echo wp_get_attachment_image($s['img']['ID'], '40px'); ?>
+                        <?php echo wp_get_attachment_image($s['img']['ID']); ?>
                         </div>
                         
-                        <div class="servicesWIBlockItemContent"> 
+                        <div class="servicesWIBlockItemContent colorBlack"> 
                             <span class="servicesWIBlockItemContentTitle"><?php echo $s['title']; ?></span>
                             <?php if ($s['info']): ?>
                             <span class="servicesWIBlockItemContentInfo"><?php echo $s['info']; ?></span>
@@ -32,7 +32,7 @@ $btn = get_sub_field( 'btn' );
             <?php endforeach; ?>
         </div>
     <?php if ($btn): ?>
-    <div class="btn" data-aos="fade-up" ><?php echo $btn; ?></div>
+    <div class="btn" data-aos="fade-up" onclick="location.href='<?php echo $btn['url']; ?>';" ><?php echo $btn['title']; ?></div>
     <?php endif; ?>
     </div>
 </section>
