@@ -1,0 +1,42 @@
+// Horisontal CTA
+.ctaHorisontal {
+    background-size: cover;
+    @media (max-width: $table) {
+        background-position-x: center;
+    }
+    .right {
+        flex-direction: row-reverse;
+    }
+    &Block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 300px;
+        @media (max-width: $table) {
+            flex-direction: column!important;
+            padding: 60px 0 40px 0;
+            align-items: flex-start;
+        }
+        .ctaHorisontalBlockContentText {
+            @media (max-width: $table) {
+                width: 100%;
+            }
+            width: 60%;
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 2.875rem;
+            line-height: 115%;
+            letter-spacing: -0.045em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            @media (max-width: $table) {
+                font-size: 1.75rem;
+            }
+        }
+        .btn {
+            background: #FFF;
+            color: #006EB6;
+        }
+    }
+}

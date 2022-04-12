@@ -1,38 +1,47 @@
 /* Navigation
 --------------------------------------------- */
+
 @import "navigation/navigation";
 
 /* Posts and pages
 --------------------------------------------- */
+
 @import "content/posts-and-pages";
 
 /* Comments
 --------------------------------------------- */
+
 @import "comments/comments";
 
 /* Widgets
 --------------------------------------------- */
+
 @import "widgets/widgets";
 
 /* Media
 --------------------------------------------- */
+
 @import "media/media";
 
 /* Captions
 --------------------------------------------- */
+
 @import "media/captions";
 
 /* Galleries
 --------------------------------------------- */
+
 @import "media/galleries";
 
 /* Partials
 --------------------------------------------- */
+
 @import "partials/header";
 @import "partials/footer";
 
 /* Section
 --------------------------------------------- */
+
 @import "sections/top";
 @import "sections/advantages";
 @import "sections/textImg";
@@ -49,3 +58,6 @@
 @import "sections/contactPerson";
 @import "sections/mapContacts";
 @import "sections/twoColumnText";
+@import "sections/ctaHorisontal";
+@import "sections/сtaAndForm";
+@import "sections/partnerSlider";
