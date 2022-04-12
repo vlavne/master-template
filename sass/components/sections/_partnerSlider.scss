@@ -1,0 +1,44 @@
+// Partner Slider 
+.partner-slider .testimonialsBlockItemImg {
+    position: relative;
+    left: 0;
+    top: 0;
+    border-radius: none;
+    overflow: hidden;
+    border: none;
+    width: auto;
+    height: 63px;
+    width: 270px;
+    height: 130px;
+    margin: 0 5px;
+    background: #fff;
+    border-radius: inherit;
+    border: 1px solid #ECECEC;
+    box-sizing: border-box;
+}
+
+.partner-slider .testimonialsBlockItem {
+    background: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+}
+
+.partner-slider .slick-next {
+    background: #006EB6;
+    color: #fff;
+}
+
+.partner-slider .slick-arrow.slick-next::before {
+    content: url(img/partner-arrow-next.svg);
+}
+
+.partner-slider .slick-arrow.slick-prev::before {
+    content: url(img/partner-arrow-prev.svg);
+}
+
+.partner-slider .slick-arrow {
+    width: 40px;
+    height: 40px;
+}
