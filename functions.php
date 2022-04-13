@@ -163,6 +163,14 @@ require_once get_template_directory() . '/inc/tgm_activation.php';
 require_once get_template_directory() . '/inc/acf-settings.php';
 require_once get_template_directory() . '/inc/acf-fields.php';
 
+/* Enqueues the external CSS file */
+add_action( 'wp_enqueue_scripts', 'tutsplus_external_styles' );
+function tutsplus_external_styles() {
+ 
+    wp_register_style( 'custom', get_stylesheet_directory_uri().'/custom.css' );
+    wp_enqueue_style( 'custom' );
+}
+
 
 // unregister all widgets
 function unregister_default_widgets()

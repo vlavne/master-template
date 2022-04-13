@@ -38,6 +38,9 @@
                 
                 &.phoneHeaderBtn {
                 @include toRem(margin-left,100);
+				@media (max-width: $table) {
+                display: none;
+            }    
             }
                 
 				svg{
