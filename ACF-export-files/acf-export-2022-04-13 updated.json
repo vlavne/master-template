@@ -4276,6 +4276,23 @@
                 "return_format": "string"
             },
             {
+                "key": "field_6256a5b03b450",
+                "label": "Hat Top-Link Color",
+                "name": "a-color",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string"
+            },
+            {
                 "key": "field_62568007289ed",
                 "label": "Icon Color",
                 "name": "svg-color",

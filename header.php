@@ -29,7 +29,7 @@
                 <div class="containerMax">
                     <div class="siteHeaderTopContacts">
                         <?php if ($address = get_field('address', 'options')): ?>
-                            <div class="siteHeaderTopContactsItem">
+                            <div class="siteHeaderTopContactsItem" style="color: <?php echo get_field('a-color', 'options');?>;">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path d="M12 20.9998C10.7369 19.9224 9.56619 18.7413 8.5 17.4688C6.9 15.5578 5 12.7118 5 9.99981C4.99858 7.16735 6.70425 4.6132 9.32107 3.5292C11.9379 2.44521 14.9501 3.04505 16.952 5.04881C18.2685 6.35941 19.0059 8.14219 19 9.99981C19 12.7118 17.1 15.5578 15.5 17.4688C14.4338 18.7413 13.2631 19.9224 12 20.9998ZM12 6.99981C10.9282 6.99981 9.93782 7.5716 9.40193 8.49981C8.86603 9.42801 8.86603 10.5716 9.40193 11.4998C9.93782 12.428 10.9282 12.9998 12 12.9998C13.6569 12.9998 15 11.6567 15 9.99981C15 8.34295 13.6569 6.99981 12 6.99981Z"
@@ -39,7 +39,7 @@
                             </div>
                         <?php endif; ?>
                         <?php if ($phone = get_field('phone', 'options')): $tel_link = preg_replace('![^0-9+]!', '', $phone); ?>
-                            <a href="tel:<?php echo $tel_link; ?>" class="siteHeaderTopContactsItem">
+                            <a href="tel:<?php echo $tel_link; ?>" class="siteHeaderTopContactsItem" style="color: <?php echo get_field('a-color', 'options');?>;">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path d="M18.9975 20C10.4659 20.0121 3.99088 13.4595 4.00001 5.00251C4.00001 4.45023 4.44773 4 5.00001 4H7.63937C8.13494 4 8.55593 4.36413 8.6287 4.85433C8.80311 6.0292 9.14517 7.17297 9.64448 8.2507L9.74725 8.4725C9.89013 8.78091 9.79328 9.14734 9.51668 9.34487C8.6993 9.92859 8.38692 11.1036 9.0237 12.0204C9.82278 13.1708 10.8301 14.1779 11.9803 14.9766C12.897 15.6132 14.0718 15.3009 14.6555 14.4836C14.8532 14.2069 15.2198 14.11 15.5284 14.2529L15.7492 14.3552C16.827 14.8545 17.9708 15.1966 19.1458 15.371C19.636 15.4437 20 15.8647 20 16.3603V19C20 19.5523 19.5512 20 18.9989 20L18.9975 20Z"
@@ -49,7 +49,7 @@
                             </a>
                         <?php endif; ?>
                         <?php if ($email = get_field('email', 'options')): ?>
-                            <a href="mailto:<?php echo $email; ?>" class="siteHeaderTopContactsItem">
+                            <a href="mailto:<?php echo $email; ?>" class="siteHeaderTopContactsItem" style="color: <?php echo get_field('a-color', 'options');?>;">
                                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd"

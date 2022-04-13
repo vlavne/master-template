@@ -98,7 +98,6 @@
                 45);
                 @include toRem(top,
                 -41);
-                border-radius: 50%;
                 overflow: hidden;
                 border: 1.5px solid #F1F2F5;
                 @include toRem(width,
@@ -111,7 +110,6 @@
                 img {
                     @extend %absolute;
                     object-fit: cover;
-                    border-radius: 50%;
                 }
             }
             &Text {
