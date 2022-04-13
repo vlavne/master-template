@@ -45,12 +45,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- Alignments
 
 --------------------------------------------------------------*/
-.siteNavigationContactsItem, .siteNavigation > ul, .siteHeaderTopContacts, .siteHeaderTopContactsItem, .siteHeaderWrap .container, .siteFooterBottom, .siteFooterBottom ul, .advantagesBlockItemImg, .services.slider .slick-arrow, .processBlockContentItemNum, .portfolioBlockMob .slick-arrow, .certificatesBlock .slick-arrow, .teamBlockItemContentSocial, .teamBlockItemContentSocial a, .testimonials .slick-arrow, .mapContactsBlockContactsItem, .mapContactsBlockContactsItemIcon {
+.siteNavigationContactsItem, .siteNavigation > ul, .siteHeaderTopContacts, .siteHeaderTopContactsItem, .siteHeaderWrap .container, .siteFooterBottom, .siteFooterBottom ul, .advantagesBlockItemImg, .services.slider .slick-arrow, .processBlockContentItemNum, .portfolioBlockMob .slick-arrow, .certificatesBlock .slick-arrow, .teamBlockItemContentSocial, .teamBlockItemContentSocial a, .testimonials .slick-arrow, .mapContactsBlockContactsItem, .mapContactsBlockContactsItemIcon, .partnerSl .slick-arrow {
 	display: flex;
 	align-items: center;
 }
 
-.top::before, .top img.attachment-full, .textImgBlockImg img, .servicesBlockItem img.size-service, .servicesBlockItem::before, .servicesBlockItemContent, .cta::before, .cta img.attachment-full, .portfolioBlockMob a img, .portfolioBlockItem::before, .portfolioBlockItem img, .certificates::before, .certificatesBg, .testimonialsBlockItemImg img, .contactPersonBlockPersonImg::before, .contactPersonBlockPersonImg img, .mapContacts iframe {
+.top::before, .top img.attachment-full, .textImgBlockImg img, .servicesBlockItem img.size-service, .servicesBlockItem::before, .servicesBlockItemContent, .cta::before, .cta img.attachment-full, .portfolioBlockMob a img, .portfolioBlockItem::before, .portfolioBlockItem img, .certificates::before, .certificatesBg, .testimonialsBlockItemImg img, .contactPersonBlockPersonImg::before, .contactPersonBlockPersonImg img, .mapContacts iframe, .partnerSlBlockItemImg img {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -58,7 +58,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	left: 0;
 }
 
-a, .btn, #burger, #burger span, .siteNavigation, .siteHeaderWrap, .partnersBlockItem span::before, .services.slider .slick-arrow, .portfolioBlockMob .slick-arrow, .portfolioBlockItemContent, .certificatesBlock .slick-arrow, .testimonials .slick-arrow, .faqBlockItemOpen span {
+a, .btn, #burger, #burger span, .siteNavigation, .siteHeaderWrap, .partnersBlockItem span::before, .services.slider .slick-arrow, .portfolioBlockMob .slick-arrow, .portfolioBlockItemContent, .certificatesBlock .slick-arrow, .testimonials .slick-arrow, .faqBlockItemOpen span, .partnerSl .slick-arrow {
 	-webkit-transition: .25s ease-in-out;
 	-moz-transition: .25s ease-in-out;
 	-o-transition: .25s ease-in-out;
@@ -4293,6 +4293,11 @@ textarea {
 	color: #006EB6;
 }
 
+.ctaAndForm {
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 .ctaAndForm .right {
 	flex-direction: row-reverse;
 }
@@ -4397,6 +4402,12 @@ textarea {
 	}
 }
 
+.ctaAndForm .ctaAndFormContainer .ctaAndForm_form .contactForm label,
+.ctaAndForm .ctaAndFormContainer .ctaAndForm_form .contactForm p {
+	margin: 0px !important;
+	padding: 0px !important;
+}
+
 .ctaAndForm .ctaAndFormContainer .ctaAndForm_form .contactForm .form_title {
 	font-style: normal;
 	font-weight: 400;
@@ -4408,6 +4419,18 @@ textarea {
 	margin-top: 0px;
 }
 
+.ctaAndForm .ctaAndFormContainer .ctaAndForm_form .contactForm .wpcf7-response-output {
+	margin-top: -10px;
+}
+
+.ctaAndForm .ctaAndFormContainer .ctaAndForm_form .contactForm .wpcf7-not-valid-tip {
+	margin-top: -25px;
+}
+
+.ctaAndForm .ctaAndFormContainer .ctaAndForm_form .contactForm .wpcf7-spinner {
+	margin: 25px 24px 0 24px !important;
+}
+
 .ctaAndForm .ctaAndFormContainer .ctaAndForm_form .contactForm input {
 	height: 60px;
 	width: 100%;
@@ -4417,7 +4440,7 @@ textarea {
 	line-height: 145%;
 	letter-spacing: -0.015em;
 	color: #6C6D72;
-	margin-bottom: 15px;
+	margin-bottom: -15px;
 	padding: 20px;
 }
 
@@ -4466,7 +4489,175 @@ textarea {
 	}
 }
 
-.partner-slider .testimonialsBlockItemImg {
+.partnerSl {
+	overflow: hidden;
+}
+
+.partnerSl .title2 {
+	margin-bottom: 5rem;
+}
+
+@media (max-width: 64rem) {
+	.partnerSl .title2 {
+		margin-bottom: 1.25rem;
+	}
+}
+
+@media (max-width: 64rem) {
+	.partnerSl .subtitle {
+		margin-bottom: 0.3125rem;
+	}
+}
+
+@media (max-width: 64rem) {
+	.partnerSl .title2,
+	.partnerSl .subtitle {
+		text-align: center;
+	}
+}
+
+.partnerSl .slick-arrow {
+	width: 4.125rem;
+	height: 2.75rem;
+	justify-content: center;
+	font-size: 0px;
+	top: -6.25rem;
+	left: auto;
+	right: calc((100vw - 71.25rem)/2);
+	border-radius: 0px;
+}
+
+@media (max-width: 90rem) {
+	.partnerSl .slick-arrow {
+		right: 9.375rem;
+	}
+}
+
+@media (max-width: 64rem) {
+	.partnerSl .slick-arrow {
+		top: auto;
+		bottom: 0;
+		right: calc(50% - 20px);
+	}
+}
+
+.partnerSl .slick-arrow:focus {
+	outline: none;
+}
+
+.partnerSl .slick-arrow:hover {
+	background: #F1F2F5;
+}
+
+.partnerSl .slick-arrow.slick-next {
+	transform: translate(-20px, 0px);
+}
+
+@media (max-width: 64rem) {
+	.partnerSl .slick-arrow.slick-next {
+		transform: translate(35px, 0px);
+	}
+}
+
+.partnerSl .slick-arrow.slick-next::before {
+	content: url("img/arrow-right.svg");
+}
+
+.partnerSl .slick-arrow.slick-prev {
+	transform: translate(-91px, 0px);
+}
+
+@media (max-width: 64rem) {
+	.partnerSl .slick-arrow.slick-prev {
+		transform: translate(-35px, 0px);
+	}
+}
+
+.partnerSl .slick-arrow.slick-prev::before {
+	content: url("img/arrow-left.svg");
+}
+
+@media (max-width: 90rem) {
+	.partnerSl .container {
+		padding-right: 0;
+	}
+}
+
+@media (max-width: 48rem) {
+	.partnerSl .slick-list {
+		padding-left: 0 !important;
+	}
+}
+
+@media (max-width: 64rem) {
+	.partnerSlBlock {
+		padding-bottom: 4.625rem;
+		padding-left: 1.25rem;
+	}
+}
+
+.partnerSlBlock .slick-track {
+	padding-top: 41px;
+}
+
+.partnerSlBlockItem {
+	margin: 0 0.938rem;
+	background: #ffffff;
+	position: relative;
+	padding: 6.063rem 2.5rem 3.563rem 2.5rem;
+	width: 28.125rem;
+}
+
+@media (max-width: 64rem) {
+	.partnerSlBlockItem {
+		margin: 0 0.625rem 0 0;
+		padding: 5.313rem 2.5rem 2.813rem 2.5rem;
+	}
+}
+
+.partnerSlBlockItemImg {
+	position: absolute;
+	left: 2.8125rem;
+	top: -2.5625rem;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 1.5px solid #F1F2F5;
+	width: 5.125rem;
+	height: 5.125rem;
+}
+
+@media (max-width: 64rem) {
+	.partnerSlBlockItemImg {
+		left: 2.5rem;
+	}
+}
+
+.partnerSlBlockItemImg img {
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.partnerSlBlockItemText {
+	letter-spacing: -0.005em;
+	margin-bottom: 2.1875rem;
+}
+
+.partnerSlBlockItemName {
+	font-weight: 600;
+	padding-top: 1.5625rem;
+	font-size: 1.25rem;
+	line-height: 1.5rem;
+	letter-spacing: -0.02em;
+	border-top: 1px solid #F2F2F2;
+}
+
+.partnerSlBlockItemPosition {
+	font-size: 0.875rem;
+	margin-top: 0.875rem;
+	line-height: 86%;
+}
+
+.partner-slider .partnerSlBlockItemImg {
 	position: relative;
 	left: 0;
 	top: 0;
@@ -4484,17 +4675,12 @@ textarea {
 	box-sizing: border-box;
 }
 
-.partner-slider .testimonialsBlockItem {
+.partner-slider .partnerSlBlockItem {
 	background: none;
 	margin: 0;
 	padding: 0;
 	width: auto;
 	height: auto;
-}
-
-.partner-slider .slick-next {
-	background: #006EB6;
-	color: #fff;
 }
 
 .partner-slider .slick-arrow.slick-next::before {
@@ -4508,6 +4694,14 @@ textarea {
 .partner-slider .slick-arrow {
 	width: 40px;
 	height: 40px;
+}
+
+.partner-slider .slick-arrow:hover {
+	border: 1px solid #006EB6;
+}
+
+.partner-slider .slick-arrow:hover svg {
+	border: 1px solid #006EB6;
 }
 
 /* Alignments
