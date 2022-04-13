@@ -1,15 +1,15 @@
-<section class="testimonials padd partner-slider" id="<?php echo get_sub_field('unique_id');?>" data-aos="fade-up" style="background-color: <?php echo get_sub_field('bg');?>;" >
+<section class="partnerSl padd partner-slider" id="<?php echo get_sub_field('unique_id');?>" data-aos="fade-up" style="background-color: <?php echo get_sub_field('bg');?>;" >
     <div class="container">
 
         <?php if ($title = get_sub_field('title')): ?>
             <div class="title2" data-aos="fade-up"><?php echo $title; ?></div>
         <?php endif; ?>
     </div>
-    <div class="testimonialsBlock" data-aos="fade-up">
+    <div class="partnerSlBlock" data-aos="fade-up">
         <?php foreach (get_sub_field('slides') as $t):?>
-            <div class="testimonialsBlockItem">
+            <div class="partnerSlBlockItem">
                 <?php if($t['img']):?>
-                    <div class="testimonialsBlockItemImg"><?php echo wp_get_attachment_image($t['img']['ID'], 'full');?></div>
+                    <div class="partnerSlBlockItemImg"><?php echo wp_get_attachment_image($t['img']['ID'], 'full');?></div>
                 <?php endif;?>                
             </div>
         <?php endforeach;?>
@@ -17,7 +17,7 @@
 </section>
 <script>
     $(document).ready(function (){
-        $('#<?php echo get_sub_field('unique_id');?> .testimonialsBlock').slick({
+        $('#<?php echo get_sub_field('unique_id');?> .partnerSlBlock').slick({
             dots: false,
             infinite: true,
             arrows: true,
@@ -36,7 +36,15 @@
             ]
         });
         if($(window).width() >=1024){
-            $('#<?php echo get_sub_field('unique_id');?> .testimonialsBlock').slick('slickGoTo', 1);
+            $('#<?php echo get_sub_field('unique_id');?> .partnerSlBlock').slick('slickGoTo', 1);
         }
     });
 </script>
+
+<style>
+    .partner-slider .slick-next {
+    background: <?php echo get_sub_field('button_color');
+    ?>;
+    color: #fff;
+}
+</style>

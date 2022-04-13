@@ -1,144 +1,160 @@
-//Text and Form block
-.ctaAndForm {
-    .right {
-        flex-direction: row-reverse;
-    }
-    .ctaAndFormContainer {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        min-height: 300px;
-        @media (max-width: $table) {
-            flex-direction: column!important;
-            padding: 0;
-            align-items: flex-start;
+    //Text and Form block
+    .ctaAndForm {
+        background-size: cover;
+        background-repeat: no-repeat;
+        .right {
+            flex-direction: row-reverse;
         }
-        .ctaAndFormContent {
+        .ctaAndFormContainer {
+            position: relative;
             display: flex;
-            flex-direction: column;
-            max-width: 40%;
-            padding: 150px 0;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 300px;
             @media (max-width: $table) {
-                max-width: 100%;
-                padding: 80px 20px;
+                flex-direction: column!important;
+                padding: 0;
+                align-items: flex-start;
             }
-            .ctaAndFormText {
-                font-style: normal;
-                font-weight: 400;
-                font-size: 2.875rem;
-                line-height: 115%;
-                letter-spacing: -0.045em;
-                text-transform: uppercase;
-                color: #FFFFFF;
+            .ctaAndFormContent {
                 display: flex;
                 flex-direction: column;
+                max-width: 40%;
+                padding: 150px 0;
                 @media (max-width: $table) {
-                    width: 100%;
+                    max-width: 100%;
+                    padding: 80px 20px;
+                }
+                .ctaAndFormText {
                     font-style: normal;
                     font-weight: 400;
-                    font-size: 1.75rem;
+                    font-size: 2.875rem;
                     line-height: 115%;
                     letter-spacing: -0.045em;
                     text-transform: uppercase;
-                }
-                &:after {
-                    content: '';
-                    width: 60px;
-                    height: 2px;
-                    background: #fff;
-                    left: 0;
-                    margin: 24px 0 14px 0;
-                }
-            }
-            p {
-                font-style: normal;
-                font-weight: 400;
-                font-size: 1rem;
-                line-height: 145%;
-                letter-spacing: -0.015em;
-                color: #FFFFFF;
-            }
-        }
-        .ctaAndForm_form {
-            position: absolute;
-            top: -50px;
-            right: 0;
-            @media (max-width: $table) {
-                position: relative;
-            }
-            .contactForm {
-                width: 460px;
-                padding: 50px;
-                background-color: #fff;
-                border: 1px solid #DDEAE0;
-                box-sizing: border-box;
-                box-shadow: 10px 4px 60px rgba(0, 49, 81, 0.1);
-                @media (max-width: $table) {
-                    width: 100%;
-                    padding: 20px;
-                }
-                .form_title {
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 1.5rem;
-                    line-height: 130%;
-                    letter-spacing: -0.015em;
-                    text-transform: uppercase;
-                    color: #171717;
-                    margin-top: 0px;
-                }
-                input {
-                    height: 60px;
-                    width: 100%;
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 1rem;
-                    line-height: 145%;
-                    letter-spacing: -0.015em;
-                    color: #6C6D72;
-                    margin-bottom: 15px;
-                    padding: 20px;
-                }
-                textarea {
-                    width: 100%;
-                    margin-bottom: 15px;
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 1rem;
-                    line-height: 145%;
-                    letter-spacing: -0.015em;
-                    color: #6C6D72;
-                    padding: 20px;
-                    max-height: 120px;
-                }
-                .wpcf7-submit {
-                    border: none;
-                    background: #006EB6;
-                    font-style: normal;
-                    font-weight: 500;
-                    font-size: 1rem;
-                    line-height: 19px;
-                    text-transform: uppercase;
                     color: #FFFFFF;
-                    &:hover {
-                        background: #FFFFFF;
-                        border: 1.5px solid #006EB6;
-                        box-sizing: border-box;
-                        color: #006EB6;
+                    display: flex;
+                    flex-direction: column;
+                    @media (max-width: $table) {
+                        width: 100%;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 1.75rem;
+                        line-height: 115%;
+                        letter-spacing: -0.045em;
+                        text-transform: uppercase;
+                    }
+                    &:after {
+                        content: '';
+                        width: 60px;
+                        height: 2px;
+                        background: #fff;
+                        left: 0;
+                        margin: 24px 0 14px 0;
                     }
                 }
+                p {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    line-height: 145%;
+                    letter-spacing: -0.015em;
+                    color: #FFFFFF;
+                }
             }
-            .wpcf7-response-output {
-                max-width: 445px;
-                border-color: #fff;
-                background: #006eb6;
-                color: #fff;
-                margin-top: -85px;
+            .ctaAndForm_form {
+                position: absolute;
+                top: -50px;
+                right: 0;
                 @media (max-width: $table) {
-                    margin-top: -55px;
+                    position: relative;
+                }
+                .contactForm {
+                    width: 460px;
+                    padding: 50px;
+                    background-color: #fff;
+                    border: 1px solid #DDEAE0;
+                    box-sizing: border-box;
+                    box-shadow: 10px 4px 60px rgba(0, 49, 81, 0.1);
+                    @media (max-width: $table) {
+                        width: 100%;
+                        padding: 20px;
+                    }
+                    label,
+                    p {
+                        margin: 0px !important;
+                        padding: 0px !important;
+                    }
+                    .form_title {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 1.5rem;
+                        line-height: 130%;
+                        letter-spacing: -0.015em;
+                        text-transform: uppercase;
+                        color: #171717;
+                        margin-top: 0px;
+                    }
+                    .wpcf7-response-output {
+                        margin-top: -10px;
+                    }
+                    .wpcf7-not-valid-tip {
+                        margin-top: -25px;
+                    }
+                    .wpcf7-spinner {
+                        margin: 25px 24px 0 24px !important;
+                    }
+                    input {
+                        height: 60px;
+                        width: 100%;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 1rem;
+                        line-height: 145%;
+                        letter-spacing: -0.015em;
+                        color: #6C6D72;
+                        margin-bottom: -15px;
+                        padding: 20px;
+                    }
+                    textarea {
+                        width: 100%;
+                        margin-bottom: 15px;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 1rem;
+                        line-height: 145%;
+                        letter-spacing: -0.015em;
+                        color: #6C6D72;
+                        padding: 20px;
+                        max-height: 120px;
+                    }
+                    .wpcf7-submit {
+                        border: none;
+                        background: #006EB6;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 1rem;
+                        line-height: 19px;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                        &:hover {
+                            background: #FFFFFF;
+                            border: 1.5px solid #006EB6;
+                            box-sizing: border-box;
+                            color: #006EB6;
+                        }
+                    }
+                }
+                .wpcf7-response-output {
+                    max-width: 445px;
+                    border-color: #fff;
+                    background: #006eb6;
+                    color: #fff;
+                    margin-top: -85px;
+                    @media (max-width: $table) {
+                        margin-top: -55px;
+                    }
                 }
             }
         }
     }
-}
