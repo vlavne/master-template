@@ -4266,14 +4266,12 @@ textarea {
 
 .ctaHorisontalBlock .ctaHorisontalBlockContentText {
 	width: 60%;
-	font-family: 'Rubik';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 2.875rem;
 	line-height: 115%;
 	letter-spacing: -0.045em;
 	text-transform: uppercase;
-	color: #FFFFFF;
 }
 
 @media (max-width: 64rem) {
@@ -4288,9 +4286,9 @@ textarea {
 	}
 }
 
-.ctaHorisontalBlock .btn {
-	background: #FFF;
-	color: #006EB6;
+.ctaAndForm {
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .ctaAndForm {
@@ -4754,24 +4752,43 @@ textarea {
 	top: 35px;
 	border: 1px solid #EDEDED;
 	box-sizing: border-box;
+	padding: 20px 25px !important;
 }
 
 .menu-item-has-children {
 	position: relative;
 }
 
-.menu-item-has-children:hover .sub-menu {
+.activeSubmenu .sub-menu {
 	display: flex;
+}
+
+.sub-menu li {
+	padding-top: 10px;
 }
 
 .sub-menu a {
 	text-decoration: none;
-	padding: 20px 25px;
 	font-weight: 400;
 }
 
-.siteHeaderTopContactsItem svg path[fill="#7EE62A"] {
-	fill: #006EB6;
+.menu-item-has-children {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu-item-has-children:after {
+	content: url(img/menuHasSubmenus.svg);
+	margin-left: 3px;
+	transform: rotate(180deg);
+	display: block;
+	margin-top: -7px;
+}
+
+.activeSubmenu:after {
+	transform: rotate(0deg);
+	margin-top: 5px;
 }
 
 .colorMain {
@@ -4792,10 +4809,6 @@ textarea {
 
 .top::before {
 	background: transparent;
-}
-
-.siteHeaderTop {
-	background: #EEF0F6 !important;
 }
 
 .title2 {
@@ -4846,7 +4859,6 @@ textarea {
 }
 
 .siteFooterTopInfoText {
-	font-family: 'Rubik';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
