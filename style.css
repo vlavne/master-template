@@ -4691,6 +4691,7 @@ textarea {
 .partner-slider .slick-next {
 	background: #006EB6;
 	color: #fff;
+	margin: auto;
 }
 
 /* Alignments
