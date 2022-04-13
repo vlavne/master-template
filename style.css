@@ -4412,14 +4412,6 @@ textarea {
 	margin-top: 0px;
 }
 
-.ctaAndForm .ctaAndFormContainer .ctaAndForm_form .contactForm .wpcf7-response-output {
-	margin-top: -10px;
-}
-
-.ctaAndForm .ctaAndFormContainer .ctaAndForm_form .contactForm .wpcf7-not-valid-tip {
-	margin-top: -25px;
-}
-
 .ctaAndForm .ctaAndFormContainer .ctaAndForm_form .contactForm .wpcf7-spinner {
 	margin: 25px 24px 0 24px !important;
 }
@@ -4433,7 +4425,7 @@ textarea {
 	line-height: 145%;
 	letter-spacing: -0.015em;
 	color: #6C6D72;
-	margin-bottom: -15px;
+	margin-bottom: 15px;
 	padding: 20px;
 }
 
@@ -4473,13 +4465,7 @@ textarea {
 	border-color: #fff;
 	background: #006eb6;
 	color: #fff;
-	margin-top: -85px;
-}
-
-@media (max-width: 64rem) {
-	.ctaAndForm .ctaAndFormContainer .ctaAndForm_form .wpcf7-response-output {
-		margin-top: -55px;
-	}
+	margin: 15px 0 0 0;
 }
 
 .partnerSl {
@@ -4612,7 +4598,6 @@ textarea {
 	position: absolute;
 	left: 2.8125rem;
 	top: -2.5625rem;
-	border-radius: 50%;
 	overflow: hidden;
 	border: 1.5px solid #F1F2F5;
 	width: 5.125rem;
@@ -4627,7 +4612,6 @@ textarea {
 
 .partnerSlBlockItemImg img {
 	object-fit: cover;
-	border-radius: 50%;
 }
 
 .partnerSlBlockItemText {
