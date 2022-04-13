@@ -4291,6 +4291,11 @@ textarea {
 	background-repeat: no-repeat;
 }
 
+.ctaAndForm {
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 .ctaAndForm .right {
 	flex-direction: row-reverse;
 }
