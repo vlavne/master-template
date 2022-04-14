@@ -513,6 +513,90 @@
                     "step": ""
                 }
             ]
+        },
+        {
+            "key": "field_62505a441d51a",
+            "label": "Tasten",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_62505afd1d51b",
+            "label": "Hintergrundfarbe",
+            "name": "background_color_btns",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#000",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_62505b971d51c",
+            "label": "Textfarbe",
+            "name": "text_color_btns",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#FFF",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_62505c641d51d",
+            "label": "Hover-Hintergrundfarbe",
+            "name": "background_color_btns_hover",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#FFF",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_62505cd588edf",
+            "label": "Hover-Textfarbe",
+            "name": "text_color_btns_hover",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#000",
+            "enable_opacity": 0,
+            "return_format": "string"
         }
     ],
     "location": [
@@ -533,5 +617,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1648730457
+    "modified": 1649892773
 }

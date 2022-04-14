@@ -245,6 +245,28 @@
             "default_value": "left : Logo links",
             "layout": "horizontal",
             "return_format": "value"
+        },
+        {
+            "key": "field_62504ae67b4ea",
+            "label": "Telefon neben der Taste",
+            "name": "phone_type_header_btn",
+            "type": "button_group",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "yes": "Ja",
+                "no": "Nein"
+            },
+            "allow_null": 0,
+            "default_value": "no : Nein",
+            "layout": "horizontal",
+            "return_format": "value"
         }
     ],
     "location": [
@@ -265,5 +287,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1648719586
+    "modified": 1649892774
 }
