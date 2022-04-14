@@ -210,57 +210,6 @@
             "return_format": "value"
         },
         {
-            "key": "field_62567f7c289ec",
-            "label": "Hat Top-Block Color",
-            "name": "bg-color",
-            "type": "color_picker",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "enable_opacity": 0,
-            "return_format": "string"
-        },
-        {
-            "key": "field_6256a5b03b450",
-            "label": "Hat Top-Link Color",
-            "name": "a-color",
-            "type": "color_picker",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "enable_opacity": 0,
-            "return_format": "string"
-        },
-        {
-            "key": "field_62568007289ed",
-            "label": "Icon Color",
-            "name": "svg-color",
-            "type": "color_picker",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "enable_opacity": 0,
-            "return_format": "string"
-        },
-        {
             "key": "field_6241691a3e1c1",
             "label": "Taste",
             "name": "header_btn",
@@ -338,5 +287,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1649854443
+    "modified": 1649925623
 }
