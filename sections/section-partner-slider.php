@@ -38,13 +38,10 @@
         if($(window).width() >=1024){
             $('#<?php echo get_sub_field('unique_id');?> .partnerSlBlock').slick('slickGoTo', 1);
         }
+      
+        $('.slick-next').toggleClass('colorMain');
+       
+   
     });
 </script>
 
-<style>
-    .partner-slider .slick-next {
-    background: <?php echo get_sub_field('button_color');
-    ?>;
-    color: #fff;
-}
-</style>
