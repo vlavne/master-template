@@ -5133,12 +5133,12 @@ textarea {
 	border: 1px solid #006EB6;
 }
 
-<<<<<<< HEAD
 .partner-slider .slick-next {
 	background: #006EB6;
 	color: #fff;
 	margin: auto;
-=======
+}
+
 .blackAdvantages {
 	padding: 150px 0;
 }
@@ -5677,7 +5677,6 @@ textarea {
 	.testimonialsRight .slick-list {
 		padding-left: 0 !important;
 	}
->>>>>>> a5b105306f40d0e1ef70d550d054da30f005e7bc
 }
 
 /* Alignments

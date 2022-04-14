@@ -106,6 +106,9 @@ $h5 = get_field('h5', 'options');
         color: <?php echo $text_color_btns_hover;?>;
         background: <?php echo $background_color_btns_hover;?>;}
     
+    .partnerSlBlock .slick-next{
+        background: <?php echo $main;?>;
+    }
     .testimonials .slick-arrow:hover{
         background: <?php echo $main;?>;
     }
