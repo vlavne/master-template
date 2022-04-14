@@ -181,7 +181,7 @@
 }
 
 .partner-slider .slick-next {
-    background: #006EB6;
+    background: #006EB6 !important;
     color: #fff;
 }
 
@@ -233,4 +233,35 @@
 
 #section-1Fu6l9Bb {
     margin-bottom: 0;
+}
+
+@media (max-width: $table) {
+    #section-1K4VYIgT {
+        max-height: 250px;
+        min-height: 0px;
+        display: flex;
+        align-items: center;
+    }
+    #section-1K4VYIgT.cta .container {
+        text-align: center !important;
+    }
+    #section-1K4VYIgT.cta .title3 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 38px;
+        line-height: 120%;
+        text-align: center;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+    }
+    #section-1K4VYIgT.cta .ctaText {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 135%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.005em;
+    }
 }
