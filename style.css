@@ -4241,6 +4241,213 @@ textarea {
 	margin-bottom: 0;
 }
 
+.TopTwoColumn {
+	position: relative;
+}
+
+@media (max-width: 31.25rem) {
+	.TopTwoColumn .container {
+		padding: 0rem;
+	}
+}
+
+.TopTwoColumnBlock {
+	display: flex;
+	position: relative;
+	max-height: 37.5rem;
+}
+
+@media (max-width: 48rem) {
+	.TopTwoColumnBlock {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 31.25rem) {
+	.TopTwoColumnBlock {
+		padding: 0rem 1.875rem;
+		justify-content: flex-end;
+	}
+}
+
+.TopTwoColumnBlockContent {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	text-align: start;
+	justify-content: center;
+	align-items: flex-start;
+	z-index: 2;
+	position: relative;
+}
+
+.TopTwoColumnBlockContentText {
+	max-width: 18.75rem;
+	margin-top: 0.625rem;
+}
+
+.TopTwoColumnBlockContent a.btn {
+	margin-top: 3.125rem;
+}
+
+@media (max-width: 48rem) {
+	.TopTwoColumnBlockContent {
+		width: 100%;
+	}
+}
+
+.TopTwoColumnBlockImg {
+	display: flex;
+	align-items: flex-end;
+	margin-top: auto;
+}
+
+.TopTwoColumnBlock img {
+	height: calc(100% - 3.125rem);
+	width: auto;
+}
+
+@media (max-width: 48rem) {
+	.TopTwoColumnBlock {
+		width: 100%;
+	}
+	.TopTwoColumnBlock .exist {
+		display: flex;
+	}
+	.TopTwoColumnBlock .noexist {
+		display: none;
+	}
+}
+
+.TopTwoColumnBlock .MiniCart {
+	position: absolute;
+	bottom: 0rem;
+	left: 0rem;
+	z-index: 3;
+	display: flex;
+	padding: 1.563rem 2.5rem;
+	background-color: #fff;
+	align-items: center;
+	-webkit-box-shadow: 0rem 1.563rem 3.125rem 0.625rem rgba(0, 0, 0, 0.3);
+	box-shadow: 0rem 1.563rem 3.125rem 0.625rem rgba(0, 0, 0, 0.3);
+	transform: translate(0px, 50%);
+}
+
+@media (max-width: 48rem) {
+	.TopTwoColumnBlock .MiniCart {
+		position: relative;
+		transform: unset;
+		margin-top: 3.125rem;
+	}
+}
+
+.TopTwoColumnBlock .MiniCartIcon {
+	height: 2.1875rem;
+	width: 2.1875rem;
+	margin-right: 1.875rem;
+}
+
+.TopTwoColumnBlock .MiniCartIcon img {
+	height: 100%;
+}
+
+.TopTwoColumnBlock .MiniCartContent {
+	font-weight: 600;
+}
+
+.TopTwoColumnBlock .MiniCartContentTitle {
+	font-size: 2.1875rem;
+	line-height: 2.1875rem;
+}
+
+.TopTwoColumnBlock .MiniCartContentSubTitle {
+	font-size: 1.125rem;
+	line-height: 150%;
+	color: #6b6b75;
+}
+
+.TopTwoColumnBlockBackground {
+	position: absolute;
+	z-index: 1;
+	right: 0rem;
+	height: 100%;
+}
+
+@media (max-width: 48rem) {
+	.TopTwoColumnBlockBackground {
+		left: 0rem;
+		right: unset;
+	}
+}
+
+@media (max-width: 31.25rem) {
+	.TopTwoColumnBlockBackground {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.TopTwoColumnBlockBackground img {
+	height: 100%;
+	width: auto;
+}
+
+.TopTwoColumnBlockCTA {
+	position: absolute;
+	z-index: 10;
+	right: 0px;
+	top: 0px;
+	display: flex;
+	flex-direction: column;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	max-width: 200px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 135%;
+	cursor: pointer;
+}
+
+@media (max-width: 48rem) {
+	.TopTwoColumnBlockCTA {
+		display: none;
+	}
+}
+
+.TopTwoColumnBlockCTA img {
+	height: auto;
+	width: 70%;
+	margin-left: auto;
+	max-width: 120px;
+}
+
+.TopTwoColumnBlockCTATitle {
+	margin-right: 30px;
+	margin-top: 20px;
+	margin-bottom: unset;
+}
+
+.TopTwoColumnBlockCTALink {
+	margin: 20px 0px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: max-content;
+	border-bottom: 2px solid transparent;
+	transition: .5s;
+}
+
+.TopTwoColumnBlockCTALink img {
+	width: unset;
+	margin: unset;
+	height: 100%;
+}
+
+.TopTwoColumnBlockCTA:hover .TopTwoColumnBlockCTALink {
+	border-bottom: 2px solid #fff;
+}
+
 .ctaHorisontal {
 	background-size: cover;
 }
