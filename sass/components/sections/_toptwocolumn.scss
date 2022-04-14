@@ -3,10 +3,15 @@
 .TopTwoColumn {
 
   position: relative;
-
+    @include toRem(padding-bottom, 100); 
+    @media(max-width: $tablemin) {
+      padding-bottom: 0rem;
+        
+    }
   .container {
     @media(max-width: $tablemin) {
       padding: 0rem;
+        
     }
   }
 
