@@ -50,7 +50,7 @@
     </div>
 
     <?php if($cta=get_sub_field('cta')):?>
-        <div class="TopTwoColumnBlockCTA" style="background-color:<?php echo $cta['background_color'] ?>;" onClick="location.href('<?php echo $cta['link']['url'] ?>')">
+        <div class="TopTwoColumnBlockCTA" style="background-color:<?php echo $cta['background_color'] ?>;" onClick="location.href='<?php echo $cta['link']['url'] ?>'">
 
             <img src="<?php echo get_template_directory_uri(); ?>/img/Intersect.svg" alt="intersect">
             <p class="TopTwoColumnBlockCTATitle">
