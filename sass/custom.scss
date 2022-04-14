@@ -2,10 +2,6 @@
     margin-top: 30px;
 }
 
-#wpadminbar {
-    display: none;
-}
-
 .siteHeaderWrap {
     max-height: 94px;
 }
@@ -187,4 +183,54 @@
 .partner-slider .slick-next {
     background: #006EB6;
     color: #fff;
+}
+
+.ctaAndForm .ctaAndFormContainer .ctaAndForm_form .contactForm input {
+    margin-bottom: -15px;
+}
+
+.ctaAndForm .ctaAndFormContainer .ctaAndForm_form .wpcf7-response-output {
+    margin: -35px 0 0 0;
+}
+
+.wpcf7-not-valid-tip {
+    margin-top: -25px;
+}
+
+.cta::before {
+    display: none;
+}
+
+.cta {
+    min-height: 527px;
+}
+
+.cta .container {
+    text-align: left;
+}
+
+.cta .title3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.cta .ctaText {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 135%;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.005em;
+    color: #FFFFFF;
+    max-width: 460px;
+}
+
+#section-1Fu6l9Bb {
+    margin-bottom: 0;
 }
