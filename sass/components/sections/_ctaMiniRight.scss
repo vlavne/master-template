@@ -1,0 +1,67 @@
+/* CSS CTA_MINI_RIGHT */
+
+
+
+.CtaMiniRight{
+    position: fixed;
+    z-index: 10;
+    right: 0px;
+    top: 95px;
+    width: fit-content;
+    margin-left: auto;
+      
+
+
+      @media(max-width: $tablemin) {
+        display: none;
+      }
+
+    &Block{
+        
+    display: flex;
+      flex-direction: column;
+      padding-left: 20px;
+      padding-bottom: 10px;
+      max-width: 200px;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 135%;
+      cursor: pointer;
+
+      img {
+        height: auto;
+        width: 70%;
+        margin-left: auto;
+        max-width: 120px;
+      }
+
+      &Title {
+        margin-right: 45px;
+        margin-top: 20px;
+        margin-bottom: unset;
+
+      }
+
+      &Link {
+        margin: 20px 0px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: max-content;
+        border-bottom: 2px solid transparent;
+        transition: .5s;
+
+        img {
+          width: unset;
+          margin: unset;
+          height: 100%;
+        }
+      }
+
+      &:hover .CtaMiniRightLink {
+        border-bottom: 2px solid #fff;
+      }
+
+    }
+}
