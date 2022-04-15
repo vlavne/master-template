@@ -16,7 +16,7 @@
     top: 35px;
     border: 1px solid #EDEDED;
     box-sizing: border-box;
-    padding: 20px 25px !important;
+    padding: 20px 25px 10px 25px!important
 }
 
 .menu-item-has-children {
@@ -28,7 +28,7 @@
 }
 
 .sub-menu li {
-    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .sub-menu a {
@@ -189,6 +189,10 @@
     margin-bottom: -15px;
 }
 
+.contactPage .contactPageContainer .contactPage_form .contactForm input {
+    margin-bottom: -15px;
+}
+
 .ctaAndForm .ctaAndFormContainer .ctaAndForm_form .wpcf7-response-output {
     margin: -35px 0 0 0;
 }
@@ -231,11 +235,48 @@
     max-width: 460px;
 }
 
-#section-1Fu6l9Bb {
+#section-1Fu6l9Bb,
+#section-Uu9zWyED,
+#section-CFG2iRSH,
+#section-0idSVLd0,
+#section-1ODrFDKh,
+#section-s3yIGFtb {
     margin-bottom: 0;
 }
 
+#section-1ODrFDKh {
+    margin-top: 0;
+}
+
 @media (max-width: $table) {
+    #section-LNkxULrQ {
+        max-height: 250px;
+        min-height: 0px;
+        display: flex;
+        align-items: center;
+    }
+    #section-LNkxULrQ.cta .container {
+        text-align: center !important;
+    }
+    #section-LNkxULrQ.cta .title3 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 38px;
+        line-height: 120%;
+        text-align: center;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+    }
+    #section-LNkxULrQ.cta .ctaText {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 135%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.005em;
+    }
     #section-1K4VYIgT {
         max-height: 250px;
         min-height: 0px;
@@ -263,5 +304,125 @@
         align-items: center;
         text-align: center;
         letter-spacing: -0.005em;
+    }
+    #section-1ASkmCgI {
+        max-height: 250px;
+        min-height: 0px;
+        display: flex;
+        align-items: center;
+    }
+    #section-1ASkmCgI.cta .container {
+        text-align: center !important;
+    }
+    #section-1ASkmCgI.cta .title3 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 38px;
+        line-height: 120%;
+        text-align: center;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+    }
+    #section-1ASkmCgI.cta .ctaText {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 135%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.005em;
+    }
+    #section-zIZvtP4X {
+        max-height: 250px;
+        min-height: 0px;
+        display: flex;
+        align-items: center;
+    }
+    #section-zIZvtP4X.cta .container {
+        text-align: center !important;
+    }
+    #section-zIZvtP4X.cta .title3 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 38px;
+        line-height: 120%;
+        text-align: center;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+    }
+    #section-zIZvtP4X.cta .ctaText {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 135%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.005em;
+    }
+    #section-7YAON75v {
+        max-height: 250px;
+        min-height: 0px;
+        display: flex;
+        align-items: center;
+    }
+    #section-7YAON75v.cta .container {
+        text-align: center !important;
+    }
+    #section-7YAON75v.cta .title3 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 38px;
+        line-height: 120%;
+        text-align: center;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+    }
+    #section-7YAON75v.cta .ctaText {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 135%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.005em;
+    }
+}
+
+#section-I3aTWI7P li::marker {
+    content: normal !important;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    color: #006EB6;
+}
+
+#section-I3aTWI7P .title2 {
+    font-size: 18px;
+}
+
+#section-1icmxhGe {
+    margin-top: 80px;
+}
+
+#section-E2pKhfqE .textImgBlockImg img {
+    object-fit: contain;
+}
+
+#section-E2pKhfqE .textImgBlockContent {
+    width: 40%;
+    @media (max-width: $table) {
+        width: 100px;
+        min-width: 100%;
+    }
+}
+
+#section-E2pKhfqE .textImgBlockImg {
+    width: 60%;
+    @media (max-width: $table) {
+        width: 100px;
+        min-width: 100%;
     }
 }
