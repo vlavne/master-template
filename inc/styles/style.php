@@ -9,10 +9,10 @@ $light_grey = get_field('color_light_grey', 'options');
 
 // COLORS BUTTONS
 $background_color_btns = get_field('background_color_btns', 'options');
-$text_color_btns = get_field('text_color_btns', 'options');  
+$text_color_btns = get_field('text_color_btns', 'options');
 $background_color_btns_hover = get_field('background_color_btns_hover', 'options');
 $text_color_btns_hover = get_field('text_color_btns_hover', 'options');
-    
+
 // DISTANCES
 $outer_padding_desk = get_field('outer_padding_desk', 'options');
 $outer_padding_mob = get_field('outer_padding_mob', 'options');
@@ -27,44 +27,54 @@ $h5 = get_field('h5', 'options');
 ?>
 <style>
     /* DISTANCES */
-    .marg{
+    .marg {
         margin: <?php echo $outer_padding_desk;?>px 0;
     }
-    .margBot{
+
+    .margBot {
         margin-bottom: <?php echo $outer_padding_desk;?>px;
     }
-    .padd{
+
+    .padd {
         padding: <?php echo $outer_padding_desk;?>px 0;
     }
-    @media (max-width: 1024px){
-        .marg{
+
+    @media (max-width: 1024px) {
+        .marg {
             margin: <?php echo $outer_padding_mob;?>px 0;
         }
-        .margBot{
+
+        .margBot {
             margin-bottom: <?php echo $outer_padding_mob;?>px;
         }
-        .padd{
+
+        .padd {
             padding: <?php echo $outer_padding_mob;?>px 0;
         }
     }
 
     /* COLORS */
-    .bgBlack{
+    .bgBlack {
         background: <?php echo $black;?>;
     }
-    .bgMain{
+
+    .bgMain {
         background: <?php echo $main;?>;
     }
-    .colorMain{
+
+    .colorMain {
         color: <?php echo $main;?>;
     }
-    .colorBlack{
+
+    .colorBlack {
         color: <?php echo $black;?>;
     }
-    .colorGrey{
+
+    .colorGrey {
         color: <?php echo $grey;?>;
     }
-    .borderColorMain{
+
+    .borderColorMain {
         border-color: <?php echo $main;?>;
     }
 
@@ -78,80 +88,107 @@ $h5 = get_field('h5', 'options');
         font-size: 1rem;
         line-height: 1.5;
     }
-    svg path[fill="#7EE62A"]{
+
+    svg path[fill="#7EE62A"] {
         fill: <?php echo $main;?>;
     }
+
     a, a:visited, a:hover, a:focus, a:active, .siteNavigation > ul > li > a:hover {
         color: <?php echo $main;?>;
     }
-    .siteNavigation > ul > li > a{
+
+    .siteNavigation > ul > li > a {
         color: <?php echo $black;?>;
     }
-    .page-template-default article p{
+
+    .page-template-default article p {
         color: <?php echo $grey;?>;
     }
-    a.btn, .btn{
+
+    a.btn, .btn {
         border-color: <?php echo $background_color_btns;?>;
         color: <?php echo $text_color_btns;?>;
         background: <?php echo $background_color_btns;?>;
     }
-    .btn.btnWhite{
+
+    .btn.btnWhite {
         color: <?php echo $black;?>;
     }
-    .btn:active, a.btn:active{
-    color: <?php echo $text_color_btns_hover;?>;
-    }
-    
-    a.btn:hover, .btn:hover{ 
+
+    .btn:active, a.btn:active {
         color: <?php echo $text_color_btns_hover;?>;
-        background: <?php echo $background_color_btns_hover;?>;}
-    
+    }
+
+    a.btn:hover, .btn:hover {
+        color: <?php echo $text_color_btns_hover;?>;
+        background: <?php echo $background_color_btns_hover;?>;
+    }
+
     .testimonials .slick-arrow:hover{
+        background: <?php echo $background_color_btns_hover;?>;
+    }
+    .partnerSlBlock .slick-next{
         background: <?php echo $main;?>;
     }
-    @media (max-width: 768px){
-        .testimonialsBlockItemText, .faqBlockItemA{
+
+    .testimonials .slick-arrow:hover {
+        background: <?php echo $background_color_btns_hover;?>;
+    }
+
+    @media (max-width: 768px) {
+        .testimonialsBlockItemText, .faqBlockItemA {
             color: <?php echo $grey;?>;
         }
     }
-    #burger span{
+
+    #burger span {
         background: <?php echo $black;?>;
     }
-    .siteNavigationContacts{
+
+    .siteNavigationContacts {
         border-color: <?php echo $light;?>;
     }
 
 
     /* HEADINGS */
-    h1, .title{
+    h1, .title {
         font-size: <?php echo $h1['desk'];?>px;
     }
-    h2, .title2{
+
+    h2, .title2 {
         font-size: <?php echo $h2['desk'];?>px;
     }
-    h3, .title3{
+
+    h3, .title3 {
         font-size: <?php echo $h3['desk'];?>px;
     }
-    h4, .title4{
+
+    h4, .title4 {
         font-size: <?php echo $h4['desk'];?>px;
     }
-    h5, .title5{
+
+    h5, .title5 {
         font-size: <?php echo $h5['desk'];?>px;
     }
-    @media (max-width: 1024px){
-        h1, .title{
+
+    @media (max-width: 1024px) {
+        h1, .title {
             font-size: <?php echo $h1['mob'];?>px;
         }
-        h2, .title2{
+
+        h2, .title2 {
             font-size: <?php echo $h2['mob'];?>px;
         }
-        h3, .title3{
+
+        h3, .title3 {
             font-size: <?php echo $h3['mob'];?>px;
         }
-        h4, .title4{
+
+        h4, .title4 {
             font-size: <?php echo $h4['mob'];?>px;
         }
-        h5, .title5{
+
+        h5, .title5 {
             font-size: <?php echo $h5['mob'];?>px;
         }
     }
