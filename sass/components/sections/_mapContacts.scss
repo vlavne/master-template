@@ -28,6 +28,10 @@
     .title2{
       text-align: center;
     }
+      .subtitle{
+         text-align: center;
+      } 
+      
     &Contacts{
       @include toRem(margin-top,60);
       @include toRem(margin-bottom,50);

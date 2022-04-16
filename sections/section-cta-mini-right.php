@@ -1,8 +1,6 @@
 <section class="CtaMiniRight" id="<?php echo get_sub_field('unique_id');?>">
         <div class="CtaMiniRightBlock" style="background-color:<?php if($background_color = get_sub_field('background-color')){ echo $background_color ; } ?>" 
-             onClick="location.href='
-                      <?php if($link = get_sub_field('link')){ echo $link['url'] ; } ?>
-                      '">
+             onClick='location.href=" <?php if($link = get_sub_field('link')){ echo $link['url'] ; } ?>" ;  '>
 
             <img src="<?php echo get_template_directory_uri(); ?>/img/Intersect.svg" alt="intersect">
             <p class="CtaMiniRightBlockTitle">
@@ -13,5 +11,8 @@
             </div>
 
         </div>
+    <div class="btnHide" onClick="$('.CtaMiniRight').hide() ;">
+        &#215;
+    </div>
 </section>
 
