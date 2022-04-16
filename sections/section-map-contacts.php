@@ -6,7 +6,7 @@
                 <span class="sep bgMain"></span>
             <?php endif; ?>
             <div class="mapContactsBlockContacts">
-                <?php if ($address = get_field('address', 'options')): ?>
+                <?php if ($address = get_sub_field('address')): ?>
                     <div class="mapContactsBlockContactsItem colorBlack">
                         <div class="mapContactsBlockContactsItemIcon">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -18,7 +18,18 @@
                         <?php echo $address; ?>
                     </div>
                 <?php endif; ?>
-                <?php if ($phone = get_field('phone', 'options')): $tel_link = preg_replace('![^0-9+]!', '', $phone); ?>
+                <?php if ($time_work = get_sub_field('time_work')): ?>
+                    <div class="mapContactsBlockContactsItem colorBlack">
+                        <div class="mapContactsBlockContactsItemIcon">
+                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.0499935 9.50029C0.0499935 14.7194 4.2809 18.9503 9.49999 18.9503C14.7167 18.9446 18.9443 14.717 18.95 9.50029C18.95 4.2812 14.7191 0.050293 9.49999 0.050293C4.2809 0.050293 0.0499935 4.2812 0.0499935 9.50029ZM1.93999 9.50029C1.93999 5.32502 5.32472 1.94029 9.49999 1.94029C13.6733 1.94498 17.0553 5.32696 17.06 9.50029C17.06 13.6756 13.6753 17.0603 9.49999 17.0603C5.32472 17.0603 1.93999 13.6756 1.93999 9.50029Z" fill="#222227"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.49999 1.94029C5.32472 1.94029 1.93999 5.32502 1.93999 9.50029C1.93999 13.6756 5.32472 17.0603 9.49999 17.0603C13.6753 17.0603 17.06 13.6756 17.06 9.50029C17.0553 5.32696 13.6733 1.94498 9.49999 1.94029ZM8.55499 11.3903H14.225V9.50029H10.445V4.77529H8.55499V11.3903Z" fill="#222227"/>
+</svg>
+                        </div>
+                        <?php echo $time_work; ?>
+                    </div>
+                <?php endif; ?>
+                <?php if ($phone = get_sub_field('phone')): $tel_link = preg_replace('![^0-9+]!', '', $phone); ?>
                     <a href="tel:<?php echo $tel_link; ?>" class="mapContactsBlockContactsItem colorBlack">
                             <span class="mapContactsBlockContactsItemIcon">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -30,7 +41,7 @@
                         <?php echo 'Tel: ' . $phone; ?>
                     </a>
                 <?php endif; ?>
-                <?php if ($fax = get_field('fax', 'options')): $fax_link = preg_replace('![^0-9+]!', '', $fax); ?>
+                <?php if ($fax = get_sub_field('fax')): $fax_link = preg_replace('![^0-9+]!', '', $fax); ?>
                     <a href="tel:<?php echo $fax_link; ?>" class="mapContactsBlockContactsItem colorBlack">
                             <span class="mapContactsBlockContactsItemIcon">
                                 <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
@@ -43,7 +54,7 @@
                         <?php echo 'Fax: ' . $fax; ?>
                     </a>
                 <?php endif; ?>
-                <?php if ($email = get_field('email', 'options')): ?>
+                <?php if ($email = get_sub_field('email')): ?>
                     <a href="mailto:<?php echo $email; ?>" class="mapContactsBlockContactsItem colorBlack">
                             <span class="mapContactsBlockContactsItemIcon">
                                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
