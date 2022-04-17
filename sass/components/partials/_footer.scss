@@ -132,8 +132,8 @@
 
 .site{
     &FooterTwo{
-            padding-top: 100px;
-            padding-bottom: 80px;
+             @include toRem(padding-top, 100);
+             @include toRemp(adding-bottom, 80);
         
         &Top{
             display: flex;
@@ -147,17 +147,17 @@
                 
                 @media(max-width: $tablemin){
                     width: 100%;
-                    margin-top: 60px;
-                    margin-bottom: 70px;
+                    @include toRem(margin-top, 60);
+                    @include toRem(margin-bottom, 70);
                 }
             }
             
             &Menu{
-                margin-right: 75px;
+                @include toRem(margin-right, 75);
                 &Title{
                     text-transform: uppercase;
                     font-weight: 600;
-                    margin-bottom: 20px;
+                    @include toRem(margin-bottom, 20);
                 }
                 
                 ul{
@@ -167,7 +167,7 @@
                     
                     
                     li{
-                        margin-bottom: 12px;
+                        @include toRem(margin-bottom, 12);
                         
                         a{
                             text-decoration: none;
@@ -186,7 +186,7 @@
             &Info{
                width: 50%;
                 margin-left: auto; 
-                margin-top: -14px;
+                @include toRem(margin-top, -14);
                 
                 @media(max-width: $tablemin){
                     width: 100%;
@@ -195,42 +195,49 @@
                 &Text{
                 
                 font-weight: 600;
-                font-size: 42px;
+                @include toRem(font-size, 42);
                 text-transform: uppercase;
                     
                     @media(max-width: $tablemin){
-                    font-size: 28px;
+                    @include toRem(font-size, 28);
                 }
                 
                 }
                 
                 &News{
-                    margin-top: 85px;
+                    @include toRem(margin-top, 85);
                     
                     @media(max-width: $tablemin){
-                    margin-top: 40px;
+                    @include toRem(margin-top, 40);
                 }
                     
                     &Title{
-                        font-size: 14px;
+                        @include toRem(font-size, 14);
                         text-transform: uppercase;
                         font-weight: 600;
                     }
                     
                     &Form{
-                        font-size: 15px;
+                        @include toRem(font-size, 15);
                         font-weight: 400;
                         text-transform: none;
                         width: 100%;
                         display: flex;
                         justify-content: space-between;
-                        margin-top: 24px;
+                        @include toRem(margin-top, 24);
                         color: #6b6b75;
                         border-bottom: 2px solid #c4c8d5;
-                        padding-bottom: 12px;
+                        @include toRem(padding-bottom, 12);
+                        
+                        input{
+                            width: 100%;
+                            border: none;
+                            border-radius: unset;
+                            outline-style: none;
+                        } 
                         
                         @media(max-width: $tablemin){
-                    font-size: 13px;
+                    @include toRem(font-size, 13);
                 }
                         
                         a{
@@ -238,6 +245,11 @@
                             display: flex;
                             text-decoration: none;
                             font-weight: 600;
+                            align-items: center;
+                            
+                            img{
+                                height: fit-content;
+                            }
                         }
                     }
                 }
@@ -251,7 +263,7 @@
         &Bottom{
             &Copyright{
                 font-weight: 400;
-    font-size: 18px;
+    @include toRem(font-size, 18);
     text-transform: uppercase;
             }
         } 

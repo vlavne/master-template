@@ -117,7 +117,7 @@
                     <div class="siteFooterTwoTopInfoNewsTitle">Newsletter</div>
                     <div class="siteFooterTwoTopInfoNewsForm">
                     
-                        Gerben Sie Ihre E-Mail-Adresse ein  <a href="#">Folgen<img src="<?php echo get_template_directory_uri(); ?>/img/short_right.svg" alt="short_right"></a>
+                        <input type="email" placeholder="Gerben Sie Ihre E-Mail-Adresse ein">  <a href="#">Folgen<img src="<?php echo get_template_directory_uri(); ?>/img/short_right.svg" alt="short_right"></a>
                     
                     </div>
                 
