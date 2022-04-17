@@ -133,7 +133,7 @@
 .site{
     &FooterTwo{
              @include toRem(padding-top, 100);
-             @include toRemp(adding-bottom, 80);
+             @include toRem(padding-bottom, 80);
         
         &Top{
             display: flex;
