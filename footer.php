@@ -11,6 +11,10 @@
 
 ?>
 
+<?php $footer_type = get_field('footer_type', 'options') ?>
+
+<?php if($footer_type == '1') {?>
+
 <footer id="colophon" class="siteFooter bgBlack">
     <div class="container">
         <div class="siteFooterTop">
@@ -71,6 +75,68 @@
         </div>
     </div>
 </footer><!-- #colophon -->
+
+<?php } ?>
+<?php if($footer_type == '2') {?>
+<footer id="colophon" class="siteFooterTwo">
+    <div class="container">
+        <div class="siteFooterTwoTop">
+            <div class="siteFooterTwoTopMenus">
+            <?php if (has_nav_menu('menu-footer')): ?>
+                <div class="siteFooterTwoTopMenu">
+                    <div class="siteFooterTwoTopMenuTitle">Navigation</div>
+                    <?php wp_nav_menu(
+                        array(
+                            'theme_location' => 'menu-footer',
+                            'menu_id' => 'footerMenu',
+                            'container' => ''
+                        )
+                    ); ?>
+                </div>
+            <?php endif; ?>
+            <?php if (has_nav_menu('menu-social')): ?>
+                <div class="siteFooterTwoTopMenu">
+                    <div class="siteFooterTwoTopMenuTitle">Social</div>
+                    <?php wp_nav_menu(
+                        array(
+                            'theme_location' => 'menu-social',
+                            'menu_id' => 'socialMenu',
+                            'container' => ''
+                        )
+                    ); ?>
+                </div>
+            <?php endif; ?>
+            
+            </div>
+            <div class="siteFooterTwoTopInfo">
+                <?php if ($footer_text = get_field('footer_text', 'options')): ?>
+                    <div class="siteFooterTwoTopInfoText"><?php echo $footer_text; ?></div>
+                <?php endif; ?>
+                
+                <div class="siteFooterTwoTopInfoNews">
+                    <div class="siteFooterTwoTopInfoNewsTitle">Newsletter</div>
+                    <div class="siteFooterTwoTopInfoNewsForm">
+                    
+                        Gerben Sie Ihre E-Mail-Adresse ein  <a href="#">Folgen<img src="<?php echo get_template_directory_uri(); ?>/img/short_right.svg" alt="short_right"></a>
+                    
+                    </div>
+                
+                </div>
+                
+            </div>
+
+        </div>
+        <div class="siteFooterTwoBottom">
+            <?php if ($copyright = get_field('copyright', 'options')): ?>
+                <div class="siteFooterTwoBottomCopyright"><?php echo $copyright; ?></div>
+            <?php endif; ?>
+            
+        </div>
+    </div>
+</footer><!-- #colophon -->
+<?php } ?>
+
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
