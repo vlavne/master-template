@@ -38,6 +38,25 @@
             "new_lines": "br"
         },
         {
+            "key": "field_625c8ff8e7852",
+            "label": "Arbeitszeit",
+            "name": "work-time",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 3,
+            "new_lines": "br"
+        },
+        {
             "key": "field_623c50a5bf48e",
             "label": "Telefon",
             "name": "phone",
@@ -338,5 +357,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1649925785
+    "modified": 1650233351
 }

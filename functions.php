@@ -206,3 +206,65 @@ add_action('admin_menu', 'wpdocs_remove_menus');
 
 // IMAGE SIZES
 add_image_size('service', 335, 450, true);
+add_image_size('postCard', 320, 209, true);
+
+//register post type and taxonomy
+add_action( 'init', 'register_projects_type' );
+function register_projects_type() {
+    register_taxonomy('Kategorie Hotelzimmer', array('hotel_rooms'), array(
+        'label'                 => 'Kategorien Hotelzimmer', // определяется параметром $labels->name
+        'labels'                => array(
+            'name'              => 'Kategorien Hotelzimmer',
+            'singular_name'     => 'Kategorien Hotelzimmer',
+            'search_items'      => 'Suche Kategorien Hotelzimmer',
+            'all_items'         => 'Alle Kategorien Hotelzimmer',
+            'parent_item'       => 'Eltern-Kategorien Hotelzimmer',
+            'parent_item_colon' => 'Eltern-Kategorien Hotelzimmer:',
+            'edit_item'         => 'bearbeiten Kategorien Hotelzimmer',
+            'update_item'       => 'aktualisieren Kategorien Hotelzimmer',
+            'add_new_item'      => 'Fügen Kategorien Hotelzimmer',
+            'new_item_name'     => 'Neuen Kategorien Hotelzimmer',
+            'menu_name'         => 'Kategorien Hotelzimmer',
+        ),
+        'description'           => 'Richtung in Kategorien Hotelzimmer', // описание таксономии
+        'public'                => true,
+        'show_in_nav_menus'     => true, // равен аргументу public
+//        'show_ui'               => true, // равен аргументу public
+//        'show_tagcloud'         => false, // равен аргументу show_ui
+        'hierarchical'          => true,
+        'rewrite'               => array('slug'=>'hotel_room_category', 'hierarchical'=>true, 'with_front'=>true, 'feed'=>false ),
+        'show_admin_column'     => true, // Позволить или нет авто-создание колонки таксономии в таблице ассоциированного типа записи. (с версии 3.5)
+    ) );
+    register_post_type('hotel_rooms', array(
+        'label'               => 'Hotelzimmer',
+        'labels'              => array(
+            'name'          => 'Hotelzimmer',
+            'singular_name' => 'hotel_rooms',
+            'menu_name'     => 'Hotelzimmer',
+            'all_items'     => 'Alle Hotelzimmers',
+            'add_new'       => 'Fügen Hotelzimmer',
+            'add_new_item'  => 'Neuen Hotelzimmer hinzufügen',
+            'edit'          => 'bearbeiten',
+            'edit_item'     => 'bearbeiten Hotelzimmer',
+            'new_item'      => 'Neu Hotelzimmer',
+        ),
+        'description'         => '',
+        'public'              => true,
+        'publicly_queryable'  => null,
+//        'show_ui'             => true,
+//        'show_in_rest'        => false,
+//        'rest_base'           => '',
+//        'show_in_menu'        => true,
+        'exclude_from_search' => false,
+//        'capability_type'     => 'post',
+//        'map_meta_cap'        => true,
+        'hierarchical'        => true,
+//        'rewrite'             => array( 'slug'=>'lessons/%lessoncat%', 'with_front'=>false, 'pages'=>false, 'feeds'=>false, 'feed'=>false ),
+        'rewrite'             => true,
+//        'has_archive'         => 'standorte-cat',
+        'query_var'           => true,
+        'supports'            => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
+//        'taxonomies'          => array( 'lessoncat' ),
+        'menu_icon'           => 'dashicons-analytics',
+    ) );
+}

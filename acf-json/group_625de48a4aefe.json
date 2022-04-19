@@ -1,12 +1,12 @@
 {
-    "key": "group_624591899d715",
-    "title": "Page",
+    "key": "group_625de48a4aefe",
+    "title": "custop post type page fields",
     "fields": [
         {
-            "key": "field_6245919abd343",
-            "label": "Hintergrundfarbe",
-            "name": "bg",
-            "type": "color_picker",
+            "key": "field_625de4970e741",
+            "label": "Room price",
+            "name": "room_price",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -16,8 +16,10 @@
                 "id": ""
             },
             "default_value": "",
-            "enable_opacity": 0,
-            "return_format": "string"
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         }
     ],
     "location": [
@@ -25,18 +27,18 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "page"
+                "value": "post"
             }
         ]
     ],
     "menu_order": 0,
-    "position": "side",
+    "position": "normal",
     "style": "default",
-    "label_placement": "left",
+    "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1650035775
+    "modified": 1650363035
 }
