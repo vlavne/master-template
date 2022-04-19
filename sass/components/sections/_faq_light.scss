@@ -1,0 +1,172 @@
+// FAQ LIGHT
+
+.faqLight{
+  .title2{
+    text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 125%;
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+    color: #1E1E24;
+    @include toRem(margin-top,15);
+    @media (max-width: $table){
+      //@include toRem(margin-bottom,22);
+    }
+  }
+  &Line{
+    width: 60px;
+    height: 2px;
+    text-align: center;
+    margin: 20px auto;
+    background: #87AD86;
+  }
+  &Subtitle{
+    text-align: center;
+    @include toRem(font-size,14);
+    @include toRem(line-height,14);
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+  &Text{
+    @include toRem(font-size,18);
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: -0.005em;
+    color: #5C5D64;
+  }
+  &Block{
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap:    3rem;
+    grid-column-gap: 3rem;
+    @include toRem(margin-top,60);
+    @media (max-width: $table){
+      display: block;
+    }
+
+    &Item{
+      @include toRem(padding-top,32);
+      @include toRem(padding-bottom,32);
+      @include toRem(padding-left,24);
+      @include toRem(padding-right,24);
+      position: relative;
+      border: 1px solid #C4C8D5;
+
+      &.active{
+        &:after{
+          transform: rotate(180deg);
+        }
+      }
+      &:nth-child(5n - 2){
+        grid-row: 1/3;
+        grid-column: 2/2;
+      }
+      @media (max-width: $table){
+        cursor: pointer;
+        @include toRem(margin-bottom,20);
+        @include toRem(padding-right,48);
+        &:after{
+          transition: all .5s;
+          position: absolute;
+          @include toRem(top, 26);
+          @include toRem(right, 24);
+          content: url("/wp-content/themes/master-template/img/arrowDown.svg");
+        }
+      }
+      &Title{
+        font-weight: 500;
+        line-height: 130%;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: #1E1E24;
+        @include toRem(font-size, 28);
+        @include toRem(margin-bottom, 16);
+        @media (max-width: $table){
+          font-weight: 500;
+          @include toRem(font-size, 18);
+          line-height: 130%;
+        }
+      }
+      &Text{
+        line-height: 160%;
+        color: #5C5D64;
+        font-weight: 400;
+        @include toRem(font-size, 16);
+        @media (max-width: $table){
+          display: none;
+          font-weight: 400;
+          @include toRem(margin-top, 12);
+          @include toRem(font-size, 14);
+          line-height: 145%;
+        }
+      }
+    }
+  }
+}
+.faq{
+  &Block{
+    &Item{
+      @include toRem(padding-bottom,30);
+      @include toRem(margin-bottom,30);
+      border-bottom: 1px solid #DDEAE0;
+      @media (max-width: $table){
+        @include toRem(padding-bottom,24);
+        @include toRem(margin-bottom,24);
+      }
+      &:last-child{
+        margin-bottom: 0;
+      }
+      &Q{
+        cursor: pointer;
+        font-weight: 500;
+        @include toRem(font-size,24);
+        line-height: 130%;
+        letter-spacing: -0.015em;
+        position: relative;
+        @include toRem(padding-right,20);
+        @media (max-width: $table){
+          font-weight: 600;
+          font-size: 1rem;
+          line-height: 138%;
+          letter-spacing: -0.02em;
+        }
+      }
+      &Open{
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        @include toRem(top,5);
+        @include toRem(width,20);
+        @include toRem(height,20);
+        &.active span:nth-of-type(1){
+          transform: rotate(0deg);
+        }
+        span{
+          display: block;
+          width: 100%;
+          @include toRem(height,2);
+          @extend %transition25;
+          position: absolute;
+          left: 0;
+          @include toRem(bottom,10);
+          &:nth-of-type(1){
+            transform: rotate(90deg);
+          }
+        }
+      }
+      &A{
+        display: none;
+        @include toRem(margin-top,20);
+        @include toRem(max-width,520);
+        letter-spacing: -0.005em;
+        @media (max-width: $table){
+          max-width: 100%;
+          @include toRem(margin-top,24);
+        }
+      }
+    }
+  }
+}
