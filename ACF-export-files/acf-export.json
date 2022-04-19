@@ -4091,6 +4091,156 @@
                         ],
                         "min": "",
                         "max": ""
+                    },
+                    "layout_6257f2f23e692": {
+                        "key": "layout_6257f2f23e692",
+                        "name": "separator",
+                        "label": "Separator",
+                        "display": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_6257f3033e693",
+                                "label": "Symbol separator",
+                                "name": "icon",
+                                "type": "image",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "return_format": "array",
+                                "preview_size": "thumbnail",
+                                "library": "all",
+                                "min_width": "",
+                                "min_height": "",
+                                "min_size": "",
+                                "max_width": "",
+                                "max_height": "",
+                                "max_size": "",
+                                "mime_types": ""
+                            },
+                            {
+                                "key": "field_6257f3703e694",
+                                "label": "Farbe",
+                                "name": "color",
+                                "type": "color_picker",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "#fff",
+                                "enable_opacity": 0,
+                                "return_format": "string"
+                            },
+                            {
+                                "key": "field_6257f48c3e695",
+                                "label": "Eindeutige Block-ID",
+                                "name": "unique_id",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            }
+                        ],
+                        "min": "",
+                        "max": ""
+                    },
+                    "layout_62594598dfd4f": {
+                        "key": "layout_62594598dfd4f",
+                        "name": "cta-mini-right",
+                        "label": "CTA mini rechts",
+                        "display": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_625945eddfd50",
+                                "label": "Text",
+                                "name": "text",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            },
+                            {
+                                "key": "field_62594681dfd51",
+                                "label": "Link",
+                                "name": "link",
+                                "type": "link",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "return_format": "array"
+                            },
+                            {
+                                "key": "field_62594697dfd52",
+                                "label": "Hintergrundfarbe",
+                                "name": "background-color",
+                                "type": "color_picker",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "#222227",
+                                "enable_opacity": 0,
+                                "return_format": "string"
+                            },
+                            {
+                                "key": "field_625954bd62a4c",
+                                "label": "Eindeutige Block-ID",
+                                "name": "unique_id",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            }
+                        ],
+                        "min": "",
+                        "max": ""
                     }
                 },
                 "button_label": "Add Row",
@@ -4956,6 +5106,28 @@
                 "prepend": "",
                 "append": "",
                 "maxlength": ""
+            },
+            {
+                "key": "field_625c3c54e3ff0",
+                "label": "Type",
+                "name": "footer_type",
+                "type": "button_group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "1": "Typ 1",
+                    "2": "Typ 2"
+                },
+                "allow_null": 0,
+                "default_value": "",
+                "layout": "horizontal",
+                "return_format": "value"
             },
             {
                 "key": "field_624162cb2a79a",
