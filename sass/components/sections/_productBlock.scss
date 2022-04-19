@@ -1,0 +1,102 @@
+// productBlock
+.productBlock {
+  .productBlockTitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 115%;
+    letter-spacing: -0.045em;
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+  .title2 {
+    margin: 0 !important;
+    @include toRem(margin-bottom, 60);
+    @media (max-width: $table) {
+      line-height: 193%;
+      @include toRem(margin-bottom, 14);
+    }
+  }
+  .title2,
+  .subtitle {
+    @media (max-width: $table) {
+      text-align: left;
+    }
+  }
+  .productBlockBlock {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media (max-width: $table) {
+      flex-wrap: wrap;
+    }
+    .productCategoty {
+      width: 100%;
+      margin-bottom: 150px;
+      @media (max-width: $table) {
+        margin-bottom: 80px;
+      }
+    }
+    .productBlockIttem {
+      width: 100%;
+      padding: 40px 25px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 60px;
+      @media (max-width: $table) {
+        padding: 0;
+        width: 100%;
+        flex-direction: column;
+        & {
+          margin-top: 20px;
+        }
+        &:first-child {
+          margin-top: 40px;
+        }
+      }
+      .productIttem {
+        display: flex;
+        justify-content: space-between;
+        width: 43%;
+        @media (max-width: $table) {
+          width: 100%;
+          margin-bottom: 40px;
+        }
+        .productLeft {
+          min-width: 35%;
+          .product_atributes_cont {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: -25px;
+            span {
+              margin-right: 10px;
+            }
+          }
+        }
+        .productRight {
+          @media (max-width: $table) {
+            display: flex;
+            justify-content: end;
+            align-items: flex-end;
+          }
+          .productImg {
+            @media (max-width: $table) {
+              max-width: 125px;
+            }
+          }
+        }
+      }
+      h3 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.25rem;
+        line-height: 130%;
+        letter-spacing: -0.015em;
+        text-transform: uppercase;
+        margin: 0;
+      }
+    }
+  }
+}

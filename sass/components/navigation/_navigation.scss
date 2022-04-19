@@ -1,0 +1,89 @@
+// SITE NAVIGATION
+.site{
+	&Navigation{
+		@extend %transition25;
+		@media (max-width: $table) {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			overflow: scroll;
+			top: 0;
+			left: -100%;
+			background: #ffffff;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			padding: 1.875rem 1.25rem;
+		}
+		&.active{
+			left: 0;
+		}
+		&Contacts{
+			display: none;
+			padding-top: 2.5rem;
+			border-top: 1px solid #DDEAE0;
+			@media (max-width: $table) {
+				display: block;
+			}
+			&Item{
+				@extend %flex-center;
+				@include toRem(margin-bottom,5);
+				@include toRem(font-size,15);
+				font-weight: 500;
+				line-height: 187%;
+				text-decoration: none;
+				&:last-child{
+					margin-bottom: 0;
+				}
+                
+                &.phoneHeaderBtn {
+                @include toRem(margin-left,100);
+				@media (max-width: $table) {
+                display: none;
+            }    
+            }
+                
+				svg{
+					@include toRem(margin-right,10);
+				}
+				br{
+					display: none;
+				}
+			}
+		}
+		ul{
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+		&>ul{
+			@extend %flex-center;
+			@media (max-width: $table) {
+				flex-direction: column;
+				align-items: flex-start;
+				margin: auto 0;
+			}
+			&>li{
+				@include toRem(margin-right,45);
+				@media (max-width: 71.875rem) {
+					@include toRem(margin-right,20);
+				}
+				@media (max-width: $table) {
+					margin-right: 0;
+					@include toRem(margin-bottom,25);
+					@include toRem(font-size,28);
+					font-weight: 600;
+					line-height: 193%;
+				}
+				&:last-child{
+					margin-right: 0;
+					margin-bottom: 0;
+				}
+				&>a{
+					letter-spacing: -0.005em;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}

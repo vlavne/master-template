@@ -1,0 +1,172 @@
+// SERVICES
+.services{
+  .title2{
+    @include toRem(margin-bottom,60);
+    @media (max-width: $table){
+      line-height: 193%;
+      @include toRem(margin-bottom,14);
+    }
+  }
+  .title2, .subtitle{
+    @media (max-width: $table){
+      text-align: center;
+    }
+  }
+  &.grid{
+    .title2, .subtitle{
+      text-align: center;
+    }
+    .servicesBlock{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      @include toRem(grid-gap,37);
+      @media (max-width: 75rem) {
+        @include toRem(grid-gap,20);
+      }
+      @media (max-width: $tablemin) {
+        grid-template-columns: 100%;
+      }
+      &Item{
+        &Wrap{
+          width: 100%;
+        }
+      }
+    }
+  }
+  &.slider{
+    overflow: hidden;
+    .slick-arrow{
+      @include toRem(width,66);
+      @include toRem(height,44);
+      @extend %flex-center;
+      justify-content: center;
+      font-size: 0px;
+      @include toRem(top,-80);
+      left: auto;
+      right: $halfcontainer;
+      @extend %transition25;
+      border-radius: 0px;
+      @media (max-width:$maxcontainer){
+        @include toRem(right,150);
+      }
+      @media (max-width: $table) {
+        top: auto;
+        bottom: 0;
+        right: calc(50% - 20px);
+      }
+      &:focus{
+        outline: none;
+      }
+      &:hover{
+        background: #F1F2F5;
+      }
+      &.slick-next{
+        transform: translate(-20px, 0px);
+        @media (max-width: $table) {
+          transform: translate(35px, 0px);
+        }
+        &::before{
+          content: url("img/arrow-right.svg");
+        }
+      }
+      &.slick-prev{
+        transform: translate(-91px, 0px);
+        @media (max-width: $table) {
+          transform: translate(-35px, 0px);
+        }
+        &::before{
+          content: url("img/arrow-left.svg");
+        }
+      }
+    }
+    .container{
+      @media (max-width: $maxcontainer) {
+        padding-right: 0;
+      }
+    }
+    .slick-list{
+      padding-left: 0!important;
+    }
+    .servicesBlock{
+      margin-right: $halfcontainerminus;
+      @media (max-width: $maxcontainer) {
+        margin-right: 0;
+      }
+      @media (max-width: $table) {
+        @include toRem(padding-bottom,74);
+      }
+      &ItemWrap{
+        @include toRem(margin-right,30);
+        @media (max-width: $table) {
+          @include toRem(margin-right,10);
+        }
+      }
+    }
+  }
+  &Block{
+    a, a:focus, a:visited{
+      color: #fff;
+    }
+    &Item{
+      width: 100%;
+      padding-top: 126.762%;
+      position: relative;
+      overflow: hidden;
+      display: block;
+      color: #ffffff!important;
+      &:hover, &:focus, &:active, &:visited{
+        color: #ffffff!important;
+      }
+      @media (max-width: $table){
+        padding-top: 106.454%;
+      }
+      img.size-service{
+        @extend %absolute;
+        object-fit: cover;
+      }
+      &Wrap{
+        width: 23.2638889vw;
+      }
+      &::before{
+        content: '';
+        @extend %absolute;
+        background: linear-gradient(180deg, rgba(39, 39, 49, 0) 0%, rgba(39, 39, 49, 0.72) 70.69%, rgba(39, 39, 49, 0.95) 100%);
+        z-index: 1;
+      }
+      &Content{
+        @extend %absolute;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 2.5rem 3rem;
+        @media (max-width: 75rem) {
+          @include toRem(padding,30);
+        }
+        &Title{
+          font-weight: 500;
+          @include toRem(font-size,35);
+          @include toRem(margin-bottom,20);
+          line-height: 130%;
+          letter-spacing: -0.015em;
+          @media (max-width: 75rem) {
+            @include toRem(font-size,20);
+            @include toRem(line-height,24);
+            letter-spacing: -0.02em;
+            @include toRem(margin-bottom,5);
+          }
+        }
+        &Info{
+          letter-spacing: -0.005em;
+          @include toRem(margin-bottom,25);
+          @media (max-width: 75rem) {
+            @include toRem(margin-bottom,20);
+          }
+        }
+        &Link{
+          margin-right: auto;
+        }
+      }
+    }
+  }
+}

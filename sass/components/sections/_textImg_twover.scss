@@ -1,0 +1,77 @@
+/* CSS Text Img and Button 2 version*/
+
+    .textImg2ver{
+    
+    .container{
+        
+        
+        .textImg2verTitle{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+        
+        
+        .textImg2verBlock{
+            display: flex;
+            
+            @media (max-width: $tablemin){
+                            flex-direction: column;
+                        }
+            
+            &Img{
+                width: 50%;
+                display: flex;
+                
+                @media (max-width: $tablemin){
+                           width: 100%;
+                           margin-bottom: 30px;
+                        }
+                
+                img{
+                        height: fit-content;
+                }
+            }
+            
+            &Text{
+                    width: 50%;
+                    padding: 0px 50px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                
+                @media (max-width: $tablemin){
+                                width: 100%;
+                                padding: 0px;
+                        }
+                
+                p{
+                        margin-top: 0px;
+                        font-size: 15px;
+                }
+                
+            }
+        }
+    
+        }
+        
+        .btn{
+                width: fit-content;
+                    
+                     @media (max-width: $tablemin){
+                            display: none;
+                        }
+                    
+                    &.mobile{
+                        display: none;
+                        
+                        @media (max-width: $tablemin){
+                            display: block;
+                            width: 100%;
+                        }
+                    }
+                }
+        
+    }

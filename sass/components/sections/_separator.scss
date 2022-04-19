@@ -1,0 +1,25 @@
+/* CSS SEPERATOR */
+
+
+    .separator{
+        @include toRem(margin-top, 50);
+        @include toRem(margin-bottom, 50);
+    
+    .separatorContent{
+        display: flex;
+        align-items: center;
+        
+        &line{
+            width: 100%;
+            @include toRem(height, 2);
+        }
+        
+        img{
+            @include toRem(height, 40);
+            width: auto;
+            margin: 0px 15px;
+        }
+        
+    }
+    
+    }

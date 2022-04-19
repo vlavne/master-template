@@ -1,0 +1,86 @@
+// assortment
+.assortment {
+    .title2 {
+        margin: 0 !important;
+        @include toRem(margin-bottom, 60);
+        @media (max-width: $table) {
+            line-height: 193%;
+            @include toRem(margin-bottom, 14);
+        }
+    }
+    .title2,
+    .subtitle {
+        @media (max-width: $table) {
+            text-align: left;
+        }
+    }
+    .assortmentBlock {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @media (max-width: $table) {
+            flex-wrap: wrap;
+        }
+        .assortmentIttem {
+            width: 23%;
+            padding: 40px 25px;
+            border: 1px solid #F0F0F0;
+            box-sizing: border-box;
+            box-shadow: 0px 14px 114px rgba(107, 109, 112, 0.08);
+            margin-top: 60px;
+            @media (max-width: $table) {
+                width: 100%;
+                & {
+                    margin-top: 20px;
+                }
+                &:first-child {
+                    margin-top: 40px;
+                }
+            }
+            h3 {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1.25rem;
+                line-height: 130%;
+                letter-spacing: -0.015em;
+                text-transform: uppercase;
+            }
+            li {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 0.875rem;
+                line-height: 130%;
+                display: flex;
+                align-items: flex-start;
+                letter-spacing: -0.005em;
+                list-style: none;
+                margin-bottom: 15px;
+                &::before {
+                    content: url("img/assortmentLiBegore.svg");
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    .citate p {
+        display: flex;
+        align-items: flex-start;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 135%;
+        letter-spacing: -0.005em;
+        position: relative;
+        padding-left: 33px;
+        &::before {
+            content: '';
+            height: 100%;
+            background: #006EB6;
+            left: 0;
+            min-height: 100%;
+            width: 2.5px;
+            position: absolute;
+        }
+    }
+}

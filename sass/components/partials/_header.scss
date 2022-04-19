@@ -1,0 +1,94 @@
+// SITE HEADER
+.site {
+    &Header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        background: #ffffff;
+        &Top {
+            @media (max-width: $table) {
+                display: none;
+            }
+            &Contacts {
+                @extend %flex-center;
+                justify-content: center;
+                padding: 0.625rem 0;
+                &Item {
+                    @extend %flex-center;
+                    @include toRem(margin-right, 70);
+                    text-decoration: none;
+                    font-weight: 500;
+                    @include toRem(font-size, 15);
+                    line-height: 187%;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    br {
+                        display: none;
+                    }
+                    svg {
+                        @include toRem(margin-right, 10);
+                    }
+                }
+            }
+        }
+        &.fixed &Wrap {
+            padding: 1rem 0;
+        }
+        &Wrap {
+            @extend %transition25;
+            padding: 1.375rem 0 1.5rem;
+            @media (max-width: $table) {
+                padding: 1.25rem 0!important;
+            }
+            .container {
+                @extend %flex-center;
+                .custom-logo-link {
+                    display: flex;
+                    flex-direction: column;
+                    margin-right: auto;
+                    position: relative;
+                    z-index: 12;
+                    @media (max-width: $table) {
+                        margin: 0 auto;
+                        max-height: 1.875rem;
+                        img {
+                            max-height: inherit;
+                            width: auto;
+                        }
+                    }
+                }
+                .btn {
+                    @include toRem(margin-left, 81);
+                    position: relative;
+                    z-index: 12;
+                    padding: 0.688rem 2.188rem;
+                    @media (max-width: 71.875rem) {
+                        @include toRem(margin-left, 30);
+                    }
+                    @media (max-width: $table) {
+                        background: rgba(0, 0, 0, 0);
+                        border: 0px;
+                        padding: 0;
+                        font-weight: 600;
+                        @include toRem(font-size, 14);
+                        @include toRem(line-height, 17);
+                        letter-spacing: 0.015em;
+                        display: inline-flex;
+                        align-items: center;
+                        margin-left: 0;
+                    }
+                    img {
+                        display: none;
+                        @media (max-width: $table) {
+                            display: initial;
+                            @include toRem(margin-left, 5);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

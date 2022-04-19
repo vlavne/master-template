@@ -1,0 +1,36 @@
+// BUTTONS
+.btn{
+  @extend %transition25;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  @include toRem(font-size,15);
+  line-height: 187%;
+  padding: 0.875rem 2.438rem 0.938rem 2.438rem;
+  border: 1px solid;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  
+  &.btnWhite{
+    background: #ffffff;
+    border-color: #ffffff;
+    &:hover{
+      background: rgba(0,0,0,0);
+    }
+  }
+}
+.link{
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  @include toRem(font-size,18);
+  @include toRem(padding-bottom,1);
+  line-height: 130%;
+  letter-spacing: -0.015em;
+  border-bottom: 2px solid #ffffff;
+  svg{
+    padding-left: 1px;
+  }
+}

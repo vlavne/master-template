@@ -1,0 +1,115 @@
+// SERVICES WITH ICONS 
+
+.servicesWI{
+    
+    .title2, .subtitle{
+        text-align: center;
+        margin: auto;
+    }
+    
+    .title2{
+    @include toRem(margin-bottom,60);
+    @media (max-width: $table){
+      line-height: 193%;
+      @include toRem(margin-bottom,14);
+    }
+  }
+    
+    .container{
+        display: flex;
+    flex-direction: column;
+        
+        .btn{
+            margin-top: 50px;
+            align-self: center;
+            transition: .5s;
+            
+        }
+        
+    }
+    
+    &Block{ 
+        
+        &.slick-slider{
+            display: flex;
+            align-items: center;
+            
+            .slick-arrow{
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    min-width: 2.5rem;
+                
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        
+        &Item{
+            text-decoration: none;
+            text-align: center;
+            &Wrap{
+            border: 0.125rem solid #0001;
+            @include toRem(max-width,320);
+            @include toRem(margin-right,15);
+            @include toRem(margin-left,15);
+            @include toRem(padding-bottom,20);
+                
+                @media(max-width: 86rem){
+                    @include toRem(margin-right,10);
+                    @include toRem(margin-left,10);
+                }
+                
+            }
+            
+            &Img{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @include toRem(height,40);
+                @include toRem(margin-top,50);
+                @include toRem(margin-bottom,50);
+                img{
+                    height: 100%;
+                    width: auto;
+                }
+            }
+            &Content{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    @include toRem(padding-right,15);
+                    @include toRem(padding-left,15);
+                
+               &Title{
+          font-weight: 700;
+          @include toRem(font-size,20);
+          @include toRem(margin-bottom,20);
+          line-height: 130%;
+          letter-spacing: -0.015em;
+            @media (max-width: 83rem){
+            @include toRem(font-size,16);
+            @include toRem(line-height,18);
+            letter-spacing: -0.02em;
+            @include toRem(margin-bottom,10);
+          }
+        }
+        &Info{
+          letter-spacing: -0.005em;
+            font-weight: 400;
+            @include toRem(font-size,15);
+          @include toRem(margin-bottom,25);
+          @media (max-width: 83rem) {
+            @include toRem(margin-bottom,12);
+          }
+        }
+            }
+        
+        
+    }}
+    
+    
+}
+

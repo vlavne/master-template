@@ -1,0 +1,31 @@
+// COMMON STYLE CLASSES
+
+.borderLine{
+  border: 1.2px solid #EDEDED;
+  border-radius: 2px;
+  @media (max-width: $table){
+    border-color: #F3F3F3;
+  }
+}
+
+.sep{
+  @include toRem(width,60);
+  @include toRem(height,3);
+  display: block;
+  margin: 1.563rem auto;
+  @include toRem(border-radius,40);
+  @media (max-width: $table){
+    margin: 0.625rem auto;
+  }
+}
+
+.textCenterMob{
+  @media (max-width: $tablemin){
+    text-align: center!important;
+  }
+}
+.textLeftMob{
+  @media (max-width: $tablemin){
+    text-align: left!important;
+  }
+}

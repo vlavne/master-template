@@ -1,0 +1,10 @@
+a {
+  @extend %transition25;
+  &:focus {
+    outline: 0;
+  }
+  &:hover,
+  &:active {
+    outline: 0;
+  }
+}

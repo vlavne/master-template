@@ -1,0 +1,66 @@
+// PROCESS
+.process{
+  &Block{
+    @include toRem(padding,70);
+    @include toRem(padding-right,80);
+    display: grid;
+    grid-template-columns: 44.7204969% 55.2795031%;
+    @media (max-width: $table){
+      padding: 2.5rem 1.063rem 2.5rem 1.875rem;
+      display: block;
+    }
+    .title2{
+      @include toRem(max-width,401);
+      @media (max-width: $table){
+        line-height: 193%;
+        @include toRem(margin-bottom,15);
+        max-width: 100%;
+      }
+    }
+    &Content{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 2.75rem 3.125rem;
+      @media (max-width: $table){
+        @include toRem(grid-gap,30);
+      }
+      @media (max-width: $tablemin){
+        grid-template-columns: 100%;
+      }
+      &Item{
+        &Num{
+          @include toRem(width,80);
+          @include toRem(height,80);
+          font-weight: 700;
+          @include toRem(font-size,36);
+          @include toRem(margin-bottom,30);
+          line-height: 72%;
+          letter-spacing: 0.015em;
+          @extend %flex-center;
+          justify-content: center;
+          border: 1px solid;
+          @media (max-width: $tablemin){
+            @include toRem(width,40);
+            @include toRem(height,40);
+            @include toRem(font-size,20);
+            line-height: 130%;
+          }
+        }
+        &Title{
+          margin-bottom: 1rem;
+          font-weight: 500;
+          font-size: 20px;
+          @include toRem(font-size,20);
+          line-height: 110%;
+          @media (max-width: $tablemin){
+            letter-spacing: -0.02em;
+            @include toRem(margin-bottom,10);
+          }
+        }
+        &Text{
+          letter-spacing: -0.005em;
+        }
+      }
+    }
+  }
+}
