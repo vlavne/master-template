@@ -2598,6 +2598,148 @@ textarea {
 	text-transform: uppercase;
 }
 
+.siteFooterTwo {
+	padding-top: 6.25rem;
+	padding-bottom: 5rem;
+}
+
+.siteFooterTwoTop {
+	display: flex;
+}
+
+@media (max-width: 48rem) {
+	.siteFooterTwoTop {
+		flex-direction: column-reverse;
+	}
+}
+
+.siteFooterTwoTopMenus {
+	display: flex;
+}
+
+@media (max-width: 48rem) {
+	.siteFooterTwoTopMenus {
+		width: 100%;
+		margin-top: 3.75rem;
+		margin-bottom: 4.375rem;
+	}
+}
+
+.siteFooterTwoTopMenu {
+	margin-right: 4.6875rem;
+}
+
+.siteFooterTwoTopMenuTitle {
+	text-transform: uppercase;
+	font-weight: 600;
+	margin-bottom: 1.25rem;
+}
+
+.siteFooterTwoTopMenu ul {
+	margin: auto;
+	padding: unset;
+	list-style-type: none;
+}
+
+.siteFooterTwoTopMenu ul li {
+	margin-bottom: 0.75rem;
+}
+
+.siteFooterTwoTopMenu ul li a {
+	text-decoration: none;
+	opacity: .6;
+	transition: .3s;
+}
+
+.siteFooterTwoTopMenu ul li a:hover {
+	opacity: 1;
+	text-shadow: 0 0 .45px #333, 0 0 .45px #333;
+}
+
+.siteFooterTwoTopInfo {
+	width: 50%;
+	margin-left: auto;
+	margin-top: -0.875rem;
+}
+
+@media (max-width: 48rem) {
+	.siteFooterTwoTopInfo {
+		width: 100%;
+	}
+}
+
+.siteFooterTwoTopInfoText {
+	font-weight: 600;
+	font-size: 2.625rem;
+	text-transform: uppercase;
+}
+
+@media (max-width: 48rem) {
+	.siteFooterTwoTopInfoText {
+		font-size: 1.75rem;
+	}
+}
+
+.siteFooterTwoTopInfoNews {
+	margin-top: 5.3125rem;
+}
+
+@media (max-width: 48rem) {
+	.siteFooterTwoTopInfoNews {
+		margin-top: 2.5rem;
+	}
+}
+
+.siteFooterTwoTopInfoNewsTitle {
+	font-size: 0.875rem;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.siteFooterTwoTopInfoNewsForm {
+	font-size: 0.9375rem;
+	font-weight: 400;
+	text-transform: none;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 1.5rem;
+	color: #6b6b75;
+	border-bottom: 2px solid #c4c8d5;
+	padding-bottom: 0.75rem;
+}
+
+.siteFooterTwoTopInfoNewsForm input {
+	width: 100%;
+	border: none;
+	border-radius: unset;
+	outline-style: none;
+}
+
+@media (max-width: 48rem) {
+	.siteFooterTwoTopInfoNewsForm {
+		font-size: 0.8125rem;
+	}
+}
+
+.siteFooterTwoTopInfoNewsForm a {
+	text-transform: uppercase;
+	display: flex;
+	text-decoration: none;
+	font-weight: 600;
+	align-items: center;
+}
+
+.siteFooterTwoTopInfoNewsForm a img {
+	height: fit-content;
+}
+
+.siteFooterTwoBottomCopyright {
+	font-weight: 400;
+	font-size: 1.125rem;
+	text-transform: uppercase;
+}
+
 /* Section
 --------------------------------------------- */
 .top {
@@ -4620,16 +4762,9 @@ textarea {
 
 .TopTwoColumn {
 	position: relative;
-	padding-bottom: 6.25rem;
 }
 
-@media (max-width: 48rem) {
-	.TopTwoColumn {
-		padding-bottom: 0rem;
-	}
-}
-
-@media (max-width: 48rem) {
+@media (max-width: 31.25rem) {
 	.TopTwoColumn .container {
 		padding: 0rem;
 	}
@@ -4639,22 +4774,18 @@ textarea {
 	display: flex;
 	position: relative;
 	max-height: 37.5rem;
-	min-height: 37.5rem;
 }
 
 @media (max-width: 48rem) {
 	.TopTwoColumnBlock {
 		flex-direction: column;
-		justify-content: center;
-		padding: 0rem 1.875rem;
 	}
 }
 
 @media (max-width: 31.25rem) {
 	.TopTwoColumnBlock {
+		padding: 0rem 1.875rem;
 		justify-content: flex-end;
-		min-height: unset;
-		padding-top: 6.25rem;
 	}
 }
 
@@ -4672,12 +4803,6 @@ textarea {
 .TopTwoColumnBlockContentText {
 	max-width: 18.75rem;
 	margin-top: 0.625rem;
-}
-
-@media (max-width: 48rem) {
-	.TopTwoColumnBlockContentText {
-		max-width: unset;
-	}
 }
 
 .TopTwoColumnBlockContent a.btn {
@@ -4771,12 +4896,6 @@ textarea {
 	.TopTwoColumnBlockBackground {
 		left: 0rem;
 		right: unset;
-		width: 100%;
-		height: 100%;
-		overflow: hidden;
-		display: flex;
-		justify-content: center;
-		align-items: center;
 	}
 }
 
@@ -4792,11 +4911,60 @@ textarea {
 	width: auto;
 }
 
+.TopTwoColumnBlockCTA {
+	position: absolute;
+	z-index: 10;
+	right: 0px;
+	top: 0px;
+	display: flex;
+	flex-direction: column;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	max-width: 200px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 135%;
+	cursor: pointer;
+}
+
 @media (max-width: 48rem) {
-	.TopTwoColumnBlockBackground img {
-		height: auto;
-		width: 100%;
+	.TopTwoColumnBlockCTA {
+		display: none;
 	}
+}
+
+.TopTwoColumnBlockCTA img {
+	height: auto;
+	width: 70%;
+	margin-left: auto;
+	max-width: 120px;
+}
+
+.TopTwoColumnBlockCTATitle {
+	margin-right: 30px;
+	margin-top: 20px;
+	margin-bottom: unset;
+}
+
+.TopTwoColumnBlockCTALink {
+	margin: 20px 0px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: max-content;
+	border-bottom: 2px solid transparent;
+	transition: .5s;
+}
+
+.TopTwoColumnBlockCTALink img {
+	width: unset;
+	margin: unset;
+	height: 100%;
+}
+
+.TopTwoColumnBlockCTA:hover .TopTwoColumnBlockCTALink {
+	border-bottom: 2px solid #fff;
 }
 
 .ctaHorisontal {
@@ -4947,6 +5115,7 @@ textarea {
 @media (max-width: 64rem) {
 	.ctaAndForm .ctaAndFormContainer .ctaAndForm_form {
 		position: relative;
+		top: 0px;
 	}
 }
 
@@ -4969,7 +5138,7 @@ textarea {
 .ctaAndForm .ctaAndFormContainer .ctaAndForm_form .contactForm label,
 .ctaAndForm .ctaAndFormContainer .ctaAndForm_form .contactForm p {
 	margin: 0px !important;
-	padding: 0px !important;
+	padding: 0px;
 }
 
 .ctaAndForm .ctaAndFormContainer .ctaAndForm_form .contactForm .form_title {
@@ -4981,6 +5150,7 @@ textarea {
 	text-transform: uppercase;
 	color: #171717;
 	margin-top: 0px;
+	margin-bottom: 20px;
 }
 
 .ctaAndForm .ctaAndFormContainer .ctaAndForm_form .contactForm .wpcf7-spinner {
@@ -5256,6 +5426,107 @@ textarea {
 	background: #006EB6;
 	color: #fff;
 	margin: auto;
+}
+
+.assortment .title2 {
+	margin: 0 !important;
+	margin-bottom: 3.75rem;
+}
+
+@media (max-width: 64rem) {
+	.assortment .title2 {
+		line-height: 193%;
+		margin-bottom: 0.875rem;
+	}
+}
+
+@media (max-width: 64rem) {
+	.assortment .title2,
+	.assortment .subtitle {
+		text-align: left;
+	}
+}
+
+.assortment .assortmentBlock {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+@media (max-width: 64rem) {
+	.assortment .assortmentBlock {
+		flex-wrap: wrap;
+	}
+}
+
+.assortment .assortmentBlock .assortmentIttem {
+	width: 23%;
+	padding: 40px 25px;
+	border: 1px solid #F0F0F0;
+	box-sizing: border-box;
+	box-shadow: 0px 14px 114px rgba(107, 109, 112, 0.08);
+	margin-top: 60px;
+}
+
+@media (max-width: 64rem) {
+	.assortment .assortmentBlock .assortmentIttem {
+		width: 100%;
+	}
+	.assortment .assortmentBlock .assortmentIttem {
+		margin-top: 20px;
+	}
+	.assortment .assortmentBlock .assortmentIttem:first-child {
+		margin-top: 40px;
+	}
+}
+
+.assortment .assortmentBlock .assortmentIttem h3 {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.25rem;
+	line-height: 130%;
+	letter-spacing: -0.015em;
+	text-transform: uppercase;
+}
+
+.assortment .assortmentBlock .assortmentIttem li {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 0.875rem;
+	line-height: 130%;
+	display: flex;
+	align-items: flex-start;
+	letter-spacing: -0.005em;
+	list-style: none;
+	margin-bottom: 15px;
+}
+
+.assortment .assortmentBlock .assortmentIttem li::before {
+	content: url("img/assortmentLiBegore.svg");
+	margin-right: 10px;
+}
+
+.assortment .citate p {
+	display: flex;
+	align-items: flex-start;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.5rem;
+	line-height: 135%;
+	letter-spacing: -0.005em;
+	position: relative;
+	padding-left: 33px;
+}
+
+.assortment .citate p::before {
+	content: '';
+	height: 100%;
+	background: #006EB6;
+	left: 0;
+	min-height: 100%;
+	width: 2.5px;
+	position: absolute;
 }
 
 .blackAdvantages {
@@ -5798,6 +6069,353 @@ textarea {
 	}
 }
 
+.contactPage {
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.contactPage .right {
+	flex-direction: row-reverse;
+}
+
+@media (max-width: 64rem) {
+	.contactPage {
+		margin: 0 !important;
+	}
+}
+
+.contactPage .contactPageContainer {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	min-height: 300px;
+}
+
+@media (max-width: 64rem) {
+	.contactPage .contactPageContainer {
+		flex-direction: column !important;
+		padding: 0;
+		align-items: flex-start;
+	}
+}
+
+@media (min-width: 1100px) {
+	.contactPage .contactPageContainer {
+		width: 71.25rem;
+		margin: 0 auto;
+	}
+}
+
+.contactPage .contactPageContainer .contactPageContent {
+	display: flex;
+	flex-direction: column;
+	max-width: 40%;
+}
+
+@media (max-width: 64rem) {
+	.contactPage .contactPageContainer .contactPageContent {
+		max-width: 100%;
+		padding: 40px 20px;
+	}
+}
+
+.contactPage .contactPageContainer .contactPageContent .siteHeaderTopContacts {
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.contactPage .contactPageContainer .contactPageContent .siteHeaderTopContactsItem {
+	margin-bottom: 20px;
+}
+
+@media (max-width: 64rem) {
+	.contactPage .contactPageContainer .contactPageContent .siteHeaderTopContactsItem {
+		display: block !important;
+	}
+}
+
+.contactPage .contactPageContainer .contactPageContent .contactPageTextP {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 145%;
+	letter-spacing: -0.015em;
+}
+
+@media (max-width: 64rem) {
+	.contactPage .contactPageContainer .contactPageContent .subtitle {
+		margin-bottom: 12px;
+	}
+}
+
+.contactPage .contactPageContainer .contactPageContent .contactPageText {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 2.875rem;
+	line-height: 115%;
+	letter-spacing: -0.045em;
+	text-transform: uppercase;
+	display: flex;
+	flex-direction: column;
+}
+
+@media (max-width: 64rem) {
+	.contactPage .contactPageContainer .contactPageContent .contactPageText {
+		width: 100%;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 1.75rem;
+		line-height: 115%;
+		letter-spacing: -0.045em;
+		text-transform: uppercase;
+	}
+}
+
+.contactPage .contactPageContainer .contactPageContent .contactPageText:after {
+	content: '';
+	width: 60px;
+	height: 2px;
+	background: #006EB6;
+	left: 0;
+	margin: 24px 0 14px 0;
+}
+
+.contactPage .contactPageContainer .contactPageContent p {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 145%;
+	letter-spacing: -0.015em;
+}
+
+.contactPage .contactPageContainer .contactPage_form {
+	right: 0;
+}
+
+@media (max-width: 64rem) {
+	.contactPage .contactPageContainer .contactPage_form {
+		position: relative;
+		top: 0px;
+	}
+}
+
+.contactPage .contactPageContainer .contactPage_form .contactForm {
+	width: 460px;
+	padding: 50px;
+	background-color: #fff;
+	border: 1px solid #DDEAE0;
+	box-sizing: border-box;
+}
+
+@media (max-width: 64rem) {
+	.contactPage .contactPageContainer .contactPage_form .contactForm {
+		width: 100%;
+		padding: 20px;
+	}
+}
+
+.contactPage .contactPageContainer .contactPage_form .contactForm label,
+.contactPage .contactPageContainer .contactPage_form .contactForm p {
+	margin: 0px !important;
+	padding: 0px;
+}
+
+.contactPage .contactPageContainer .contactPage_form .contactForm .form_title {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.5rem;
+	line-height: 130%;
+	letter-spacing: -0.015em;
+	text-transform: uppercase;
+	color: #171717;
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+
+.contactPage .contactPageContainer .contactPage_form .contactForm .wpcf7-spinner {
+	margin: 25px 24px 0 24px !important;
+}
+
+.contactPage .contactPageContainer .contactPage_form .contactForm input {
+	height: 60px;
+	width: 100%;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 145%;
+	letter-spacing: -0.015em;
+	color: #6C6D72;
+	margin-bottom: 15px;
+	padding: 20px;
+}
+
+.contactPage .contactPageContainer .contactPage_form .contactForm textarea {
+	width: 100%;
+	margin-bottom: 15px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 145%;
+	letter-spacing: -0.015em;
+	color: #6C6D72;
+	padding: 20px;
+	max-height: 120px;
+}
+
+.contactPage .contactPageContainer .contactPage_form .contactForm .wpcf7-submit {
+	border: none;
+	background: #006EB6;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1rem;
+	line-height: 19px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+.contactPage .contactPageContainer .contactPage_form .contactForm .wpcf7-submit:hover {
+	background: #FFFFFF;
+	border: 1.5px solid #006EB6;
+	box-sizing: border-box;
+	color: #006EB6;
+}
+
+.contactPage .contactPageContainer .contactPage_form .wpcf7-response-output {
+	max-width: 445px;
+	border-color: #fff;
+	background: #006eb6;
+	color: #fff;
+	margin: 15px 0 0 0;
+}
+
+.productBlock .productBlockTitle {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 46px;
+	line-height: 115%;
+	letter-spacing: -0.045em;
+	text-transform: uppercase;
+	margin-top: 10px;
+}
+
+.productBlock .title2 {
+	margin: 0 !important;
+	margin-bottom: 3.75rem;
+}
+
+@media (max-width: 64rem) {
+	.productBlock .title2 {
+		line-height: 193%;
+		margin-bottom: 0.875rem;
+	}
+}
+
+@media (max-width: 64rem) {
+	.productBlock .title2,
+	.productBlock .subtitle {
+		text-align: left;
+	}
+}
+
+.productBlock .productBlockBlock {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+@media (max-width: 64rem) {
+	.productBlock .productBlockBlock {
+		flex-wrap: wrap;
+	}
+}
+
+.productBlock .productBlockBlock .productCategoty {
+	width: 100%;
+	margin-bottom: 150px;
+}
+
+@media (max-width: 64rem) {
+	.productBlock .productBlockBlock .productCategoty {
+		margin-bottom: 80px;
+	}
+}
+
+.productBlock .productBlockBlock .productBlockIttem {
+	width: 100%;
+	padding: 40px 25px;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 60px;
+}
+
+@media (max-width: 64rem) {
+	.productBlock .productBlockBlock .productBlockIttem {
+		padding: 0;
+		width: 100%;
+		flex-direction: column;
+	}
+	.productBlock .productBlockBlock .productBlockIttem {
+		margin-top: 20px;
+	}
+	.productBlock .productBlockBlock .productBlockIttem:first-child {
+		margin-top: 40px;
+	}
+}
+
+.productBlock .productBlockBlock .productBlockIttem .productIttem {
+	display: flex;
+	justify-content: space-between;
+	width: 43%;
+}
+
+@media (max-width: 64rem) {
+	.productBlock .productBlockBlock .productBlockIttem .productIttem {
+		width: 100%;
+		margin-bottom: 40px;
+	}
+}
+
+.productBlock .productBlockBlock .productBlockIttem .productIttem .productLeft {
+	min-width: 35%;
+}
+
+.productBlock .productBlockBlock .productBlockIttem .productIttem .productLeft .product_atributes_cont {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin-bottom: -25px;
+}
+
+.productBlock .productBlockBlock .productBlockIttem .productIttem .productLeft .product_atributes_cont span {
+	margin-right: 10px;
+}
+
+@media (max-width: 64rem) {
+	.productBlock .productBlockBlock .productBlockIttem .productIttem .productRight {
+		display: flex;
+		justify-content: end;
+		align-items: flex-end;
+	}
+}
+
+@media (max-width: 64rem) {
+	.productBlock .productBlockBlock .productBlockIttem .productIttem .productRight .productImg {
+		max-width: 125px;
+	}
+}
+
+.productBlock .productBlockBlock .productBlockIttem h3 {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.25rem;
+	line-height: 130%;
+	letter-spacing: -0.015em;
+	text-transform: uppercase;
+	margin: 0;
+}
+
 /* CSS SEPERATOR */
 .separator {
 	margin-top: 3.125rem;
@@ -5992,8 +6610,5 @@ textarea {
 	margin-right: auto;
 	margin-bottom: 1.5em;
 }
-
-/* Custom styles (can be deleted)
---------------------------------------------- */
 
 /*# sourceMappingURL=style.css.map */
