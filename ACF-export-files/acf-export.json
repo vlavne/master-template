@@ -3999,6 +3999,123 @@
                 },
                 "default_value": "",
                 "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": ""
+              },
+              {
+                "key": "field_62549b570012f",
+                "label": "Content",
+                "name": "content",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                  "width": "",
+                  "class": "",
+                  "id": ""
+                },
+                "default_value": "",
+                "new_lines": "",
+                "maxlength": "",
+                "placeholder": "",
+                "rows": ""
+              },
+              {
+                "key": "field_625557b160470",
+                "label": "Formular Title",
+                "name": "formTitle",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                  "width": "",
+                  "class": "",
+                  "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+              },
+              {
+                "key": "field_62549b6700130",
+                "label": "Form Shortcode",
+                "name": "form_shortcode",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                  "width": "",
+                  "class": "",
+                  "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+              },
+              {
+                "key": "field_62549b7f00131",
+                "label": "Background Color",
+                "name": "background_color",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                  "width": "",
+                  "class": "",
+                  "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string"
+              },
+              {
+                "key": "field_6255ea2c062f7",
+                "label": "Background Image",
+                "name": "background_image",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                  "width": "",
+                  "class": "",
+                  "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "full",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+              },
+              {
+                "key": "field_62551a267c10e",
+                "label": "Eindeutige Block-ID",
+                "name": "unique_id",
+                "type": "text",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                  "width": "",
+                  "class": "",
+                  "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
                 "prepend": "",
                 "append": "",
                 "maxlength": ""
