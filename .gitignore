@@ -10,3 +10,12 @@ functions.php
 style.css
 style.css.map
 /acf-json
+custom.scss
+custom.css
+custom.css.map
+.gitignore
+package-lock.json
+functions.php
+style.css
+style.css.map
+/acf-json

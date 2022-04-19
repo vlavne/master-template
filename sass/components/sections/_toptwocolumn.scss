@@ -3,15 +3,10 @@
 .TopTwoColumn {
 
   position: relative;
-    @include toRem(padding-bottom, 100); 
-    @media(max-width: $tablemin) {
-      padding-bottom: 0rem;
-        
-    }
+
   .container {
-    @media(max-width: $tablemin) {
+    @media(max-width: $mob) {
       padding: 0rem;
-        
     }
   }
 
@@ -20,19 +15,14 @@
     display: flex;
     position: relative;
     @include toRem(max-height, 600);
-    @include toRem(min-height, 600);  
 
     @media(max-width: $tablemin) {
       flex-direction: column;
-        justify-content: center;
-         padding: 0rem 1.875rem;
     }
 
     @media(max-width: $mob) {
-     
+      padding: 0rem 1.875rem;
       justify-content: flex-end;
-        min-height: unset;
-       @include toRem(padding-top, 100);  
     }
 
     &Content {
@@ -48,11 +38,6 @@
       &Text {
         @include toRem(max-width, 300);
         @include toRem(margin-top, 10);
-          
-          @media(max-width: $tablemin) {
-        max-width: unset;
-      }
-          
       }
 
       a.btn {
@@ -148,12 +133,6 @@
       @media(max-width: $tablemin) {
         left: 0rem;
         right: unset;
-        width: 100%;
-              height: 100%;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
       }
 
       @media(max-width: $mob) {
@@ -164,16 +143,67 @@
       img {
         height: 100%;
         width: auto;
-          
-          @media(max-width: $tablemin) {
-        height: auto;
-        width: 100%;
-      }
-          
       }
     }
 
-    
+    &CTA {
+      position: absolute;
+      z-index: 10;
+      right: 0px;
+      top: 0px;
+      display: flex;
+      flex-direction: column;
+      padding-left: 20px;
+      padding-bottom: 10px;
+      max-width: 200px;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 135%;
+      cursor: pointer;
+
+
+      @media(max-width: $tablemin) {
+        display: none;
+      }
+
+
+      img {
+        height: auto;
+        width: 70%;
+        margin-left: auto;
+        max-width: 120px;
+      }
+
+      &Title {
+        margin-right: 30px;
+        margin-top: 20px;
+        margin-bottom: unset;
+
+      }
+
+      &Link {
+        margin: 20px 0px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: max-content;
+        border-bottom: 2px solid transparent;
+        transition: .5s;
+
+        img {
+          width: unset;
+          margin: unset;
+          height: 100%;
+        }
+      }
+
+      &:hover .TopTwoColumnBlockCTALink {
+        border-bottom: 2px solid #fff;
+      }
+
+    }
+
 
   }
 }
