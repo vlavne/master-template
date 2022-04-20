@@ -1,0 +1,283 @@
+// CONTACT BLOCK WITH IMAGE, BUTTON, FORM FIELDS
+.contactBlockWithImg{
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  &::before {
+    content: '';
+    background: linear-gradient(0deg, rgba(25, 27, 33, 0.85), rgba(25, 27, 33, 0.85));
+    z-index: 1;
+  }
+  img.contactBlockWithImgShow{
+    object-fit: cover;
+    position: absolute;
+    width: 48.5%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    @media (max-width: 64rem){
+      display: none;
+    }
+  }
+  .container{
+    position: relative;
+    @media (max-width: 90rem){
+      padding: 0 1.375rem;
+    }
+    @media (max-width: 64rem){
+      padding: 0;
+    }
+  }
+  &Block{
+    display: flex;
+    @media (max-width: 64rem){
+      flex-direction: column;
+    }
+    &Content{
+      width: 50.8771929825%;
+      @include toRem(padding-right,92);
+      @include toRem(padding-top,28);
+      @include toRem(padding-bottom,28);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      //@media (max-width: 75rem){
+      //  @include toRem(padding-right,30);
+      //}
+
+      @media (min-width: 64rem){
+        background-image: unset!important;
+      }
+      @media (max-width: 64rem){
+        width: 100%;
+        height: 100%;
+        position: relative;
+        padding: 80px 20px;
+      }
+      @media (max-width: $table){
+        width: 100%;
+        //padding: 0;
+        //@include toRem(margin-bottom,30);
+        //display: block;
+      }
+      &Bg{
+        display: none;
+        @media (max-width: 64rem){
+          z-index: -1;
+          position: absolute;
+          padding: 80px 20px;
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .title2{
+        font-weight: 700;
+        @include toRem(font-size,36);
+        line-height: 125%;
+        letter-spacing: -0.015em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+      }
+      &Btn{
+        font-weight: 700;
+        @include toRem(font-size,16);
+        line-height: 19px;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        @media (max-width: 64rem){
+          text-decoration: unset;
+        }
+      }
+      &Text{
+        font-weight: 400;
+        @include toRem(font-size,18);
+        line-height: 150%;
+        letter-spacing: -0.005em;
+        color: #FFFFFF;
+      }
+    }
+    &Form{
+      position: relative;
+      width: 49.1228070175%;
+      overflow: hidden;
+      @media (max-width: 64rem){
+        padding: 60px 20px;
+        width: unset;
+      }
+      input{
+        padding: 60px 10px;
+        max-height: 68px;
+        height: 100%;
+        height: 68px;
+      }
+      .inputRow3{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 3.4375rem;
+        align-items: flex-end;
+        @media (max-width: 64rem){
+          grid-template-columns: unset;
+          display: block;
+        }
+        input[type="submit"]{
+          padding: 25px 20px;
+          max-width: 180px;
+          //max-height: 68px;
+          background: #577E56;
+          line-height: unset;
+          border: unset;
+          @media (max-width: 64rem){
+            margin-top: 40px;
+            max-width: unset;
+            width: 100%;
+          }
+        }
+
+        label{
+          margin-top: 25px;
+          text-align: left;
+          margin-bottom: unset;
+          @media (max-width: 64rem){
+
+          }
+        }
+        >*{
+
+        }
+      }
+      .inputRow{
+        display: inline-flex;
+        justify-content: space-between;
+        @media (max-width: 64rem){
+          display: block;
+        }
+        label{
+          max-width: 49%;
+          @media (max-width: 64rem){
+            max-width: unset;
+          }
+        }
+      }
+      label{
+        display: block;
+        @include toRem(margin-bottom,20);
+        font-weight: 600;
+        @include toRem(font-size,15);
+        line-height: 187%;
+        input{
+          width: 100%;
+          @include toRem(margin-top,10);
+          border-radius: 0px;
+          background: #ffffff;
+          border: 2px solid rgba(154, 154, 154, 0.19);
+          padding: 0.719rem 1.5rem;
+          @include toRem(font-size,15);
+          line-height: 187%;
+          &::placeholder{
+            color: #9A9B9C;
+          }
+        }
+      }
+      button{
+        margin-top: 10px;
+        width: 100%;
+        border-radius: 0px;
+      }
+    }
+
+  }
+}
+.textImg{
+  &Block{
+    display: flex;
+    @media (max-width: $table){
+      flex-direction: column!important;
+    }
+    &.right{
+      flex-direction: row-reverse;
+    }
+    &.right &Content{
+      padding-right: 0;
+      @include toRem(padding-left,92);
+      @media (max-width: 75rem){
+        @include toRem(padding-left,30);
+      }
+      @media (max-width: $table){
+        padding: 0;
+      }
+    }
+    &Content{
+      width: 50.8771929825%;
+      @include toRem(padding-right,92);
+      @include toRem(padding-top,28);
+      @include toRem(padding-bottom,28);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      @media (max-width: 75rem){
+        @include toRem(padding-right,30);
+      }
+      @media (max-width: $table){
+        width: 100%;
+        padding: 0;
+        @include toRem(margin-bottom,30);
+        display: block;
+      }
+      .title2{
+        @include toRem(margin-bottom,25);
+        @media (max-width: $table){
+          @include toRem(margin-bottom,5);
+          line-height: 193%;
+        }
+      }
+      &Text{
+        letter-spacing: -0.005em;
+        p:first-of-type{
+          margin-top: 0;
+        }
+        p:last-child{
+          margin-bottom: 0;
+        }
+        ul{
+          margin-left: 0;
+          padding-left: 20px;
+          li{
+            padding-left: 10px;
+            &::marker{
+              content: url("/wp-content/themes/master-template/img/listIcon.svg");
+              width:  20px;
+              height: 20px;
+              margin-right: 10px;
+
+            }
+          }
+
+        }
+      }
+      .btn{
+        @include toRem(margin-top,45);
+        margin-right: auto;
+        @media (max-width: $table){
+          @include toRem(margin-top,25);
+        }
+      }
+    }
+    &Img{
+      position: relative;
+      width: 49.1228070175%;
+      overflow: hidden;
+      padding-top: 43.75%;
+      min-height: 100%;
+      @media (max-width: $table){
+        width: 100%;
+        padding-top: 89.554%;
+      }
+      img{
+        @extend %absolute;
+        object-fit: cover;
+      }
+    }
+  }
+}

@@ -1,0 +1,103 @@
+// TEXT BLOCK WITH IMAGE AND BUTTON
+.contactInfo{
+  &Block{
+    display: flex;
+    @media (max-width: $table){
+      flex-direction: column!important;
+    }
+    &.right{
+      flex-direction: row-reverse;
+    }
+    &.right &Content{
+      padding-right: 0;
+      @include toRem(padding-left,92);
+      @media (max-width: 75rem){
+        @include toRem(padding-left,30);
+      }
+      @media (max-width: $table){
+        padding: 0;
+      }
+    }
+    &Content{
+      width: 40.8771929825%;
+      @include toRem(padding-right,74);
+      @include toRem(padding-top,28);
+      @include toRem(padding-bottom,28);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      @media (max-width: 75rem){
+        @include toRem(padding-right,30);
+      }
+      @media (max-width: $table){
+        width: 100%;
+        padding: 0;
+        @include toRem(margin-bottom,30);
+        display: block;
+      }
+      &Line{
+        width: 60px;
+        height: 2px;
+        text-align: left;
+        margin: 20px 0;
+        background: #87AD86;
+      }
+      &Single{
+        @include toRem(margin-bottom,18);
+        display: flex;
+        align-items: flex-start;
+        &:first-child{
+          font-weight: 600;
+          @include toRem(font-size,16);
+          line-height: 170%;
+        }
+        img{
+          @include toRem(margin-right,10);
+          @include toRem(padding-top,2);
+        }
+        a{
+          text-decoration: unset;
+          font-weight: 500;
+          @include toRem(font-size,14);
+          line-height: 150%;
+          letter-spacing: -0.015em;
+        }
+      }
+      .title2{
+        @include toRem(font-size,38);
+        text-transform: uppercase;
+        @media (max-width: $table){
+          @include toRem(margin-bottom,5);
+          line-height: 193%;
+          @include toRem(font-size,24);
+        }
+      }
+      &Text{
+        letter-spacing: -0.005em;
+        font-style: normal;
+        font-weight: 700;
+        @include toRem(font-size,25);
+        @include toRem(margin-bottom,20);
+        line-height: 155%;
+        @media (max-width: $table){
+          @include toRem(font-size,20);
+        }
+      }
+    }
+    &Img{
+      position: relative;
+      width: 59.1228070175%;
+      overflow: hidden;
+      padding-top: 43.75%;
+      min-height: 100%;
+      @media (max-width: $table){
+        width: 100%;
+        padding-top: 89.554%;
+      }
+      img{
+        @extend %absolute;
+        object-fit: cover;
+      }
+    }
+  }
+}

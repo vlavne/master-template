@@ -1,0 +1,150 @@
+// ROOM LIST
+.roomList {
+  .title2, .subtitle {
+    text-align: center;
+    margin: auto;
+  }
+  &Line{
+    width: 60px;
+    height: 2px;
+    text-align: center;
+    margin: 20px auto;
+    background: #87AD86;
+  }
+  &Text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: -0.005em;
+    color: #5C5D64;
+    @include toRem(max-width, 442);
+    margin: auto;
+    @include toRem(margin-bottom, 60);
+
+  }
+  .title2 {
+    text-transform: uppercase;
+    margin-bottom: 0;
+    @media (max-width: $table) {
+      line-height: 193%;
+      @include toRem(margin-bottom, 14);
+    }
+  }
+  &Block {
+    &Terms{
+      display: flex;
+      justify-content: center;
+      @include toRem(margin-bottom, 60);
+      &Single{
+        cursor: pointer;
+        width: fit-content;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        color: #1E1E24;
+        padding: 18px 25px;
+        &.active{
+          border-radius: 100px;
+          color: #FFFFFF;
+        }
+      }
+    }
+    &Item {
+      //width: 100%;
+      //display: inline-block;
+      text-decoration: none;
+      text-align: center;
+      &.slick-slider{
+        display: flex;
+        align-items: center;
+
+        .slick-arrow{
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-width: 2.5rem;
+
+          img{
+            width: 100%;
+          }
+        }
+      }
+      &Wrap {
+        border: 0.125rem solid #0001;
+        @include toRem(max-width, 320);
+        @include toRem(margin-right, 18);
+        @include toRem(margin-left, 18);
+        @include toRem(padding-bottom, 20);
+
+        @media(max-width: 86rem) {
+          @include toRem(margin-right, 10);
+          @include toRem(margin-left, 10);
+        }
+        &Content{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          @include toRem(padding-top,40);
+          @include toRem(padding-bottom,40);
+          @include toRem(padding-right,30);
+          @include toRem(padding-left,30);
+          &Link{
+            display: flex;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.01em;
+            text-transform: uppercase;
+            text-decoration: unset;
+            img{
+              margin-left: 9px;
+            }
+          }
+          &Title{
+            font-weight: 700;
+            @include toRem(font-size,20);
+            @include toRem(margin-bottom,20);
+            line-height: 130%;
+            letter-spacing: -0.015em;
+            @media (max-width: 83rem){
+              @include toRem(font-size,16);
+              @include toRem(line-height,18);
+              letter-spacing: -0.02em;
+              @include toRem(margin-bottom,10);
+            }
+          }
+          &Info{
+            letter-spacing: -0.005em;
+            font-weight: 400;
+            @include toRem(min-height,66);
+            @include toRem(font-size,14);
+            @include toRem(margin-bottom,25);
+            @media (max-width: 83rem) {
+              @include toRem(margin-bottom,12);
+            }
+          }
+        }
+
+        &Img {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @include toRem(height, 40);
+          @include toRem(margin-top, 50);
+          @include toRem(margin-bottom, 50);
+
+          img {
+            height: 100%;
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+}
+

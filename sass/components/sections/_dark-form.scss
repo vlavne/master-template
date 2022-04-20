@@ -1,0 +1,229 @@
+// DARK CONTACT FORM
+.darkForm{
+  //background: #22252E;
+  &.lightColor{
+    background-color: #fff;
+    .darkFormMap{
+      .darkFormContentText{
+        color: #5C5D64;
+      }
+      .darkContactTitle{
+        color: #1E1E24;
+      }
+    }
+    .darkFormContent{
+      .colorLight{
+        color: #5C5D64;
+      }
+      .title2{
+        color: #1E1E24;
+      }
+      input[type="submit"]{
+        color: #FFFFFF;
+      }
+      input[type="text"], input[type="mail"], textarea{
+        color: #5C5D64;
+        background: rgba(95, 93, 93, 0.05);
+        &:focus{
+          color: #5C5D64;
+        }
+        &::placeholder{
+          color: #5C5D64;
+        }
+        &::-webkit-input-placeholder {
+          color: #5C5D64;
+        }
+        &::-moz-placeholder { /* Firefox 19+ */
+          color: #5C5D64;
+        }
+        &:-ms-input-placeholder {
+          color: #5C5D64;
+        }
+        &:-moz-placeholder { /* Firefox 18- */
+          color: #5C5D64;
+        }
+      }
+    }
+
+
+  }
+  .container{
+    display: grid;
+    grid-template-columns: 40.3684211% 59.6315789%;
+    @media (max-width: $table){
+      display: block;
+    }
+  }
+  &Content{
+    .title2{
+      text-align: left;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 125%;
+      letter-spacing: -0.015em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      @include toRem(margin-top,15);
+      @media (max-width: $table){
+        @include toRem(font-size, 24);
+      }
+    }
+    &Subtitle{
+      text-align: left;
+      @include toRem(font-size,14);
+      @include toRem(line-height,14);
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      font-style: normal;
+      font-weight: 700;
+      @media (max-width: $table){
+        @include toRem(font-size, 12);
+      }
+    }
+    &Text{
+      @include toRem(font-size,16);
+      font-weight: 600;
+      line-height: 150%;
+      text-align: left;
+      letter-spacing: -0.005em;
+      color: #D1D1D1;
+      @media (max-width: $table){
+        @include toRem(font-size, 14);
+      }
+    }
+    input{
+      max-height: 68px;
+    }
+    input, textarea{
+
+      width: 100%;
+      padding: 18px 24px;
+      background: rgba(242, 242, 242, 0.05);
+      font-weight: 500;
+      @include toRem(font-size, 16);
+      line-height: 150%;
+      letter-spacing: -0.005em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      margin-bottom: 25px;
+      border: unset;
+      @include toRem(margin-bottom, 25);
+      @media (max-width: $table){
+        @include toRem(font-size, 14);
+      }
+      &:focus{
+        color: #FFFFFF;
+      }
+      &::placeholder{
+        color: #FFFFFF;
+      }
+      &::-webkit-input-placeholder {
+        color: #FFFFFF;
+      }
+      &::-moz-placeholder { /* Firefox 19+ */
+        color: #FFFFFF;
+      }
+      &:-ms-input-placeholder {
+        color: #FFFFFF;
+      }
+      &:-moz-placeholder { /* Firefox 18- */
+        color: #FFFFFF;
+      }
+    }
+    input[type="submit"]{
+      padding: 25px 20px;
+      width: 100%;
+      background: #577E56;
+      line-height: unset;
+      border: unset;
+      @media (max-width: 64rem){
+        margin-top: 40px;
+        max-width: unset;
+      }
+      @media (max-width: $table){
+        @include toRem( margin-top, 0);
+      }
+    }
+  }
+  &Map{
+    &Wrap{
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      @include toRem(margin-bottom, 30);
+      @media (max-width: $table){
+        display: block;
+      }
+      &Single{
+        .colorLight{
+          font-weight: 500;
+          @include toRem(font-size, 14);
+          line-height: 150%;
+          letter-spacing: -0.015em;
+          color: #D1D1D1;
+          @media (max-width: $table){
+            @include toRem(font-size, 14);
+          }
+        }
+        &Img{
+          width: 50px;
+          height: 50px;
+          background-color: #577E56;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          @include toRem(margin-bottom, 32);
+        }
+        .darkContactTitle{
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 150%;
+          letter-spacing: -0.015em;
+          color: #D1D1D1;
+          @include toRem(margin-bottom, 10)
+        }
+        a{
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 150%;
+          letter-spacing: -0.015em;
+          color: #D1D1D1;
+          text-decoration: unset;
+        }
+        .darkContactTitle{
+          font-style: normal;
+          font-weight: 700;
+          @include toRem(font-size, 22);
+          line-height: 22px;
+          letter-spacing: -0.01em;
+          text-transform: uppercase;
+          color: #FFFFFF;
+          @media (max-width: $table){
+            @include toRem(font-size, 16);
+          }
+
+        }
+        @media (max-width: $table){
+          display: flex;
+          flex-direction: row;
+        }
+      }
+    }
+    @include toRem(padding-left,120);
+    @media (max-width: $table){
+      padding-left: unset;
+      .darkFormMob{
+        padding-left: 30px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+@media (max-width: 64rem){
+  display: none;
+}
+@media (max-width: 90rem){
+  padding: 0 1.375rem;
+}
+
