@@ -9,7 +9,7 @@
         background: #ffffff;
         &Top {
             @media (max-width: $table) {
-                display: none;
+                display: none!important;
             }
             &Contacts {
                 @extend %flex-center;

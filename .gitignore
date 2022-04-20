@@ -4,9 +4,7 @@
 custom.scss
 custom.css
 custom.css.map
-.gitignore
 package-lock.json
-functions.php
+/acf-json
 style.css
 style.css.map
-/acf-json
