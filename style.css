@@ -2734,6 +2734,12 @@ textarea {
 	height: fit-content;
 }
 
+@media (max-width: 48rem) {
+	.siteFooterTwoTopArrowUp {
+		display: none;
+	}
+}
+
 .siteFooterTwoBottomCopyright {
 	font-weight: 400;
 	font-size: 1.125rem;
@@ -6582,6 +6588,121 @@ textarea {
 	.textImg2ver .btn.mobile {
 		display: block;
 		width: 100%;
+	}
+}
+
+/* LIST OF SERVICES  */
+.ListOfServises {
+	text-align: center;
+}
+
+.ListOfServisesBlock {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.ListOfServisesBlockItem {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%;
+	min-height: 5.625rem;
+	padding: 1.875rem 2.5rem;
+	background-color: #00000003;
+	margin-bottom: 1.25rem;
+	text-align: start;
+	border: 0.125rem solid #00000008;
+}
+
+@media (max-width: 48rem) {
+	.ListOfServisesBlockItem {
+		flex-direction: column;
+		margin-bottom: 2.5rem;
+	}
+}
+
+.ListOfServisesBlockItemImg {
+	width: 5rem;
+	height: 5rem;
+	background-color: #00000005;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 2.5rem;
+}
+
+@media (max-width: 48rem) {
+	.ListOfServisesBlockItemImg {
+		margin-right: unset;
+		margin-bottom: 2.5rem;
+	}
+}
+
+.ListOfServisesBlockItemImg img {
+	width: 50%;
+	height: auto;
+}
+
+.ListOfServisesBlockItemTitle {
+	font-size: 1.25rem;
+	font-weight: 600;
+	max-width: 60%;
+}
+
+@media (max-width: 48rem) {
+	.ListOfServisesBlockItemTitle {
+		text-align: center;
+		max-width: unset;
+	}
+}
+
+.ListOfServisesBlockItemList {
+	width: 55%;
+	margin-left: auto;
+}
+
+@media (max-width: 48rem) {
+	.ListOfServisesBlockItemList {
+		width: 100%;
+		margin: auto;
+	}
+}
+
+.ListOfServisesBlockItemList ul {
+	list-style-position: inside;
+	-moz-column-count: 2;
+	/* Firefox */
+	-webkit-column-count: 2;
+	/* Safari and Chrome */
+	column-count: 2;
+	color: #6b6b75;
+	margin: auto;
+	font-size: 0.9375rem;
+}
+
+@media (max-width: 48rem) {
+	.ListOfServisesBlockItemList ul {
+		padding: unset;
+		margin-top: 0.875rem;
+		-moz-column-count: 2;
+		/* Firefox */
+		-webkit-column-count: 2;
+		/* Safari and Chrome */
+		column-count: 2;
+	}
+	.ListOfServisesBlockItemList ul li {
+		margin: 0.3125rem;
+	}
+}
+
+@media (max-width: 31.25rem) {
+	.ListOfServisesBlockItemList ul {
+		-moz-column-count: unset;
+		/* Firefox */
+		-webkit-column-count: unset;
+		/* Safari and Chrome */
+		column-count: unset;
 	}
 }
 
