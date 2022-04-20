@@ -41,7 +41,7 @@
                                       fill="#7EE62A"/>
                                 </svg>
                             </span>
-                        <?php echo 'Tel: ' . $phone; ?>
+                        <?php echo $phone; ?>
                     </a>
                 <?php endif; ?>
                 <?php if ($fax = get_sub_field('fax')): $fax_link = preg_replace('![^0-9+]!', '', $fax); ?>

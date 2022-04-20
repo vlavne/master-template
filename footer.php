@@ -124,9 +124,14 @@
                 </div>
                 
             </div>
+            
+            <div class="siteFooterTwoTopArrowUp"><a href="#primary">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-up.svg" alt="arrow_up"></a>
+            </div>
 
         </div>
         <div class="siteFooterTwoBottom">
+            
             <?php if ($copyright = get_field('copyright', 'options')): ?>
                 <div class="siteFooterTwoBottomCopyright"><?php echo $copyright; ?></div>
             <?php endif; ?>
