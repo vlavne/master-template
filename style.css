@@ -2179,7 +2179,7 @@ textarea {
 
 @media (max-width: 64rem) {
 	.siteHeaderTop {
-		display: none;
+		display: none !important;
 	}
 }
 

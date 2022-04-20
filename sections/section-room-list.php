@@ -17,7 +17,7 @@ $btn = get_sub_field('btn');
         <div class="roomListText " data-aos="fade-up"><?php echo $text; ?></div>
     <?php endif; ?>
     <div class="roomListBlock" data-aos="fade-up">
-        <?
+        <?php
         // Get the posts
         if ($tax = get_sub_field('tax')):  $tax = get_sub_field('tax');  endif;
         if ($post_type = get_sub_field('post_type')):  $post_type = get_sub_field('post_type');  endif;

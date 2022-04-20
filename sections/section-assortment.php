@@ -1,4 +1,4 @@
-<section class="assortment marg <?php echo $type;?>" id="<?php echo get_sub_field('unique_id');?>"
+<section class="assortment marg <?php echo get_sub_field('type');?>" id="<?php echo get_sub_field('unique_id');?>"
          style="background-color:<?php echo get_sub_field('background_color');?>; background-image:url(<?php echo get_sub_field('background_image');?>);">
     <div class="container">
         <?php if ($subtitle = get_sub_field('subtitle')): ?>

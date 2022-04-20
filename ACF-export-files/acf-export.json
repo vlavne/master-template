@@ -1921,6 +1921,243 @@
             "min": "",
             "max": ""
           },
+          "layout_6256fff786e84": {
+            "key": "layout_6256fff786e84",
+            "name": "assortment",
+            "label": "Assortment",
+            "display": "block",
+            "sub_fields": [
+              {
+                "key": "field_6256fff786e85",
+                "label": "Untertitel",
+                "name": "subtitle",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                  "width": "",
+                  "class": "",
+                  "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+              },
+              {
+                "key": "field_6256fff786e86",
+                "label": "Titel",
+                "name": "title",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                  "width": "",
+                  "class": "",
+                  "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+              },
+              {
+                "key": "field_6256fff786e87",
+                "label": "Titel tag",
+                "name": "title_tag",
+                "type": "select",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                  "width": "",
+                  "class": "",
+                  "id": ""
+                },
+                "choices": {
+                  "h1": "h1",
+                  "h2": "h2",
+                  "h3": "h3",
+                  "h4": "h4",
+                  "h5": "h5",
+                  "h6": "h6",
+                  "div": "div"
+                },
+                "default_value": "h2",
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "return_format": "value",
+                "placeholder": ""
+              },
+              {
+                "key": "field_62580d890fa8d",
+                "label": "Background Color",
+                "name": "background_color",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                  "width": "",
+                  "class": "",
+                  "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string"
+              },
+              {
+                "key": "field_62580d6d0fa8c",
+                "label": "Background Image",
+                "name": "background_image",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                  "width": "",
+                  "class": "",
+                  "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "full",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+              },
+              {
+                "key": "field_62580da20fa8e",
+                "label": "Citation",
+                "name": "citation",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                  "width": "",
+                  "class": "",
+                  "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": ""
+              },
+              {
+                "key": "field_6256fff786e88",
+                "label": "Leistungen",
+                "name": "assortmentReapeter",
+                "type": "repeater",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                  "width": "",
+                  "class": "",
+                  "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "table",
+                "button_label": "",
+                "sub_fields": [
+                  {
+                    "key": "field_6256fff786e89",
+                    "label": "Titel",
+                    "name": "assortmentTitle",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                      "width": "",
+                      "class": "",
+                      "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                  },
+                  {
+                    "key": "field_62580c110063b",
+                    "label": "Assortment Points",
+                    "name": "assortmentPoints",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                      "width": "",
+                      "class": "",
+                      "id": ""
+                    },
+                    "collapsed": "",
+                    "min": 0,
+                    "max": 0,
+                    "layout": "table",
+                    "button_label": "",
+                    "sub_fields": [
+                      {
+                        "key": "field_62580cab0063c",
+                        "label": "Point",
+                        "name": "point",
+                        "type": "textarea",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                          "width": "",
+                          "class": "",
+                          "id": ""
+                        },
+                        "default_value": "",
+                        "new_lines": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "rows": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "key": "field_6256fff786e8e",
+                "label": "Eindeutige Block-ID",
+                "name": "unique_id",
+                "type": "text",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                  "width": "",
+                  "class": "",
+                  "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+              }
+            ],
+            "min": "",
+            "max": ""
+          },
           "layout_624f14d65603a": {
             "key": "layout_624f14d65603a",
             "name": "services-with-icons",
@@ -2225,25 +2462,6 @@
                 "maxlength": ""
               },
               {
-                "key": "field_625d6e2981e9d",
-                "label": "Eindeutige Block-ID",
-                "name": "unique_id",
-                "type": "text",
-                "instructions": "",
-                "required": 1,
-                "conditional_logic": 0,
-                "wrapper": {
-                  "width": "",
-                  "class": "",
-                  "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "maxlength": ""
-              },
-              {
                 "key": "field_625e6298b1532",
                 "label": "Custom tax name",
                 "name": "tax",
@@ -2269,6 +2487,25 @@
                 "type": "text",
                 "instructions": "",
                 "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                  "width": "",
+                  "class": "",
+                  "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+              },
+              {
+                "key": "field_625d6e2981e9d",
+                "label": "Eindeutige Block-ID",
+                "name": "unique_id",
+                "type": "text",
+                "instructions": "",
+                "required": 1,
                 "conditional_logic": 0,
                 "wrapper": {
                   "width": "",
