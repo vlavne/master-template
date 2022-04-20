@@ -30,3 +30,25 @@
     }
   }
 }
+.container-left{
+  padding: 0;
+}
+.container-right{
+  padding: 0;
+}
+@media (max-width: 90rem){
+  .container-left{
+    padding: 0 9.375rem 0 0;
+  }
+  .container-right{
+    padding: 0 0 0 9.375rem;
+  }
+}
+@media (max-width: 64rem){
+  .container-left{
+    padding: 0 1.25rem;
+  }
+  .container-right{
+    padding: 0 1.25rem;
+  }
+}

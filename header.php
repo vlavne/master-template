@@ -25,7 +25,7 @@
 <div id="page" class="site" <?php if($bg=get_field('bg')):?>style="background-color: <?php echo $bg;?>;" <?php endif;?>>
     <header id="masthead" class="siteHeader">
         <?php if (get_field('header_top', 'options') == 'yes'): ?>
-            <div class="siteHeaderTop bgBlack colorMain" style="background-color: <?php echo get_field('bg-color', 'options');?>;">
+            <div class="siteHeaderTop bgBlack colorMain" style="background-color: #ffffff;">
                 <div class="containerMax">
                     <div class="siteHeaderTopContacts">
                         <?php if ($address = get_field('address', 'options')): ?>
@@ -39,7 +39,7 @@
                             </div>
                         <?php endif; ?>
                         <?php if ($phone = get_field('phone', 'options')): $tel_link = preg_replace('![^0-9+]!', '', $phone); ?>
-                            <a href="tel:<?php echo $tel_link; ?>" class="siteHeaderTopContactsItem" style="color: <?php echo get_field('a-color', 'options');?>;">
+                            <a href="tel:<?php echo $tel_link; ?>" class="siteHeaderTopContactsItem" style="color: #B38876;">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path d="M18.9975 20C10.4659 20.0121 3.99088 13.4595 4.00001 5.00251C4.00001 4.45023 4.44773 4 5.00001 4H7.63937C8.13494 4 8.55593 4.36413 8.6287 4.85433C8.80311 6.0292 9.14517 7.17297 9.64448 8.2507L9.74725 8.4725C9.89013 8.78091 9.79328 9.14734 9.51668 9.34487C8.6993 9.92859 8.38692 11.1036 9.0237 12.0204C9.82278 13.1708 10.8301 14.1779 11.9803 14.9766C12.897 15.6132 14.0718 15.3009 14.6555 14.4836C14.8532 14.2069 15.2198 14.11 15.5284 14.2529L15.7492 14.3552C16.827 14.8545 17.9708 15.1966 19.1458 15.371C19.636 15.4437 20 15.8647 20 16.3603V19C20 19.5523 19.5512 20 18.9989 20L18.9975 20Z"

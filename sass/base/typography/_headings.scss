@@ -46,13 +46,24 @@ h5, .title5{
 	@include toRem(margin-bottom,20);
 }
 .subtitle{
+	position: relative;
 	font-weight: 500;
-	@include toRem(font-size,14);
+	@include toRem(font-size,18);
 	line-height: 86%;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
-	margin-bottom: 1rem;
+	@include toRem(margin-bottom,27);
 	@media (max-width: $table){
 		margin-bottom: 0;
 	}
+}
+.subtitle:before{
+	content: "";
+	display: block;
+	position: absolute;
+	left: -30px;
+	width: 20px;
+	height: 20px;
+	background: url('img/Vector.svg');
+	background-size: contain;
 }

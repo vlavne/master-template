@@ -1,0 +1,30 @@
+#headerMenu li a{
+    font-weight: 500;
+    color: #686C77;
+}
+.siteNavigationContactsItem.phoneHeaderBtn{
+    font-size: 16px;
+    font-weight: 600;
+    color: #B38876;
+    position: relative;
+}
+.phoneHeaderBtn:after{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 40px;
+    position: absolute;
+    background: #EDEDED;
+    left: -30px;
+}
+.siteHeaderTop{
+    position: relative;
+    border-bottom: 1px solid #EDEDED;
+    z-index: 100;
+    display: none;
+}
+@media(max-width: 64rem){
+    .siteHeaderTop{
+        display: block;
+    }
+}

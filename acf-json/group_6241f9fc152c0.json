@@ -135,7 +135,8 @@
             "choices": {
                 "Inter": "Inter",
                 "Rubik": "Rubik",
-                "Raleway": "Raleway"
+                "Raleway": "Raleway",
+                "Poppins": "Poppins"
             },
             "default_value": "inter",
             "allow_null": 0,
@@ -617,5 +618,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1649927409
+    "modified": 1650440696
 }

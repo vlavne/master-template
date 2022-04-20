@@ -8,18 +8,18 @@ $(document).ready(function() {
         $(".site").css('padding-top', $(".siteHeader").outerHeight());
     });
 
-    function headerFixed() {
-        if ($(window).scrollTop() > 0) {
-            $(".siteHeader").addClass("fixed");
-            $('.siteHeaderTop').slideUp();
-        } else {
-            $(".siteHeader").removeClass("fixed");
-            $('.siteHeaderTop').slideDown();
-        }
-    }
-    $(window).scroll(function() {
-        headerFixed();
-    });
+    // function headerFixed() {
+    //     if ($(window).scrollTop() > 0) {
+    //         $(".siteHeader").addClass("fixed");
+    //         $('.siteHeaderTop').slideUp();
+    //     } else {
+    //         $(".siteHeader").removeClass("fixed");
+    //         $('.siteHeaderTop').slideDown();
+    //     }
+    // }
+    // $(window).scroll(function() {
+    //     headerFixed();
+    // });
     $(".scroll-link").click(function(event) {
         event.preventDefault();
         var id = $(this).attr("href"),

@@ -14,6 +14,7 @@
 			flex-direction: column;
 			justify-content: center;
 			padding: 1.875rem 1.25rem;
+			
 		}
 		&.active{
 			left: 0;
@@ -23,7 +24,7 @@
 			padding-top: 2.5rem;
 			border-top: 1px solid #DDEAE0;
 			@media (max-width: $table) {
-				display: block;
+				display: none;
 			}
 			&Item{
 				@extend %flex-center;

@@ -1,5 +1,5 @@
-<section class="textImg marg" id="<?php echo get_sub_field('unique_id');?>" data-aos="fade-up">
-    <div class="container">
+<section class="textImg" id="<?php echo get_sub_field('unique_id');?>" data-aos="fade-up">
+    <div class="container container-right">
         <div class="textImgBlock <?php echo get_sub_field('text_position');?>">
             <div class="textImgBlockContent">
                 <?php if($subtitle=get_sub_field('subtitle')):?>

@@ -30,7 +30,7 @@ function master_template_setup()
     load_theme_textdomain('master-template', get_template_directory() . '/languages');
 
     // Add default posts and comments RSS feed links to head.
-//	add_theme_support( 'automatic-feed-links' );
+ //	add_theme_support( 'automatic-feed-links' );
 
     /*
         * Let WordPress manage the document title.
@@ -53,6 +53,7 @@ function master_template_setup()
             'menu-header' => esc_html__('Header-Menü', 'master-template'),
             'menu-footer' => esc_html__('Footer-Menü', 'master-template'),
             'menu-info' => esc_html__('Info-Menü', 'master-template'),
+            'menu-social' => esc_html__('Social-Menü', 'master-template'),
         )
     );
 
@@ -166,7 +167,7 @@ require_once get_template_directory() . '/inc/acf-fields.php';
 /* Enqueues the external CSS file */
 add_action( 'wp_enqueue_scripts', 'tutsplus_external_styles' );
 function tutsplus_external_styles() {
- 
+
     wp_register_style( 'custom', get_stylesheet_directory_uri().'/custom.css' );
     wp_enqueue_style( 'custom' );
 }

@@ -52,7 +52,6 @@
                     position: relative;
                     z-index: 12;
                     @media (max-width: $table) {
-                        margin: 0 auto;
                         max-height: 1.875rem;
                         img {
                             max-height: inherit;

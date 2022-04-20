@@ -46,14 +46,14 @@ $(document).ready(function () {
                 prevArrow: '<div class="slider-btn slider-btn-left" aria-hidden="true"><img src="<?php echo get_template_directory_uri(); ?>/img//arrow-light-left.svg" alt=""></div>',
                 responsive: [ 
             {
-              breakpoint: 600,
+              breakpoint: 800,
               settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1
               }
             },
             {
-              breakpoint: 480,
+              breakpoint: 500,
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1

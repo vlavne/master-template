@@ -109,7 +109,7 @@
                 }
                 img {
                     @extend %absolute;
-                    object-fit: cover;
+                    object-fit: contain;
                 }
             }
             &Text {
@@ -184,4 +184,10 @@
 
 .partner-slider .slick-arrow:hover svg {
     border: 1px solid #006EB6;
+}
+
+.partner-slider .slick-next {
+    background: #006EB6;
+    color: #fff;
+    margin: auto;
 }
