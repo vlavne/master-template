@@ -1,4 +1,7 @@
 // CONTACT BLOCK WITH IMAGE, BUTTON, FORM FIELDS
+.textImg{
+  background: #f8f8f8;
+}
 .contactBlockWithImg{
   position: relative;
   overflow: hidden;
@@ -192,6 +195,7 @@
 .textImg{
   &Block{
     display: flex;
+    justify-content: space-between;
     @media (max-width: $table){
       flex-direction: column!important;
     }
@@ -209,13 +213,17 @@
       }
     }
     &Content{
-      width: 50.8771929825%;
+      width: 44%;
       @include toRem(padding-right,92);
-      @include toRem(padding-top,28);
-      @include toRem(padding-bottom,28);
+      @include toRem(padding-top,0);
+      @include toRem(padding-bottom,0);
       display: flex;
       flex-direction: column;
       justify-content: center;
+      @media (max-width: 90rem){
+        @include toRem(padding-top,105);
+        @include toRem(padding-bottom,105);
+      }
       @media (max-width: 75rem){
         @include toRem(padding-right,30);
       }
@@ -266,7 +274,7 @@
     }
     &Img{
       position: relative;
-      width: 49.1228070175%;
+      width: 56%;
       overflow: hidden;
       padding-top: 43.75%;
       min-height: 100%;

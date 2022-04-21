@@ -1167,7 +1167,7 @@
                             "key": "field_62431fd071f9d",
                             "label": "Titel",
                             "name": "title",
-                            "type": "text",
+                            "type": "wysiwyg",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1177,10 +1177,10 @@
                                 "id": ""
                             },
                             "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
                         },
                         {
                             "key": "field_62431fd871f9e",
@@ -1211,6 +1211,21 @@
                             "return_format": "value",
                             "ajax": 0,
                             "placeholder": ""
+                        },
+                        {
+                            "key": "field_626119d2a0612",
+                            "label": "btn",
+                            "name": "btn",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
                         },
                         {
                             "key": "field_62431ff871f9f",
@@ -3384,5 +3399,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1649927408
+    "modified": 1650530929
 }

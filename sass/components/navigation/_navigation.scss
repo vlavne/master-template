@@ -39,7 +39,10 @@
                 
                 &.phoneHeaderBtn {
                 @include toRem(margin-left,100);
-				@media (max-width: $table) {
+				@media (max-width: 90rem) {
+					@include toRem(margin-left,50);
+				}   
+				@media (max-width: 80rem) {
                 display: none;
             }    
             }

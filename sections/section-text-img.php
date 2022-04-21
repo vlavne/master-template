@@ -6,7 +6,7 @@
                     <div class="subtitle colorMain"><?php echo $subtitle;?></div>
                 <?php endif;?>
                 <?php if($title=get_sub_field('title')):?>
-                    <<?php echo get_sub_field('title_tag');?> class="title2"><?php echo $title;?></<?php echo get_sub_field('title_tag');?>>
+                    <<?php echo get_sub_field('title_tag');?> class="title1"><?php echo $title;?></<?php echo get_sub_field('title_tag');?>>
                 <?php endif;?>
                 <?php if($text=get_sub_field('text')):?>
                     <div class="textImgBlockContentText colorGrey"><?php echo $text;?></div>

@@ -5,8 +5,11 @@ h4,
 h5,
 h6 {
 	clear: both;
+	word-wrap: normal;
 }
-
+.golden{
+	color: #B38876;
+}
 h1, .title{
 	font-weight: 600;
 	line-height: 130%;
@@ -53,6 +56,7 @@ h5, .title5{
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 	@include toRem(margin-bottom,27);
+	@include toRem(margin-left,30);
 	@media (max-width: $table){
 		margin-bottom: 0;
 	}
@@ -61,6 +65,7 @@ h5, .title5{
 	content: "";
 	display: block;
 	position: absolute;
+	top: -4px;
 	left: -30px;
 	width: 20px;
 	height: 20px;

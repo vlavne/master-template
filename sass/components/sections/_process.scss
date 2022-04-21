@@ -1,7 +1,7 @@
 // PROCESS
 .process{
   &Block{
-    @include toRem(padding,70);
+    @include toRem(padding-left,70);
     @include toRem(padding-right,80);
     display: grid;
     grid-template-columns: 44.7204969% 55.2795031%;
@@ -48,9 +48,10 @@
         }
         &Title{
           margin-bottom: 1rem;
-          font-weight: 500;
-          font-size: 20px;
-          @include toRem(font-size,20);
+          font-weight: 600;
+          font-size: 24px;
+          color: #234255;
+          @include toRem(font-size,24);
           line-height: 110%;
           @media (max-width: $tablemin){
             letter-spacing: -0.02em;
@@ -63,4 +64,7 @@
       }
     }
   }
+}
+.processIcon{
+  @include toRem(margin-bottom,24);
 }
