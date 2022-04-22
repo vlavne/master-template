@@ -18,6 +18,15 @@
 		&.active{
 			left: 0;
 		}
+
+		&Btn{
+			display: none;
+			@media (max-width: $table) {
+				margin-top: 30px;
+				display: block;
+			}
+		}
+
 		&Contacts{
 			display: none;
 			padding-top: 2.5rem;
@@ -25,6 +34,7 @@
 			@media (max-width: $table) {
 				display: block;
 			}
+
 			&Item{
 				@extend %flex-center;
 				@include toRem(margin-bottom,5);
@@ -35,14 +45,13 @@
 				&:last-child{
 					margin-bottom: 0;
 				}
-                
+
                 &.phoneHeaderBtn {
-                @include toRem(margin-left,100);
+                @include toRem(margin-left,36);
 				@media (max-width: $table) {
                 display: none;
-            }    
             }
-                
+            }
 				svg{
 					@include toRem(margin-right,10);
 				}
@@ -61,7 +70,7 @@
 			@media (max-width: $table) {
 				flex-direction: column;
 				align-items: flex-start;
-				margin: auto 0;
+				//margin: auto 0;
 			}
 			&>li{
 				@include toRem(margin-right,45);

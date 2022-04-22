@@ -134,46 +134,51 @@
     &FooterTwo{
              @include toRem(padding-top, 100);
              @include toRem(padding-bottom, 80);
-        
+
         &Top{
             display: flex;
-            
+
             @media(max-width: $tablemin){
                 flex-direction: column-reverse;
             }
-            
+
             &Menus{
                 display: flex;
-                
+
                 @media(max-width: $tablemin){
                     width: 100%;
                     @include toRem(margin-top, 60);
                     @include toRem(margin-bottom, 70);
                 }
             }
-            
             &Menu{
                 @include toRem(margin-right, 75);
+                @media(max-width: $table){
+                  @include toRem(margin-right, 20);
+                }
+                &:last-child{
+                  @include toRem(margin-right, 0);
+                }
                 &Title{
                     text-transform: uppercase;
                     font-weight: 600;
                     @include toRem(margin-bottom, 20);
                 }
-                
+
                 ul{
                     margin: auto;
                     padding: unset;
                     list-style-type: none;
-                    
-                    
+
+
                     li{
                         @include toRem(margin-bottom, 12);
-                        
+
                         a{
                             text-decoration: none;
                             opacity: .6;
                             transition: .3s;
-                            
+
                             &:hover{
                                 opacity: 1;
                                 text-shadow: 0 0 .45px #333, 0 0 .45px #333;
@@ -182,41 +187,41 @@
                     }
                 }
             }
-            
+
             &Info{
                width: 50%;
-                margin-left: auto; 
+                margin-left: auto;
                 @include toRem(margin-top, -14);
-                
+
                 @media(max-width: $tablemin){
                     width: 100%;
                 }
-                
+
                 &Text{
-                
+
                 font-weight: 600;
                 @include toRem(font-size, 42);
                 text-transform: uppercase;
-                    
+
                     @media(max-width: $tablemin){
                     @include toRem(font-size, 28);
                 }
-                
+
                 }
-                
+
                 &News{
                     @include toRem(margin-top, 85);
-                    
+
                     @media(max-width: $tablemin){
                     @include toRem(margin-top, 40);
                 }
-                    
+
                     &Title{
                         @include toRem(font-size, 14);
                         text-transform: uppercase;
                         font-weight: 600;
                     }
-                    
+
                     &Form{
                         @include toRem(font-size, 15);
                         font-weight: 400;
@@ -228,45 +233,45 @@
                         color: #6b6b75;
                         border-bottom: 2px solid #c4c8d5;
                         @include toRem(padding-bottom, 12);
-                        
+
                         input{
                             width: 100%;
                             border: none;
                             border-radius: unset;
                             outline-style: none;
-                        } 
-                        
+                        }
+
                         @media(max-width: $tablemin){
                     @include toRem(font-size, 13);
                 }
-                        
+
                         a{
                             text-transform: uppercase;
                             display: flex;
                             text-decoration: none;
                             font-weight: 600;
                             align-items: center;
-                            
+
                             img{
                                 height: fit-content;
                             }
                         }
                     }
                 }
-                
-                
-                
+
+
+
             }
-            
+
         }
-        
+
         &Bottom{
             &Copyright{
                 font-weight: 400;
     @include toRem(font-size, 18);
     text-transform: uppercase;
             }
-        } 
+        }
     }
 }
 
@@ -274,46 +279,77 @@
     &FooterTwo{
              @include toRem(padding-top, 100);
              @include toRem(padding-bottom, 80);
-        
+        &.darkScheme{
+          color: #fff;
+          a{
+            color: #979699;
+          }
+          .siteFooterTwoPolicy{
+            ul{
+              margin-left: 0;
+              padding-left: 0;
+              list-style: none;
+              display: flex;
+              flex-direction: row;
+              li{
+                &:first-child{
+                  @include toRem(margin-right, 34);
+                }
+                a{
+                  text-decoration: none;
+                }
+              }
+
+            }
+          }
+        }
         &Top{
             display: flex;
-            
+
             @media(max-width: $tablemin){
                 flex-direction: column-reverse;
             }
-            
+
             &Menus{
                 display: flex;
-                
+
                 @media(max-width: $tablemin){
                     width: 100%;
                     @include toRem(margin-top, 60);
                     @include toRem(margin-bottom, 70);
                 }
             }
-            
+
             &Menu{
+              &:first-child{
                 @include toRem(margin-right, 75);
+                @media(max-width: $table){
+                  @include toRem(margin-right, 28);
+                }
+              }
+              &:last-child{
+                @include toRem(margin-right, 0);
+              }
                 &Title{
                     text-transform: uppercase;
                     font-weight: 600;
                     @include toRem(margin-bottom, 20);
                 }
-                
+
                 ul{
                     margin: auto;
                     padding: unset;
                     list-style-type: none;
-                    
-                    
+
+
                     li{
                         @include toRem(margin-bottom, 12);
-                        
+
                         a{
                             text-decoration: none;
                             opacity: .6;
                             transition: .3s;
-                            
+
                             &:hover{
                                 opacity: 1;
                                 text-shadow: 0 0 .45px #333, 0 0 .45px #333;
@@ -322,41 +358,41 @@
                     }
                 }
             }
-            
+
             &Info{
                width: 50%;
-                margin-left: auto; 
+                margin-left: auto;
                 @include toRem(margin-top, -14);
-                
+
                 @media(max-width: $tablemin){
                     width: 100%;
                 }
-                
+
                 &Text{
-                
+
                 font-weight: 600;
                 @include toRem(font-size, 42);
                 text-transform: uppercase;
-                    
+
                     @media(max-width: $tablemin){
                     @include toRem(font-size, 28);
                 }
-                
+
                 }
-                
+
                 &News{
                     @include toRem(margin-top, 85);
-                    
+
                     @media(max-width: $tablemin){
                     @include toRem(margin-top, 40);
                 }
-                    
+
                     &Title{
                         @include toRem(font-size, 14);
                         text-transform: uppercase;
                         font-weight: 600;
                     }
-                    
+
                     &Form{
                         @include toRem(font-size, 15);
                         font-weight: 400;
@@ -368,44 +404,72 @@
                         color: #6b6b75;
                         border-bottom: 2px solid #c4c8d5;
                         @include toRem(padding-bottom, 12);
-                        
-                        input{
+                        position: relative;
+                        input[type="email"]{
                             width: 100%;
                             border: none;
                             border-radius: unset;
                             outline-style: none;
-                        } 
-                        
+                            background-color: transparent;
+                            color: #979699;
+                            @media(max-width: $table){
+                              font-size: 12px;
+                            }
+                          &:focus{
+                            color: #979699;
+                          }
+                        }
+
+                        input[type="submit"]{
+                          color: #FFFFFF;
+                          letter-spacing: 0.02em;
+                          text-transform: uppercase;
+                          background-color: transparent;
+                          background-repeat: no-repeat;
+                          background-image: url("/wp-content/themes/master-template/img/footerArrowRight.svg");
+                          background-size: 25%;
+                          background-position: right;
+                          padding-right: 30px;
+                          width: 25%;
+                          @media(max-width: $table){
+                            width: 33%;
+                            font-weight: 700;
+                            @include toRem(font-size, 12);
+                            @include toRem(line-height, 14);
+                          }
+                        }
+                        .wpcf7-spinner{
+                            position: absolute;
+                            right: 0;
+                        }
+
                         @media(max-width: $tablemin){
                     @include toRem(font-size, 13);
                 }
-                        
+
                         a{
                             text-transform: uppercase;
                             display: flex;
                             text-decoration: none;
                             font-weight: 600;
                             align-items: center;
-                            
+
                             img{
                                 height: fit-content;
                             }
                         }
                     }
                 }
-                
-                
-                
+
             }
-            
         }
-        
+
         &Bottom{
             &Copyright{
                 font-weight: 400;
     @include toRem(font-size, 18);
     text-transform: uppercase;
             }
-        } 
+        }
     }
 }

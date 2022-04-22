@@ -1,13 +1,8 @@
 <?php $template_directory = get_template_directory_uri();?>
 <div class="siteHeaderWrap">
     <div class="container">
-        <div id="burger">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <?php the_custom_logo(); ?>
+
+
         <nav id="siteNavigation" class="siteNavigation">
             <?php wp_nav_menu(
                 array(
@@ -16,7 +11,15 @@
                     'container' => ''
                 )
             ); ?>
+            <div class="siteNavigationBtn">
+                <?php if ($btn = get_field('header_btn', 'options')): ?>
+                    <a href="<?php echo $btn['url']; ?>" class="btn <?php if (get_field('header_btn_type', 'options')==='transparent'){echo ' colorMain borderColorMain transparentBtn';} ?>"
+                       <?php if ($btn['target']): ?>target="<?php echo $btn['target']; ?>"<?php endif; ?>><?php echo $btn['title']; ?>
+                        <img src="<?php echo $template_directory;?>/img/short_right.svg" alt=""></a>
+                <?php endif; ?>
+            </div>
             <div class="siteNavigationContacts">
+
                 <?php if ($address = get_field('address', 'options')): ?>
                     <div class="siteNavigationContactsItem colorBlack">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -52,12 +55,9 @@
                     </a>
                 <?php endif; ?>
             </div>
+
         </nav>
-        <?php if ($btn = get_field('header_btn', 'options')): ?>
-            <a href="<?php echo $btn['url']; ?>" class="btn"
-               <?php if ($btn['target']): ?>target="<?php echo $btn['target']; ?>"<?php endif; ?>><?php echo $btn['title']; ?>
-                <img src="<?php echo $template_directory;?>/img/short_right.svg" alt=""></a>
-        <?php endif; ?>
+        <?php the_custom_logo(); ?>
         <?php if(get_field('phone_type_header_btn', 'options')=='yes') {?>
         <?php if ($phone = get_field('phone', 'options')): $tel_link = preg_replace('![^0-9+]!', '', $phone); ?>
                     <a href="tel:<?php echo $tel_link; ?>" class="siteNavigationContactsItem phoneHeaderBtn colorBlack">
@@ -70,5 +70,18 @@
                     </a>
                 <?php endif; ?>
         <?php } ?>
+        <?php if ($btn = get_field('header_btn', 'options')): ?>
+        <span class="siteHeaderWrapBtn">
+            <a href="<?php echo $btn['url']; ?>" class="btn <?php if (get_field('header_btn_type', 'options')==='transparent'){echo ' colorMain borderColorMain transparentBtn';} ?>"
+               <?php if ($btn['target']): ?>target="<?php echo $btn['target']; ?>"<?php endif; ?>><?php echo $btn['title']; ?>
+                <img src="<?php echo $template_directory;?>/img/short_right.svg" alt=""></a>
+        </span>
+        <?php endif; ?>
+        <div id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </div>
 </div>

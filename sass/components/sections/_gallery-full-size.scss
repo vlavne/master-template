@@ -1,0 +1,47 @@
+.bigGallery{
+  .mobContainer{
+    @media (max-width: $table) {
+      padding: 0 1.25rem;
+      width: 100%;
+    }
+  }
+  &Block{
+    &Item{
+      &Elem{
+        max-width: 998px;
+
+      }
+    }
+  }
+  .bigGalleryBlockItemElem {
+    max-width: 100%;
+    margin: auto;
+    img{
+      margin: auto;
+    }
+  }
+  .slick-slide:not(.slick-active){
+    transform: scale(0.9);
+    @media (max-width: $table) {
+      transform: scale(1);
+    }
+  }
+  .slick-dots{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    button{
+      display: none;
+    }
+    li{
+      width: 25px;
+      @include toRem(margin-top, 50)
+    }
+    li::marker{
+      content: url("/wp-content/themes/master-template/img/dotsOff.svg");
+    }
+    li.slick-active::marker{
+      content: url("/wp-content/themes/master-template/img/dotsOnn.svg");
+    }
+  }
+}

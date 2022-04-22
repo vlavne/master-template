@@ -1,5 +1,11 @@
 // CONTACT BLOCK WITH IMAGE, BUTTON, FORM FIELDS
 .contactBlockWithImg{
+  @include toRem(padding-top,100);
+  @include toRem(padding-bottom,100);
+  @media (max-width: 64rem){
+    @include toRem(padding-top,80);
+    @include toRem(padding-bottom,80);
+  }
   position: relative;
   overflow: hidden;
   text-align: center;
@@ -78,6 +84,10 @@
         letter-spacing: -0.015em;
         text-transform: uppercase;
         color: #FFFFFF;
+        text-align: left;
+      }
+      .contactBlockWithImgBlockContentBtn{
+        color: #fff;
       }
       &Btn{
         font-weight: 700;
@@ -85,7 +95,16 @@
         line-height: 19px;
         letter-spacing: 0.01em;
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: #fff;
+        text-decoration: unset;
+        text-align: left;
+        //position: r;
+        &:after{
+          width: 26px;
+          height: 26px;
+          padding-left: 10px;
+          content: url("/wp-content/themes/master-template/img/arrowTopRightWhite.svg");
+        }
         @media (max-width: 64rem){
           text-decoration: unset;
         }
@@ -96,6 +115,7 @@
         line-height: 150%;
         letter-spacing: -0.005em;
         color: #FFFFFF;
+        text-align: left;
       }
     }
     &Form{
@@ -125,9 +145,7 @@
           padding: 25px 20px;
           max-width: 180px;
           //max-height: 68px;
-          background: #577E56;
           line-height: unset;
-          border: unset;
           @media (max-width: 64rem){
             margin-top: 40px;
             max-width: unset;

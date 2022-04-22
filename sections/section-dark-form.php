@@ -1,4 +1,4 @@
-<section class="darkForm padd <?php if (get_sub_field('blockColor') === 'dark'){ echo 'bgBlack darkColor';} else { echo 'lightColor';} ?> ">
+<section class="darkForm padd <?php if (get_sub_field('blockColor') === 'dark'){ echo 'bgBlack darkColor';} else { echo 'lightColor';} ?> " data-aos="fade-up">
     <div class="container">
         <div class="darkFormContent">
             <?php if($subtitle=get_sub_field('subtitle')):?>

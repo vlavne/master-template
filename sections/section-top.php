@@ -1,4 +1,4 @@
-<section class="top padd <?php echo get_sub_field('text_align_mob');?>" id="<?php echo get_sub_field('unique_id');?>">
+<section class="top padd <?php echo get_sub_field('text_align_mob');?> <?php echo get_sub_field('is-high-block');?>" id="<?php echo get_sub_field('unique_id');?>">
     <?php echo wp_get_attachment_image(get_sub_field('bg')['ID'],'full');?>
     <div class="container">
         <?php if($title=get_sub_field('title')):?>

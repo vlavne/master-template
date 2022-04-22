@@ -7,9 +7,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  &.highFalse{
+    min-height: 22vw;
+  }
   @media (max-width: $tablemin) {
     min-height: 120vw;
   }
+
   &::before{
     content: '';
     @extend %absolute;

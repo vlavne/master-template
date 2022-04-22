@@ -1,11 +1,10 @@
-<section class="contactBlockWithImg padd">
+<section class="contactBlockWithImg marg" data-aos="fade-up">
     <?php if($img=get_sub_field('img')):?>
         <img class="contactBlockWithImgShow" src="<?php echo wp_get_attachment_image_url($img['ID'], 'full');?>">
     <?php endif;?>
     <div class="container">
         <div class="contactBlockWithImgBlock">
             <div class="contactBlockWithImgBlockContent" <?php if($img=get_sub_field('img')):?> style="background-image: url('<?php echo wp_get_attachment_image_url($img['ID'], 'full');?>')" <?php endif;?>>
-
                 <?php if($title=get_sub_field('title')):?>
                     <<?php echo get_sub_field('title_tag');?> class="title2"><?php echo $title;?></<?php echo get_sub_field('title_tag');?>>
                 <?php endif;?>

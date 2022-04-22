@@ -8,13 +8,9 @@
  *
  * @package Master_Template
  */
-
 ?>
-
 <?php $footer_type = get_field('footer_type', 'options') ?>
-
 <?php if($footer_type == '1') {?>
-
 <footer id="colophon" class="siteFooter bgBlack">
     <div class="container">
         <div class="siteFooterTop">
@@ -77,8 +73,8 @@
 </footer><!-- #colophon -->
 
 <?php } ?>
-<?php if($footer_type == '2') {?>
-<footer id="colophon" class="siteFooterTwo">
+<?php if($footer_type == '2') { ?>
+<footer id="colophon" class="siteFooterTwo <?php if (get_field('scheme', 'options') === '1' ) { echo 'darkScheme colorLight bgBlack';} ?>">
     <div class="container">
         <div class="siteFooterTwoTop">
             <div class="siteFooterTwoTopMenus">
@@ -106,39 +102,56 @@
                     ); ?>
                 </div>
             <?php endif; ?>
-            
+
             </div>
             <div class="siteFooterTwoTopInfo">
                 <?php if ($footer_text = get_field('footer_text', 'options')): ?>
                     <div class="siteFooterTwoTopInfoText"><?php echo $footer_text; ?></div>
                 <?php endif; ?>
-                
                 <div class="siteFooterTwoTopInfoNews">
-                    <div class="siteFooterTwoTopInfoNewsTitle">Newsletter</div>
-                    <div class="siteFooterTwoTopInfoNewsForm">
-                    
-                        <input type="email" placeholder="Gerben Sie Ihre E-Mail-Adresse ein">  <a href="#">Folgen<img src="<?php echo get_template_directory_uri(); ?>/img/short_right.svg" alt="short_right"></a>
-                    
-                    </div>
-                
+<!--                    CODE TO CF7-->
+<!--                            <div class="siteFooterTwoTopInfoNewsTitle">Newsletter</div>-->
+<!--                            <div class="siteFooterTwoTopInfoNewsForm">[email your-email placeholder "enter you email address"][submit "subscribe"] </div>-->
+<!--                    CODE TO CF7-->
+                    <?php  if(do_shortcode('[contact-form-7 id="454" title="Footer form"]')){ echo do_shortcode('[contact-form-7 id="454" title="Footer form"]'); } else{
+                        ?>
+                        <div role="form" class="wpcf7" id="wpcf7-f454-o3" lang="en-US" dir="ltr">
+                            <div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
+                            <form action="/#wpcf7-f454-o3" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
+                                <div style="display: none;">
+                                    <input type="hidden" name="_wpcf7" value="454">
+                                    <input type="hidden" name="_wpcf7_version" value="5.5.6">
+                                    <input type="hidden" name="_wpcf7_locale" value="en_US">
+                                    <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f454-o3">
+                                    <input type="hidden" name="_wpcf7_container_post" value="0">
+                                    <input type="hidden" name="_wpcf7_posted_data_hash" value="">
+                                </div>
+                                <div class="siteFooterTwoTopInfoNewsTitle">Newsletter</div>
+                                <div class="siteFooterTwoTopInfoNewsForm"><span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-email" aria-invalid="false" placeholder="enter you email address"></span><input type="submit" value="subscribe" class="wpcf7-form-control has-spinner wpcf7-submit"><span class="wpcf7-spinner"></span> </div>
+                                <div class="wpcf7-response-output" aria-hidden="true"></div></form></div>
+                    <?php
+                    }?>
                 </div>
-                
             </div>
-
         </div>
         <div class="siteFooterTwoBottom">
             <?php if ($copyright = get_field('copyright', 'options')): ?>
                 <div class="siteFooterTwoBottomCopyright"><?php echo $copyright; ?></div>
             <?php endif; ?>
-            
+        </div>
+        <div class="siteFooterTwoPolicy">
+            <?php wp_nav_menu(
+                array(
+                    'theme_location' => 'menu-policy',
+                    'menu_id' => 'footerPolicy',
+                    'container' => ''
+                )
+            ); ?>
         </div>
     </div>
 </footer><!-- #colophon -->
 <?php } ?>
-
-
 </div><!-- #page -->
-
 <?php wp_footer(); ?>
 <script>
     $(document).ready(function (){
@@ -150,6 +163,5 @@
         });
     });
 </script>
-
 </body>
 </html>

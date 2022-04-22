@@ -2,7 +2,7 @@
 $btn = get_sub_field('btn');
 ?>
 
-<section class="roomList marg" id="<?php echo get_sub_field('unique_id'); ?>">
+<section class="roomList marg" id="<?php echo get_sub_field('unique_id'); ?>" data-aos="fade-up">
     <div class="container">
         <?php if ($subtitle = get_sub_field('subtitle')): ?>
             <div class="subtitle colorMain" data-aos="fade-up"><?php echo $subtitle; ?></div>
@@ -67,7 +67,7 @@ $btn = get_sub_field('btn');
 
                     <div class="roomListBlockItemWrap" <?php $terms = get_the_terms($standorte->ID, 'Kategorie Hotelzimmer'); ?>
                          data-cat-single="<?php if ($terms != '') { echo $terms[0]->slug; } ?>">
-                        <?php if ($thumbnail = get_the_post_thumbnail_url($standorte->ID)): ?>
+                        <?php if ($thumbnail = get_the_post_thumbnail_url($standorte->ID, 'postCard')): ?>
                             <img src="<?php echo $thumbnail; ?>" class="listAngebotsSingleWrapImg">
                         <?php endif; ?>
                         <?php echo wp_get_attachment_image($standorte->ID); ?>

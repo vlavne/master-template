@@ -91,11 +91,10 @@
         @include toRem(font-size, 14);
       }
     }
-    input{
+    input[type='text']{
       max-height: 68px;
     }
-    input, textarea{
-
+    input[type='text'], textarea{
       width: 100%;
       padding: 18px 24px;
       background: rgba(242, 242, 242, 0.05);
@@ -133,9 +132,7 @@
     input[type="submit"]{
       padding: 25px 20px;
       width: 100%;
-      background: #577E56;
       line-height: unset;
-      border: unset;
       @media (max-width: 64rem){
         margin-top: 40px;
         max-width: unset;
