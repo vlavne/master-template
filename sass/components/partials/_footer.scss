@@ -462,6 +462,11 @@
                 }
 
             }
+          &ArrowUp{
+            @media(max-width: $tablemin){
+              display: none;
+            }
+          }
         }
 
         &Bottom{
