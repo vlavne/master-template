@@ -31,6 +31,8 @@ $btn = get_sub_field( 'btn' );
                 </div>
             <?php endforeach; ?>
         </div>
+    <div class="scroll_bar"><div class="scroll_tape"></div></div>
+        
     <?php if ($btn): ?>
     <div class="btn" data-aos="fade-up" onclick="location.href='<?php echo $btn['url']; ?>';" ><?php echo $btn['title']; ?></div>
     <?php endif; ?>
@@ -64,6 +66,32 @@ $(document).ready(function () {
                     });
 
             });
+
+</script>
+
+<script>
+    
+    $(function(){
+    
+ var $slides = $('#<?php echo get_sub_field('unique_id');?> .servicesWIBlock');   
+ var $slides_active = $('#<?php echo get_sub_field('unique_id');?> .slick-active').length;
+ var $slides_all = $('#<?php echo get_sub_field('unique_id');?> .slick-slide').length;   
+ var $scroll_bar = $('#<?php echo get_sub_field('unique_id');?> .scroll_bar');
+ var $scroll_tape = $('#<?php echo get_sub_field('unique_id');?> .scroll_tape');  
+ 
+      $scroll_tape.css('width', $scroll_bar.width()/$slides_all)  
+        
+    function setProgress(index) {
+        var $calc = (($slides_active / $slides_all)*index)*$scroll_bar.width();
+        $scroll_tape.css('left', $calc);
+}
+
+    $slides.on('beforeChange', function(event, slick, currentSlide, nextSlide) {   
+  setProgress(nextSlide);
+});
+    
+    });
+    
 
 </script>
 
