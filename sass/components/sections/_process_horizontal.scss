@@ -1,0 +1,89 @@
+// process_horizontal
+.process_horizontal {
+    position: relative;
+    @media (max-width: $table) {
+        padding: 80px 0 !important;
+    }
+    .process_horizontalTitle {
+        font-style: normal;
+        font-weight: 600;
+        @include toRem(font-size, 45);
+        @include toRem(line-height, 68);
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: #072125 !important;
+        text-align: center;
+    }
+    .txtImgBg_divider {
+        background-image: url(img/divider_black.svg);
+        background-repeat: no-repeat;
+        background-position: left;
+        @include toRem(width, 200);
+        @include toRem(height, 20);
+        text-align: left;
+        margin: 20px auto 35px auto;
+        background-color: transparent;
+        @media (max-width: $table) {
+            @include toRem(margin-bottom, 60);
+        }
+    }
+    .blackAdvantagesBlock {
+        display: flex;
+        @media (max-width: $table) {
+            flex-direction: column;
+        }
+    }
+    .blackAdvantagesBlockItem {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background: transparent;
+        padding: 0;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .blackAdvantagesBlockItemContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .blackAdvantagesBlockItemContentTitle {
+        font-style: normal;
+        font-weight: 600;
+        @include toRem(font-size, 20);
+        line-height: 130%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #2E3443;
+        @include toRem(max-width, 230);
+        @include toRem(margin-bottom, 20);
+    }
+    .AdvantageUndertitle {
+        font-style: normal;
+        font-weight: 600;
+        @include toRem(font-size, 36);
+        @include toRem(line-height, 26);
+        text-align: center;
+        letter-spacing: 0.015em;
+        color: #2EBD6E;
+        @include toRem(margin-bottom, 75);
+        background: #F8F8F8;
+        box-shadow: 0px 30px 80px -16px rgba(83, 53, 53, 0.1);
+        @include toRem(padding, 25);
+        @include toRem(border-radius, 22);
+        @media (max-width: $table) {
+            @include toRem(margin-bottom, 55);
+        }
+    }
+    .blackAdvantagesBlockItemContentText {
+        font-style: normal;
+        font-weight: 400;
+        @include toRem(font-size, 16);
+        line-height: 155%;
+        text-align: center;
+        color: #545454;
+    }
+}

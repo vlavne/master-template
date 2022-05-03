@@ -1,0 +1,126 @@
+// Certificates Slider
+.certificateSlider {
+    display: flex;
+    justify-content: space-between;
+    .slick-list {
+        padding: 0 20% 0 0 !important;
+    }
+    .certSlideIttem {
+        @include toRem(padding-right, 20);
+    }
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: $table) {
+            flex-direction: column-reverse;
+        }
+    }
+    .certSlideIttemTitle {
+        display: none;
+    }
+    .certSlideIttemDesc {
+        display: none;
+    }
+    .slick-active>.certSlideIttemTitle {
+        display: block;
+    }
+    .slick-active>.certSlideIttemDesc {
+        display: block;
+    }
+    .certSlider {
+        max-width: 45%;
+        @include toRem(padding, 20);
+        background: #323233;
+        border-radius: 20px;
+        @media (max-width: $table) {
+            max-width: 90%;
+        }
+        .partnerSlBlockItem {
+            @include toRem(min-height, 560);
+        }
+        .partnerSlBlockItemImg {
+            margin: 0;
+            border: none;
+        }
+        .certSlideIttemTitle {
+            font-style: normal;
+            font-weight: 600;
+            @include toRem(font-size, 18);
+            @include toRem(line-height, 27);
+            color: #FFFFFF;
+            @include toRem(margin-top, 20);
+            @include toRem(max-width, 430);
+        }
+        .certSlideIttemDesc {
+            font-style: normal;
+            font-weight: 400;
+            @include toRem(font-size, 12);
+            line-height: 160%;
+            color: #CBCBCB;
+            @include toRem(margin-top, 5);
+            @include toRem(max-width, 430);
+        }
+        .slick-arrow {
+            top: auto;
+            @include toRem(right, 14);
+            @include toRem(bottom, 14);
+        }
+        .slick-next {
+            background: #1A1A1A;
+            @include toRem(border-radius, 10);
+            z-index: 9999;
+            @include toRem(right, -5);
+            @media (max-width: $table) {
+                @include toRem(right, 50);
+            }
+        }
+        .slick-prev {
+            background: #fff;
+            @include toRem(border-radius, 10);
+            @include toRem(right, -30);
+            cursor: pointer;
+            z-index: 9999;
+            @media (max-width: $table) {
+                @include toRem(right, 30);
+            }
+        }
+    }
+    .container_left {
+        padding: 50px 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        @media (max-width: $table) {
+            padding: 0 20px 40px 20px;
+        }
+        .title2 {
+            font-style: normal;
+            font-weight: 600;
+            @include toRem(font-size, 45);
+            @include toRem(line-height, 68);
+            text-align: center;
+            letter-spacing: -0.02em;
+            color: #FFFFFF;
+            margin-bottom: 0;
+        }
+        .cert_content {
+            font-style: normal;
+            font-weight: 400;
+            @include toRem(font-size, 16);
+            line-height: 160%;
+            color: #CBCBCB;
+        }
+        .blackAdvantagesLine {
+            background-image: url(img/divider.svg);
+            background-repeat: no-repeat;
+            background-position: left;
+            width: 100%;
+            @include toRem(height, 20);
+            text-align: center;
+            margin: 20px auto;
+            background-color: transparent;
+            @include toRem(margin-bottom, 35);
+        }
+    }
+}

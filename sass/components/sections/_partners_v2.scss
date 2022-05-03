@@ -1,0 +1,51 @@
+// PARTNERS v2
+.partners_v2 {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .blackAdvantagesLine {
+        background-image: url(img/divider.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 1.25rem;
+        width: 100%;
+        text-align: center;
+        margin: 20px auto;
+        background-color: transparent;
+    }
+    h2 {
+        text-align: center;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 45px;
+        line-height: 68px;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+    }
+    .partnersBlock {
+        border: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0;
+        padding-top: 70px;
+        @media (max-width: $table) {
+            display: block;
+        }
+        .partner_v2_img {
+            background: #242424;
+            border-radius: 20px;
+            padding: 35px;
+            width: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @media (max-width: $table) {
+                margin-bottom: 20px;
+                width: 100%;
+            }
+        }
+    }
+}

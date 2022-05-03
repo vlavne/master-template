@@ -1,0 +1,47 @@
+// DARK CONTACT AND MAP
+.darkContactAndMap {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: 0 !important;
+    iframe {
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+        @media (max-width: $table) {
+            min-height: 270px;
+            margin-top: 60px;
+        }
+    }
+    .title2 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 45px;
+        line-height: 68px;
+        letter-spacing: -0.02em;
+        color: #ffffff;
+        text-transform: none;
+    }
+    .darkFormContentText p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: #cccdcf;
+        margin-bottom: 50px;
+    }
+    .darkMap_Contacts {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #ffffff;
+        div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            svg {
+                margin-right: 12px;
+            }
+        }
+    }
+}

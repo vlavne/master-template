@@ -1,0 +1,70 @@
+.siteHeaderTop {
+	display: none;
+}
+
+.siteHeader .menu a {
+	color: #6B6B75;
+}
+
+#section-OSVG16sm .textImgBlockImg img {
+	object-fit: contain !important;
+}
+
+#section-OSVG16sm .textImgBlockContent .btn {
+	border-radius: 200px;
+	background: #141414;
+}
+
+#section-OSVG16sm .btn:hover {
+	background: #fff;
+	color: #141414;
+	border: 1px solid #141414;
+	border-radius: 200px;
+}
+
+#section-OSVG16sm .title2 {
+	font-size: 51px;
+	color: #072125 !important;
+}
+
+#section-OSVG16sm .subtitle {
+	display: flex;
+	align-items: center;
+}
+
+#section-OSVG16sm .subtitle:before {
+	content: url(img/first_block_before.svg);
+	display: block;
+	margin-right: 10px;
+}
+
+#section-IH0ow477 .btn {
+	background: #141414;
+	border-radius: 200px;
+}
+
+#section-IH0ow477 .btn:hover {
+	background: #fff;
+	color: #141414;
+	border: 1px solid #141414;
+	border-radius: 200px;
+}
+
+.siteHeaderWrap .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.siteNavigationContactsItem.phoneHeaderBtn {
+	margin-left: 0 !important;
+}
+
+.siteHeaderWrap .container .custom-logo-link {
+	font-size: 51px !important;
+}
+
+.siteHeaderWrap .container .custom-logo-link {
+	margin-right: 0 !important;
+}
+
+/*# sourceMappingURL=custom.css.map */

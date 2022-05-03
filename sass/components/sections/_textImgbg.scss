@@ -1,0 +1,50 @@
+// TEXT BLOCK WITH IMAGE AND BUTTON
+.textImgBg {
+    padding: 150px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container {
+        .textImgBlockContent .title2 {
+            margin-bottom: 0;
+        }
+        .textImgBlockContent {
+            @include toRem(padding, 70);
+            background: #fff;
+            @include toRem(border-radius, 24);
+            @media (max-width: $table) {
+                border-radius: 0px;
+                padding: 40px 20px;
+                margin-bottom: 0;
+            }
+        }
+        .mobileImg {
+            display: none;
+            @media (max-width: $table) {
+                display: block;
+                @include toRem(height, 230);
+                width: 100%;
+                background-size: cover;
+            }
+        }
+        .txtImgBg_divider {
+            background-image: url(img/divider_black.svg);
+            background-repeat: no-repeat;
+            background-position: left;
+            width: 100%;
+            @include toRem(height, 20);
+            text-align: left;
+            margin: 20px 0 35px 0;
+            background-color: transparent;
+            @media (max-width: $table) {
+                margin-bottom: 50px;
+            }
+        }
+        @media (max-width: $table) {
+            padding: 0;
+        }
+    }
+    @media (max-width: $table) {
+        padding: 0;
+        background: none;
+    }
+}

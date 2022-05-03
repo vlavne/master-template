@@ -1,0 +1,110 @@
+// Leistungen in den Kästen
+.leistungenKasten {
+    display: block;
+    .title2 {
+        font-style: normal;
+        font-weight: 600;
+        @include toRem(font-size, 45);
+        @include toRem(line-height, 68);
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: #072125;
+        margin-bottom: 0;
+        @media (max-width: $table) {
+            @include toRem(font-size, 30);
+            @include toRem(line-height, 45);
+        }
+    }
+    .txtImgBg_divider {
+        background-image: url(img/divider_black.svg);
+        background-repeat: no-repeat;
+        background-position: left;
+        @include toRem(width, 200);
+        @include toRem(height, 20);
+        text-align: left;
+        margin: 20px auto 35px auto;
+        background-color: transparent;
+    }
+    .subtitle {
+        font-style: normal;
+        font-weight: 400;
+        @include toRem(font-size, 16);
+        text-align: center;
+        color: #545454;
+        @include toRem(max-width, 460);
+        text-transform: none;
+        @include toRem(margin-bottom, 70);
+        @media (max-width: $table) {
+            line-height: 160%;
+            @include toRem(font-size, 14);
+        }
+    }
+    .servicesWIBlockItemWrap {
+        border: 1px solid rgba(32, 72, 79, 0.2);
+        border-radius: 20px;
+        max-width: 1000px;
+    }
+    .servicesWIBlockItemImg {
+        height: 100%;
+        margin-top: 0;
+        margin-bottom: 3.125rem;
+        width: 100%;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        @include toRem(min-height, 188);
+        @include toRem(max-height, 188);
+        img {
+            position: relative;
+            @media (max-width: $table) {
+                min-height: 200px;
+            }
+        }
+    }
+    .servicesWIBlockItemContentInfo {
+        margin: 0 auto;
+        @include toRem(max-width, 220);
+        @include toRem(min-height, 200);
+    }
+    .slick-arrow img {
+        width: 100%;
+        @include toRem(max-height, 25);
+    }
+    .servicesWIBlockItemContent p {
+        font-style: normal;
+        font-weight: 500;
+        @include toRem(font-size, 14);
+        @include toRem(line-height, 28);
+        color: #545454;
+        margin: 0 auto;
+        span {
+            font-style: normal;
+            font-weight: 600;
+            @include toRem(font-size, 26);
+            @include toRem(line-height, 28);
+            color: #072125;
+        }
+    }
+    .slick-arrow {
+        position: relative;
+        @media (max-width: $table) {
+            position: absolute !important;
+            top: 108% !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            text-align: center;
+            border-radius: 0.625rem;
+            border: 1px solid black;
+        }
+    }
+}
+
+@media (max-width: $table) {
+    .slider-btn-left {
+        left: 30%;
+    }
+    .slider-btn-right {
+        right: 30%;
+    }
+}
