@@ -10,6 +10,8 @@ $font = get_field('font', 'options');
       as="font" crossorigin="anonymous">
 <link rel="preload" href="<?php echo $template_directory; ?>/fonts/<?php echo $font;?>/static/<?php echo $font;?>-Bold.ttf"
       as="font" crossorigin="anonymous">
+<link rel="preload" href="<?php echo $template_directory; ?>/fonts/<?php echo $font;?>/static/<?php echo $font;?>-Bold.ttf"
+      as="font" crossorigin="anonymous">
 
 <style>
     @font-face {

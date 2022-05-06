@@ -8,15 +8,7 @@ $(document).ready(function() {
         $(".site").css('padding-top', $(".siteHeader").outerHeight());
     });
 
-    function headerFixed() {
-        if ($(window).scrollTop() > 0) {
-            $(".siteHeader").addClass("fixed");
-            $('.siteHeaderTop').slideUp();
-        } else {
-            $(".siteHeader").removeClass("fixed");
-            $('.siteHeaderTop').slideDown();
-        }
-    }
+
     $(window).scroll(function() {
         headerFixed();
     });
@@ -53,8 +45,11 @@ $(document).ready(function() {
         $(this).toggleClass('activeSubmenu');
         e.preventDefault();
     });
-
-
+    $('#section-0eraZE5e .title3').after('<div class="txtImgBg_divider"></div>');
+    $('#section-0PyNWTV1 .title3').after('<div class="txtImgBg_divider"></div>');
+    $('#section-BvmPDTjS .title2').after('<div class="txtImgBg_divider"></div>');
+    $('#section-0Z5ZfxD3 .title2').after('<div class="txtImgBg_divider"></div>');
+    $('#section-1laRuiu4 .title2').after('<div class="txtImgBg_divider"></div>');
     // MODAL
     // var overlay = $('#overlay');
     // var open_modal = $('.open_modal');

@@ -1,0 +1,78 @@
+// Quote
+.obenV2 {
+    position: relative;
+    .container {
+        width: 100% !important;
+        @media (max-width: $table) {
+            padding: 0;
+        }
+        .textImg2verBlockImg img {
+            height: 100%;
+        }
+        .textImg2verBlockText {
+            margin: 140px 0;
+            justify-content: flex-start;
+            align-items: flex-start;
+            max-width: 420px;
+            @media (max-width: $table) {
+                margin: 40px 0;
+                padding: 0 20px;
+            }
+        }
+        ul {
+            margin: 0;
+            padding: 0 0 0 8px;
+        }
+        .textImg2verTitle {
+            align-items: flex-start !important;
+            .title2 {
+                text-align: left;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 45px;
+                line-height: 130%;
+                letter-spacing: -0.02em;
+                color: #072125;
+                @media (max-width: $table) {
+                    font-size: 30px;
+                }
+            }
+            .txtImgBg_divider {
+                background-image: url(img/divider_black.svg);
+                background-repeat: no-repeat;
+                background-position: left;
+                width: 12.5rem;
+                height: 1.25rem;
+                text-align: left;
+                margin: 20px 0 35px 0;
+                background-color: transparent;
+            }
+        }
+        .Text {
+            width: 425px;
+            @media (max-width: $table) {
+                width: 100%;
+            }
+        }
+        .btn {
+            margin-top: 40px;
+            @media (max-width: $table) {
+                display: block;
+            }
+        }
+        .mobile {
+            display: none;
+            @media (max-width: $table) {
+                display: none;
+            }
+        }
+        ul li {
+            padding-left: 12px;
+            &::marker {
+                content: url(/wp-content/themes/master-template/img/listIcon2.svg);
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}

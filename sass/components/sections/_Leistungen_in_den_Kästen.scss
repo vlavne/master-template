@@ -1,6 +1,11 @@
 // Leistungen in den Kästen
 .leistungenKasten {
     display: block;
+<<<<<<< Updated upstream
+=======
+    background-size: cover;
+    background-repeat: no-repeat;
+>>>>>>> Stashed changes
     .title2 {
         font-style: normal;
         font-weight: 600;
@@ -28,6 +33,10 @@
     .subtitle {
         font-style: normal;
         font-weight: 400;
+<<<<<<< Updated upstream
+=======
+        line-height: 160%;
+>>>>>>> Stashed changes
         @include toRem(font-size, 16);
         text-align: center;
         color: #545454;
@@ -98,6 +107,27 @@
             border: 1px solid black;
         }
     }
+<<<<<<< Updated upstream
+=======
+    .Nein {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @media (max-width: $table) {
+            flex-direction: column;
+        }
+        .servicesWIBlockItemWrap {
+            min-width: 30%;
+            max-width: 30%;
+            margin-bottom: 30px;
+            @media (max-width: $table) {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+>>>>>>> Stashed changes
 }
 
 @media (max-width: $table) {
@@ -107,4 +137,11 @@
     .slider-btn-right {
         right: 30%;
     }
+<<<<<<< Updated upstream
+=======
+    .servicesWIBlockItemWrap {
+        margin-left: 0;
+        margin-right: 0;
+    }
+>>>>>>> Stashed changes
 }
