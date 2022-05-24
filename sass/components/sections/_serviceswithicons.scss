@@ -110,6 +110,31 @@
         
     }}
     
+    .scroll_bar{
+        position: relative;
+        width: 60%;
+        height: 2px;
+        background-color: #f2f2f2;
+        margin: auto;
+        bottom: -40px;
+        display: none;
+        
+        .scroll_tape{
+            position: absolute;
+            width: 10%;
+            height: 2px;
+            background-color: #222227;
+            left: 0%;
+            top: 50%;
+            transform: translate(0%, -50%);
+            transition: .5s;
+        }
+    }
+    
+    
     
 }
+
+
+
 
