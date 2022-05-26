@@ -1,6 +1,9 @@
 <section class="top padd <?php echo get_sub_field('text_align_mob');?>" id="<?php echo get_sub_field('unique_id');?>">
     <?php echo wp_get_attachment_image(get_sub_field('bg')['ID'],'full');?>
     <div class="container">
+        <?php if($sub_title = get_sub_field('sub_title')){ ?>
+                <div class="subtitle" data-aos="fade-up"> <?php echo $sub_title ; ?> </div>
+        <?php };  ?>
         <?php if($title=get_sub_field('title')):?>
             <<?php echo get_sub_field('title_tag');?> class="title" data-aos="fade-up"><?php echo $title;?></<?php echo get_sub_field('title_tag');?>>
         <?php endif;?>
