@@ -24,6 +24,25 @@
                         "display": "block",
                         "sub_fields": [
                             {
+                                "key": "field_628f3b44a8fe7",
+                                "label": "Under Titel",
+                                "name": "sub_title",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            },
+                            {
                                 "key": "field_624195598ac8f",
                                 "label": "Titel",
                                 "name": "title",
@@ -6314,7 +6333,8 @@
                 "choices": {
                     "Inter": "Inter",
                     "Rubik": "Rubik",
-                    "Raleway": "Raleway"
+                    "Raleway": "Raleway",
+                    "Montserrat": "Montserrat"
                 },
                 "default_value": "inter",
                 "allow_null": 0,
