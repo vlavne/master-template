@@ -11,7 +11,7 @@
                 <div class="faqBlockItem" data-aos="fade-up">
                     <div class="faqBlockItemQ"><?php echo $f['q']; ?>
                         <div class="faqBlockItemOpen">
-                            <span class="bgMain"></span><span class="bgMain"></span></div>
+                            <span class="bgGold"></span><span class="bgGold"></span></div>
                     </div>
                     <div class="faqBlockItemA"><?php echo $f['a']; ?></div>
                 </div>

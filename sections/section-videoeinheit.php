@@ -1,15 +1,16 @@
 <section class="videoFile marg" id="<?php echo get_sub_field('unique_id');?>" data-aos="fade-up">
     <div class="">
-        <?php if ($subtitle = get_sub_field('subtitle')): ?>
-            <div class="videoFileSubtitle colorMain" data-aos="fade-up"><?php echo $subtitle; ?></div>
-        <?php endif; ?>
+        
         <?php if($title=get_sub_field('title')):?>
-        <<?php echo get_sub_field('title_tag');?> class="blackAdvantagesTitle colorBlack" data-aos="fade-up"><?php echo $title;?></<?php echo get_sub_field('title_tag');?>>
+        <<?php echo get_sub_field('title_tag');?> class="blackAdvantagesTitle titleWithLine colorBlack" data-aos="fade-up"><?php echo $title;?></<?php echo get_sub_field('title_tag');?>>
     <div class="videoFileLine"></div>
     <?php endif;?>
     <?php if ($subtitle = get_sub_field('text')): ?>
         <div class="videoFileText colorGrey" data-aos="fade-up"><?php echo $subtitle; ?></div>
     <?php endif; ?>
+    <?php if ($subtitle = get_sub_field('subtitle')): ?>
+            <div class="videoFileSubtitle" data-aos="fade-up"><?php echo $subtitle; ?></div>
+        <?php endif; ?>
     <?php if ($video = get_sub_field('video_file')): ?>
         <div class="videoFileBlock" data-aos="fade-up">
             <video id="media-video" src="<?php echo $video['url']; ?>" type="<?php echo $video['mime_type']; ?>"></video>

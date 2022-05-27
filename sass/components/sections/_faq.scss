@@ -8,14 +8,19 @@
   }
   .subtitle, .title2{
     @media (max-width: $table){
-      text-align: center;
+      display: table;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
   &Block{
     &Item{
+      @include toRem(padding-top,30);
       @include toRem(padding-bottom,30);
+      @include toRem(padding-left,30);
+      @include toRem(padding-right,30);
       @include toRem(margin-bottom,30);
-      border-bottom: 1px solid #DDEAE0;
+      border: 1px solid #DDEAE0;
       @media (max-width: $table){
         @include toRem(padding-bottom,24);
         @include toRem(margin-bottom,24);
@@ -73,4 +78,7 @@
       }
     }
   }
+}
+.bgGold{
+  background: #B38876;
 }

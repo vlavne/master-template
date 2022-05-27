@@ -23,6 +23,7 @@
     @media (max-width: $table){
       max-width: 100%;
       padding: 0;
+      @include toRem(margin-top,45);
       @include toRem(margin-bottom,90);
     }
     .title2{

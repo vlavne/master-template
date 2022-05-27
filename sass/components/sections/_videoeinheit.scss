@@ -1,14 +1,14 @@
 // Videoeinheit
 .videoFile{
   &Subtitle{
-    color: #87AD86;
+    color: #B38876;
     font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
+    font-weight: 500;
+    font-size: 18px;
     line-height: 14px;
     text-align: center;
     letter-spacing: 0.02em;
-    text-transform: uppercase;
+    
     margin-bottom: 15px;
     @media (max-width: $table){
       font-size: 12px;
@@ -19,7 +19,7 @@
     height: 2px;
     text-align: center;
     margin: 20px auto;
-    background: #87AD86;
+    background: #234255;
   }
   &Title{
     font-style: normal;
@@ -30,6 +30,7 @@
     letter-spacing: -0.015em;
     text-transform: uppercase;
     color: #FFFFFF;
+    
     @media (max-width: $table){
       font-size: 24px;
       letter-spacing: -0.015em;
@@ -51,8 +52,8 @@
     margin-right: auto;
     @media (max-width: $table){
       padding: 0 10px;
-      font-size: 14px;
-      @include toRem(font-size,14);
+      font-size: 16px;
+      @include toRem(font-size,16);
     }
   }
   &Block{
@@ -108,3 +109,38 @@
     }
   }
 }
+.titleWithLine{
+  position: relative;
+}
+.titleWithLine:before{
+      content: "";
+      width: 40vh;
+      position: absolute;
+      height: 2px;
+      display: block;
+      background: #EDEDED;
+      top: 40%;
+      left: 0;
+      @media (max-width: $table){
+        width: 30vh;
+      }
+      @media (max-width: 50rem){
+        width: 5vh;
+      }
+    }
+    .titleWithLine:after{
+      content: "";
+      width: 40vh;
+      position: absolute;
+      height: 2px;
+      display: block;
+      background: #EDEDED;
+      top: 40%;
+      right: 0;
+      @media (max-width: $table){
+        width: 30vh;
+      }
+      @media (max-width: 50rem){
+        width: 5vh;
+      }
+    }

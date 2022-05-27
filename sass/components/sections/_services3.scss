@@ -1,14 +1,19 @@
-// SERVICES
-.services{
+// services3
+.services3{
   .title2{
     @include toRem(margin-bottom,60);
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
     @media (max-width: $table){
       line-height: 193%;
       @include toRem(margin-bottom,14);
     }
   }
   .title2, .subtitle{
-    
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
     @media (max-width: $table){
        text-align: center;
        display: table;
@@ -20,7 +25,7 @@
     .title2, .subtitle{
       text-align: center;
     }
-    .servicesBlock{
+    .services3Block{
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       @include toRem(grid-gap,37);
@@ -40,13 +45,12 @@
   &.slider{
     // overflow: hidden;
     .slick-arrow{
-      @include toRem(width,66);
-      @include toRem(height,44);
+      @include toRem(width,33);
+      @include toRem(height,22);
       @extend %flex-center;
       justify-content: center;
       font-size: 0px;
-      border: 1px solid #EDEEEF;
-      @include toRem(top,-80);
+      
       left: auto;
       right: $halfcontainer;
       @extend %transition25;
@@ -57,13 +61,13 @@
       @media (max-width: $table) {
         top: auto;
         bottom: 0;
-        right: calc(50% - 20px);
+        right: calc(50% - 20px)!important;
       }
       &:focus{
         outline: none;
       }
       &:hover{
-        background: #B38876;
+        
         border: none;
       }
       &.slick-next:hover:before{
@@ -73,7 +77,8 @@
         content: url("/wp-content/uploads/2022/04/Arrow-1-Stroke-1.svg")!important;
       }
       &.slick-next{
-        transform: translate(-20px, 0px);
+        transform: translate(-60px, 0px);
+        right: -80px;
         @media (max-width: $table) {
           transform: translate(70px, 0px);
         }
@@ -83,9 +88,11 @@
         
       }
       &.slick-prev{
-        transform: translate(-91px, 0px);
+        transform: translate(40px, 0px);
+        left: -80px;
         @media (max-width: $table) {
           transform: translate(-70px, 0px);
+          left: calc(50% - 20px) !important;
         }
         &::before{
           content: url("img/arrow-left.svg");
@@ -94,14 +101,14 @@
     }
     .container{
       @media (max-width: $maxcontainer) {
-        padding-right: 0;
+      
       }
     }
     .slick-list{
       padding-left: 0!important;
     }
-    .servicesBlock{
-      margin-right: $halfcontainerminus;
+    .services3Block{
+      
       @media (max-width: $maxcontainer) {
         margin-right: 0;
       }
@@ -139,6 +146,7 @@
       }
       &Wrap{
         width: 23.2638889vw;
+        margin: 0 10px;
       }
       &::before{
         content: '';
@@ -188,13 +196,13 @@
   margin-left: auto;
   margin-right: auto;
 }
-.servicesBlockItemContentLink svg{
+.services3BlockItemContentLink svg{
   margin-left: 4px;
 }
-.servicesBlockItemContentInfo{
+.services3BlockItemContentInfo{
   font-weight: 400;
 }
-.servicesBlockItemContent::after{
+.services3BlockItemContent::after{
   content: '';
   position: absolute;
   top: 0;
@@ -206,29 +214,90 @@
   opacity: 0.5;
   z-index: 2;
 }
-.servicesBlockItemContentTitle{
+.services3BlockItemContentTitle{
   z-index: 3;
 }
-.servicesBlockItemContentInfo{
+.services3BlockItemContentInfo{
   z-index: 3;
 }
-.servicesBlockItemContentLink{
+.services3BlockItemContentLink{
   z-index: 3;
 }
-ul.custom_paging{
+.services3 ul.custom_paging{
   display: table;
   margin-left: auto;
   margin-right: auto;
   padding: 0;
   position: relative;
   right: 10px;
-  top: 90px;
+  top: 99px!important;
+  padding-left: 20px!important;
 }
-ul.custom_paging li{
+.services3 ul.custom_paging li{
   display: none;
 }
 @media(max-width: $table){
 li.slick-active {
   display: block!important;
 }
+}
+.services3Block .slick-prev{
+  content: url("img/righti.svg");
+  right: 0!important;
+  z-index: 100;
+  @media(max-width: $table){
+    transform: translate(-70px, 0px)!important;
+    
+  }
+}
+.services3Block .slick-next{
+  content: url("img/lefti.svg");
+  
+  z-index: 100;
+  @media(max-width: $table){
+    transform: translate(70px, 0px)!important;
+    
+  }
+}
+.price-img{
+  height: 100%;
+  max-height: 174px;
+  object-fit: cover;
+  margin-bottom: 40px;
+  width: 100%;
+}
+.price-title{
+  font-size: 24px;
+  font-weight: 500;
+  color: #234255;
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.price-info{
+  font-size: 14px;
+  font-weight: 400;
+  color: #686C77;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.price-content{
+  padding: 0 30px;
+  padding-bottom: 40px;
+}
+.services3BlockItemWrap{
+  border: 1px solid #686C77;
+}
+.price-text{
+  font-size: 14px;
+  font-weight: 500;
+  color: #686C77;
+  display: block;
+  text-align: center;
+}
+.price-num{
+  font-size: 26px;
+  font-weight: 600;
+  color: #B38876;
+  
 }

@@ -9,7 +9,6 @@
   padding: 0.875rem 2.438rem 0.938rem 2.438rem;
   border: 1px solid;
   text-decoration: none;
-  text-transform: uppercase;
   text-align: center;
   
   &.btnWhite{
@@ -33,4 +32,20 @@
   svg{
     padding-left: 1px;
   }
+}
+.btn-round{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  background: #B38876;
+}
+.btn-round:hover{
+  border: 1px solid #B38876;
+  background: transparent;
 }

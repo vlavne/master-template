@@ -126,7 +126,7 @@
         line-height: 130%;
         letter-spacing: -0.015em;
         position: relative;
-        @include toRem(padding-right,20);
+        @include toRem(padding-right,40);
         @media (max-width: $table){
           font-weight: 600;
           font-size: 1rem;

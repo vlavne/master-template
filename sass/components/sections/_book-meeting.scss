@@ -1,0 +1,80 @@
+.book-meeting{
+    display: flex;
+    width: 100%;
+}
+.book-meeting-left{
+    width: 50%;
+    padding-top: 117px;
+    padding-bottom: 178px;
+    padding-left: 150px;
+    background-size: cover!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.book-meeting-right{
+    width: 50%;
+    background: #F8F8FA;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-left: 90px;
+    
+}
+.book-meeting .title{
+    font-size: 45px;
+    font-weight: 600;
+    color: #fff;
+}
+.book-meeting p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    max-width: 400px;
+}
+.book-meeting .link{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: none;
+} 
+.book-meeting .wpcf7{
+    max-width: 474px;
+}
+.book-meeting .wpcf7 input{
+    padding: 24px;
+    border: 1px solid #DCDCDC;
+    margin-bottom: 20px;
+    background: transparent;
+    width: 100%;
+}
+.book-meeting .wpcf7-submit{
+    background: #B38876!important;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+@media(max-width: 1024px){
+    .book-meeting{
+        flex-direction: column;
+    }
+    .book-meeting-left{
+        width: 100%;
+        padding-top: 117px;
+        padding-bottom: 178px;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .book-meeting-right{
+        width: 100%;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        justify-content: center;
+    }
+}

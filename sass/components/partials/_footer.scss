@@ -155,7 +155,7 @@
             &Menu{
                 @include toRem(margin-right, 75);
                 &Title{
-                    text-transform: uppercase;
+                   
                     font-weight: 600;
                     @include toRem(margin-bottom, 20);
                 }
@@ -196,7 +196,7 @@
                 
                 font-weight: 600;
                 @include toRem(font-size, 42);
-                text-transform: uppercase;
+                
                     
                     @media(max-width: $tablemin){
                     @include toRem(font-size, 28);
@@ -213,7 +213,6 @@
                     
                     &Title{
                         @include toRem(font-size, 14);
-                        text-transform: uppercase;
                         font-weight: 600;
                     }
                     
@@ -272,6 +271,7 @@
 
 .site{
     &FooterTwo{
+      background: #202228;
              @include toRem(padding-top, 100);
              @include toRem(padding-bottom, 80);
         
@@ -295,9 +295,11 @@
             &Menu{
                 @include toRem(margin-right, 75);
                 &Title{
-                    text-transform: uppercase;
+
                     font-weight: 600;
                     @include toRem(margin-bottom, 20);
+                    color: #ffffff;
+                    font-size: 16px;
                 }
                 
                 ul{
@@ -313,7 +315,8 @@
                             text-decoration: none;
                             opacity: .6;
                             transition: .3s;
-                            
+
+                            color: #979699;
                             &:hover{
                                 opacity: 1;
                                 text-shadow: 0 0 .45px #333, 0 0 .45px #333;
@@ -335,9 +338,8 @@
                 &Text{
                 
                 font-weight: 600;
-                @include toRem(font-size, 42);
-                text-transform: uppercase;
-                    
+                @include toRem(font-size, 45);
+                color: #ffffff;
                     @media(max-width: $tablemin){
                     @include toRem(font-size, 28);
                 }
@@ -352,9 +354,10 @@
                 }
                     
                     &Title{
-                        @include toRem(font-size, 14);
-                        text-transform: uppercase;
+                        @include toRem(font-size, 16);
+                        
                         font-weight: 600;
+                        color: #ffffff;
                     }
                     
                     &Form{
@@ -414,4 +417,61 @@
             }
         } 
     }
+}
+footer .wpcf7{
+  width: 100%;
+  .wpcf7-spinner{
+    display: none;
+  }
+  p{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    // border-bottom: 1px solid #C4C8D5;
+    // padding-bottom: 12px;
+  }
+  ::placeholder{
+    color: #979699;
+    font-size: 14px;
+  }
+  .wpcf7-email{
+    background: transparent;
+  }
+  .wpcf7-submit{
+    display: none;
+  }
+  
+}
+.sub-label{
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  svg{
+    margin-left: 4px;
+  }
+}
+.footer-docs{
+  width: 300px;
+  margin-top: 160px;
+  display: flex;
+  justify-content: space-between;
+  a{
+    font-size: 14px;
+    color: #979699!important;
+    text-decoration: none;
+    }
+}
+.footer-docs a{
+  margin-right: 30px;
+}
+@media(max-width: 500px){
+  .siteFooterTwo{
+    padding-bottom: 0;
+  }
+  .footer-docs{
+    margin-top: 30px;
+  }
 }

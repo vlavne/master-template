@@ -1,7 +1,7 @@
 <?php
 $type = get_sub_field('slider');
 ?>
-<section class="services marg <?php echo $type;?>" id="<?php echo get_sub_field('unique_id');?>">
+<section class="services3 marg <?php echo $type;?>" id="<?php echo get_sub_field('unique_id');?>">
     <div class="container">
         <?php if ($subtitle = get_sub_field('subtitle')): ?>
             <div class="subtitle colorMain <?php if($type !== "slider"){ echo 'title-center'; }?>" data-aos="fade-up"><?php echo $subtitle; ?></div>
@@ -9,21 +9,25 @@ $type = get_sub_field('slider');
         <?php if ($title = get_sub_field('title')): ?>
             <<?php echo get_sub_field('title_tag'); ?> class="title2" data-aos="fade-up"><?php echo $title; ?></<?php echo get_sub_field('title_tag'); ?>>
         <?php endif; ?>
-        <div class="servicesBlock" data-aos="fade-up">
+        <div class="services3Block" data-aos="fade-up">
             <?php foreach (get_sub_field('services') as $s): ?>
-                <div class="servicesBlockItemWrap">
-                    <a href="<?php echo $s['link']['url']; ?>"
-                       <?php if ($s['link']['target']): ?>target="<?php echo $s['link']['target']; ?>"<?php endif; ?>
-                       class="servicesBlockItem">
-                        <?php echo wp_get_attachment_image($s['img']['ID'], 'service'); ?>
-                        <span class="servicesBlockItemContent">
-                        <span class="servicesBlockItemContentTitle"><?php echo $s['title']; ?></span>
-                        <?php if ($s['info']): ?>
-                            <span class="servicesBlockItemContentInfo"><?php echo $s['info']; ?></span>
+                <div class="services3BlockItemWrap">
+                
+                       
+                 
+                        
+                        
+                        <img class="price-img" src="<?php echo $s['img']['url'];?>" />
+                        <div class="price-content">
+                        <?php if ($s['title']): ?>
+                            <span class="price-title"><?php echo $s['title'];?></span>
                         <?php endif; ?>
-                        <span class="servicesBlockItemContentLink link"><?php echo $s['link']['title']; ?><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.6558 3.75832L10.6629 8.82828H12.6569V0.342995H4.17165L4.17165 2.33704L9.24161 2.34411L0.63612 10.9496L2.05033 12.3638L10.6558 3.75832Z" fill="white"/></svg></span>
-                    </span>
-                    </a>
+                        <?php if ($s['info']): ?>
+                            <p class="price-info"><?php echo $s['info'];?></p>
+                        <?php endif; ?>
+                        <span class="price-text">from <span class="price-num"><?php echo $s['price'];?>$</span> / an hour</span>
+                        </div>
+                    
                 </div>
             <?php endforeach; ?>
         </div>
@@ -39,13 +43,12 @@ $type = get_sub_field('slider');
             if($(window).width() <= 1024){
                 $pad = '0';
             }
-            $('#<?php echo get_sub_field('unique_id');?>.slider .servicesBlock').slick({
-                dots: false,
+            $('#<?php echo get_sub_field('unique_id');?>.slider .services3Block').slick({
                 infinite: true,
                 arrows: true,
                 speed: 300,
                 slidesToShow: 3,
-                centerMode: true,
+                
                 centerPadding: $pad,
                 dots: true,
                 dotsClass: 'custom_paging',
@@ -72,7 +75,7 @@ $type = get_sub_field('slider');
                 ]
             });
             if($(window).width() >=1024){
-                $('#<?php echo get_sub_field('unique_id');?>.slider .servicesBlock').slick('slickGoTo', 1);
+                $('#<?php echo get_sub_field('unique_id');?>.slider .services3Block').slick('slickGoTo', 1);
             }
         });
     </script>

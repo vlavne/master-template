@@ -12,7 +12,7 @@
     .title2{
       @include toRem(max-width,401);
       @media (max-width: $table){
-        line-height: 193%;
+        line-height: 125%;
         @include toRem(margin-bottom,15);
         max-width: 100%;
       }
@@ -67,4 +67,27 @@
 }
 .processIcon{
   @include toRem(margin-bottom,24);
+}
+.btn-mob{
+  display: none;
+}
+
+@media(max-width: 500px){
+  .processBlockContentItem{
+    display: flex;
+  }
+  .processIcon{
+    margin-right: 18px;
+    min-width: 30px;
+  }
+  .btn-desk{
+    display: none;
+  }
+  .btn-mob{
+    display: block;
+    margin-top: 20px;
+  }
+  .processBlockContent{
+    margin-top: 40px;
+  }
 }

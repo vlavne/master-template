@@ -1,6 +1,7 @@
 // ADVANTAGES
 .blackAdvantages{
   padding: 150px 0;
+  background: #1F212C;
   &Subtitle{
     color: #87AD86;
     font-style: normal;
@@ -15,13 +16,13 @@
       font-size: 12px;
     }
   }
-  &Line{
-    width: 60px;
-    height: 2px;
-    text-align: center;
-    margin: 20px auto;
-    background: #87AD86;
-  }
+  // &Line{
+  //   width: 60px;
+  //   height: 2px;
+  //   text-align: center;
+  //   margin: 20px auto;
+  //   background: #87AD86;
+  // }
   &Title{
     font-style: normal;
     font-weight: 700;
@@ -29,12 +30,13 @@
     @include toRem(line-height,60);
     text-align: center;
     letter-spacing: -0.015em;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     color: #FFFFFF;
     @media (max-width: $table){
       font-size: 24px;
       letter-spacing: -0.015em;
       line-height: 125%;
+      margin-bottom: 50px;
     }
   }
   &Text{
@@ -73,7 +75,7 @@
       position: relative;
       display: grid;
       background: #292C36;
-      padding: 76px 37px 40px;
+      padding: 76px 29px 40px;
       //grid-template-columns: 4.438rem auto;
       @media (max-width: 71.875rem){
         //grid-template-columns: 3.75rem auto;
@@ -88,11 +90,11 @@
         height: 4.438rem;
         @extend %flex-center;
         justify-content: center;
-        padding: 0.938rem;
+        // padding: 0.938rem;
         @media (max-width: 71.875rem){
           width: 3.75rem;
           height: 3.75rem;
-          padding: 0.75rem;
+      
         }
       }
       &Content{
@@ -115,4 +117,12 @@
       }
     }
   }
+}
+.swartzSubtite{
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 22px;
+  text-transform: none;
+  color: #fff;
 }

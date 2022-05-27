@@ -9,7 +9,7 @@
         background: #ffffff;
         &Top {
             @media (max-width: $table) {
-                display: none!important;
+                
             }
             &Contacts {
                 @extend %flex-center;
@@ -90,4 +90,7 @@
             }
         }
     }
+}
+#headerMenu li a:hover{
+    color: #234255!important;
 }

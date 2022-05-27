@@ -92,7 +92,27 @@
                             'container' => ''
                         )
                     ); ?>
+    
+                <div class="footer-docs">
+                <?php if ($agb = get_field('agb', 'options')): ?>
+                    <?php $agb = get_field('agb', 'options'); ?>
+                    <a href="<?php echo $agb['url']; ?>"><?php echo $agb['title']; ?></a>
+                <?php endif; ?>
+
+                <?php if ($imp = get_field('impressum', 'options')): ?>
+                    <?php $imp = get_field('impressum', 'options'); ?>
+                        
+                        <a href="<?php echo $imp['url']; ?>"><?php echo $imp['title']; ?></a>
+                <?php endif; ?>
+
+                <?php if ($daten = get_field('datenschutz', 'options')): ?>
+                    <?php $daten = get_field('datenschutz', 'options'); ?>
+                    <a href="<?php echo $daten['url']; ?>"><?php echo $daten['title']; ?></a>
+                <?php endif; ?>
                 </div>
+                
+                </div>
+               
             <?php endif; ?>
             <?php if (has_nav_menu('menu-social')): ?>
                 <div class="siteFooterTwoTopMenu">
@@ -116,8 +136,12 @@
                 <div class="siteFooterTwoTopInfoNews">
                     <div class="siteFooterTwoTopInfoNewsTitle">Newsletter</div>
                     <div class="siteFooterTwoTopInfoNewsForm">
-                    
-                        <input type="email" placeholder="Gerben Sie Ihre E-Mail-Adresse ein">  <a href="#">Folgen<img src="<?php echo get_template_directory_uri(); ?>/img/short_right.svg" alt="short_right"></a>
+                    <?php echo do_shortcode('[contact-form-7 id="395" title="Newsletter"]');?>
+                    <label class="sub-label" for="sub">Folgen <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.53703 11.79L2.82993 12.4971L4.24414 13.9113L4.95125 13.2042L3.53703 11.79ZM12.7131 5.44236L13.4202 4.73525L12.006 3.32104L11.2988 4.02815L12.7131 5.44236ZM4.95125 13.2042L12.7131 5.44236L11.2988 4.02815L3.53703 11.79L4.95125 13.2042Z" fill="white"/>
+                    <path d="M5.65527 3.0293H4.65527V5.0293H5.65527V3.0293ZM12.7115 4.0293H13.7115L13.7115 3.0293L12.7115 3.0293V4.0293ZM11.7115 11.0855L11.7115 12.0855L13.7115 12.0855L13.7115 11.0855L11.7115 11.0855ZM5.65527 5.0293L12.7115 5.0293V3.0293L5.65527 3.0293V5.0293ZM11.7115 4.0293L11.7115 11.0855L13.7115 11.0855L13.7115 4.0293H11.7115Z" fill="white"/>
+                    </svg>
+                    </label>
                     
                     </div>
                 
