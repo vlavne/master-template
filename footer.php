@@ -140,8 +140,53 @@
     </div>
 </footer><!-- #colophon -->
 <?php } ?>
-
-
+<?php if($footer_type == '3') {?>
+    <footer id="colophon" class="siteFooterThree">
+    <div class="container">
+        
+        <div class="siteFooterThreeTop">
+            
+            <?php if ($footer_logo = get_field('footer_logo', 'options')): ?>
+                    <a href="<?php echo get_site_url(); ?>"
+                       class="siteFooterThreeTopInfoLogo"><?php echo wp_get_attachment_image($footer_logo['ID'], 'full'); ?></a>
+            <?php endif; ?>
+            <?php if (has_nav_menu('menu-footer')): ?>
+                <div class="siteFooterThreeTopMenu">
+                    <?php wp_nav_menu(
+                        array(
+                            'theme_location' => 'menu-footer',
+                            'menu_id' => 'footerMenu',
+                            'container' => ''
+                        )
+                    ); ?>
+                </div>
+            <?php endif; ?>
+            
+        
+        </div>
+        <div class="siteFooterThreeBottom">
+            
+            <?php if ($copyright = get_field('copyright', 'options')): ?>
+                <div class="siteFooterThreeBottomCopyright"><?php echo $copyright; ?></div>
+            <?php endif; ?>
+                
+                <?php if (has_nav_menu('menu-info')): ?>
+                <div class="siteFooterThreeBottomMenuInfo">
+                    <?php wp_nav_menu(
+                        array(
+                            'theme_location' => 'menu-info',
+                            'menu_id' => 'infoMenu',
+                            'container' => ''
+                        )
+                    ); ?>
+                </div>
+            <?php endif; ?>
+            
+        </div>
+        
+    </div>    
+    </footer>    
+<?php } ?>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

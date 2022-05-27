@@ -415,3 +415,124 @@
         } 
     }
 }
+
+.site{
+    &FooterThree{
+        
+        padding: 60px 0;;
+        
+        &Top{
+            
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 32px;
+            border-bottom: 1px solid #77777620;
+            margin-bottom: 29px;
+            align-items: center;
+            
+            @media(max-width: $tablemin){
+                flex-direction: column;
+            }
+            
+            
+            &Info{
+                &Logo{
+                    max-width: 230px;
+                    
+                    @media(max-width: $tablemin){
+                        max-width: 500px;
+                    }
+                }
+            }
+            
+            
+            &Menu{
+                ul.menu{
+                    display: flex;
+                    padding: 0;
+                    margin: 0;
+                    
+                    @media(max-width: $tablemin){
+                        flex-wrap: wrap;
+                        margin-top: 20px;
+                    }
+                    
+                    li{
+                        margin-left: 40px;
+                        display: block;
+                        
+                        
+                        
+                        @media(max-width: $table){
+                             margin-left: 20px;
+                        }
+                        @media(max-width: $tablemin){
+                             margin-left: 10px;
+                        }
+                        
+                        a{
+                            text-decoration: unset;
+                            color: #2D2D33;
+                            font-weight: 500;
+                            font-size: 16px;
+                            transition: .3s;
+                            &:hover{
+                            color: #d5474e;
+                        }
+                        }
+                    }
+                
+                }
+            }
+        }
+        
+        &Bottom{
+            display: flex;
+            justify-content: space-between;
+            color: #777776;
+            align-items: center;
+            font-weight: 500;
+            
+            @media(max-width: $tablemin){
+                flex-direction: column-reverse;
+            }
+            
+            &Copyright{
+                font-size: 14px;
+            }
+            
+            &MenuInfo ul{
+                display: flex;
+                text-transform: lowercase;
+                font-size: 16px;
+                align-items: center;
+                
+                @media(max-width: $tablemin){
+                        width: 100%;
+                        justify-content: space-between;
+                        margin-bottom: 30px;
+                }
+                
+        
+                
+                li{
+                    margin-left: 32px;
+                    display: block;
+                    @media(max-width: $tablemin){
+                        margin-left: 0;
+                    }
+                    
+                    a{
+                        text-decoration: unset;
+                        color: inherit;
+                    }
+                    
+                }
+            }
+        }
+        
+    }
+} 
+
+
+

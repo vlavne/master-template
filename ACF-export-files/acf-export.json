@@ -6333,7 +6333,8 @@
                 "choices": {
                     "Inter": "Inter",
                     "Rubik": "Rubik",
-                    "Raleway": "Raleway"
+                    "Raleway": "Raleway",
+                    "Montserrat": "Montserrat"
                 },
                 "default_value": "inter",
                 "allow_null": 0,
@@ -7004,7 +7005,8 @@
                 },
                 "choices": {
                     "1": "Typ 1",
-                    "2": "Typ 2"
+                    "2": "Typ 2",
+                    "3": "Typ 3"
                 },
                 "allow_null": 0,
                 "default_value": "",
