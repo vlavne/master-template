@@ -1,0 +1,183 @@
+/* CSS Team slider */
+
+.TeamSlider{
+    
+    .container{
+        margin-right: 0;
+        margin-left: calc((100% - 71.25rem) / 2);
+        width: auto;
+        padding-right: calc((100% - 71.25rem) / 2);
+        overflow: hidden;
+        
+        @media (max-width: 90rem){
+            margin-left:inherit;
+            padding-right: auto;
+            
+        }
+        
+        @media(max-width: 64rem){
+                padding-right: 1.25rem;
+            }
+        
+        
+    }
+    
+    .subtitle{
+        font-size: 12px;
+        font-weight: 700;
+        margin-bottom: 14px;
+    }
+   
+    &Title{
+        width: 60%;
+        max-width: 650px;
+        text-transform: uppercase;
+        font-size: 45px;
+        font-weight: 700;
+        
+        @media (max-width: $tablemin){
+                font-size: 28px;
+            }
+        @media (max-width: $mob){
+                font-size: 20px;
+            }
+        
+    }
+    
+    &Block{
+        
+        padding-top: 70px;
+        
+        @media(max-width: $tablemin){
+                padding-top: 35px;
+            }
+        
+        
+        &Item{
+            max-width: 350px;
+            border: 1px solid #E5EFF4;
+            padding-bottom: 40px;
+            margin-right: 30px;
+            
+            @media (max-width: 90rem){
+                max-width: 300px;
+                margin-right: 50px;
+            }
+            @media (max-width: 80rem){
+                margin-right: 70px;
+            }
+            @media (max-width: 60rem){
+                margin: 0 15px;
+            }
+            @media(max-width: $mob){
+                max-width: none;
+            }
+            
+            
+            &Img{
+                display: flex;
+                align-content: flex-end;
+                justify-content: center;
+                overflow: hidden;
+                height: 360px;
+                width: 100%;
+                
+                @media (max-width: 90rem){
+               height: 310px;
+            }
+            @media (max-width: 80rem){
+               height: 270px; 
+            }
+//            @media (max-width: 60rem){
+//               height: 250px;  
+//            }
+                
+                img{
+                        height: 100%;
+                        width: auto;
+                        max-width: fit-content;
+                }
+            }
+            
+            &Info{
+                margin-top: 40px;
+                margin-left: 40px;
+                
+                &Name{
+                    font-size: 22px;
+                    font-weight: 700;
+                }
+                
+                &Position{
+                    font-size: 14px;
+                    font-weight: 500;
+                    margin-top: 14px;
+                    display: flex;
+                    align-items: center;
+                    
+                    svg{
+                        margin-right: 14px;
+                    }
+                }
+                
+            }
+        }
+        
+        .slick-arrow{
+            top: -61px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            height: 61px;
+            width: 61px;
+            border: 1px solid #EDEEEF;
+            
+            
+            &.slider-btn-left{
+             right: 0;
+                background-color: #D4474E;
+                
+                svg{
+                    height: 14px;
+                    width: 14px;
+                        
+                path{
+                    fill: #fff;
+                }
+                }
+            }
+            
+            &.slider-btn-right{
+             right: 81px;   
+            background-color: transparent;
+                
+               svg{
+                    height: 14px;
+                    width: 14px;
+                        
+                path{
+                    fill: #D4474E;
+                }
+                }
+            }
+            
+            &.slick-disabled{
+                
+            }
+            
+        }
+        
+        .slick-list{
+            width: fit-content;
+            
+            @media (max-width: 60rem){
+                width: 100%;
+                margin: 0 -15px;
+            }
+            
+        }
+        
+        
+    }
+}
