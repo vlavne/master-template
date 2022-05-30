@@ -1,0 +1,42 @@
+.pdf .title2{
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.pdfBlock{
+  display: flex;
+
+  flex-wrap: wrap;
+  margin-top: 70px;
+  margin-right: -25px;
+}
+.pdfBlockItemWrap, .pdfBlockItemContent{
+  display: flex;
+  flex-direction: column;
+}
+.pdfBlockItemWrap{
+  margin-bottom: 40px;
+  margin-right: 25px;
+}
+.pdfBlockItemContent{
+  margin-top: 25px;
+}
+.pdfBlockItemContentTitle{
+  font-size: 20px;
+  font-weight: 500;
+  color: #234255;
+  margin-bottom: 14px;
+}
+.pdfBlockItemContentLink{
+  font-size: 16px;
+  font-weight: 500;
+  color: #234255;
+  border-bottom: 1px solid #234255;
+  width: max-content;
+}
+@media(max-width: 600px){
+  .pdfBlock{
+    justify-content: center;
+  }
+}
