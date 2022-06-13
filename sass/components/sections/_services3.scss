@@ -1,0 +1,303 @@
+// services3
+.services3{
+  .title2{
+    @include toRem(margin-bottom,60);
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    @media (max-width: $table){
+      line-height: 193%;
+      @include toRem(margin-bottom,14);
+    }
+  }
+  .title2, .subtitle{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    @media (max-width: $table){
+      text-align: center;
+      display: table;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &.grid{
+    .title2, .subtitle{
+      text-align: center;
+    }
+    .services3Block{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      @include toRem(grid-gap,37);
+      @media (max-width: 75rem) {
+        @include toRem(grid-gap,20);
+      }
+      @media (max-width: $tablemin) {
+        grid-template-columns: 100%;
+      }
+      &Item{
+        &Wrap{
+          width: 100%;
+        }
+      }
+    }
+  }
+  &.slider{
+    // overflow: hidden;
+    .slick-arrow{
+      @include toRem(width,33);
+      @include toRem(height,22);
+      @extend %flex-center;
+      justify-content: center;
+      font-size: 0px;
+
+      left: auto;
+      right: $halfcontainer;
+      @extend %transition25;
+      border-radius: 0px;
+      @media (max-width:$maxcontainer){
+        @include toRem(right,150);
+      }
+      @media (max-width: $table) {
+        top: auto;
+        bottom: 0;
+        right: calc(50% - 20px)!important;
+      }
+      &:focus{
+        outline: none;
+      }
+      &:hover{
+
+        border: none;
+      }
+      &.slick-next:hover:before{
+        content: url("/wp-content/uploads/2022/04/Arrow-1-Stroke.svg")!important;
+      }
+      &.slick-prev:hover:before{
+        content: url("/wp-content/uploads/2022/04/Arrow-1-Stroke-1.svg")!important;
+      }
+      &.slick-next{
+        transform: translate(-60px, 0px);
+        right: -80px;
+        @media (max-width: $table) {
+          transform: translate(70px, 0px);
+        }
+        &::before{
+          content: url("img/arrow-right.svg");
+        }
+
+      }
+      &.slick-prev{
+        transform: translate(40px, 0px);
+        left: -80px;
+        @media (max-width: $table) {
+          transform: translate(-70px, 0px);
+          left: calc(50% - 20px) !important;
+        }
+        &::before{
+          content: url("img/arrow-left.svg");
+        }
+      }
+    }
+    .container{
+      @media (max-width: $maxcontainer) {
+
+      }
+    }
+    .slick-list{
+      padding-left: 0!important;
+    }
+    .services3Block{
+
+      @media (max-width: $maxcontainer) {
+        margin-right: 0;
+      }
+      @media (max-width: $table) {
+        @include toRem(padding-bottom,74);
+      }
+      &ItemWrap{
+        @include toRem(margin-right,30);
+        @media (max-width: $table) {
+          @include toRem(margin-right,10);
+        }
+      }
+    }
+  }
+  &Block{
+    a, a:focus, a:visited{
+      color: #fff;
+    }
+    &Item{
+      width: 100%;
+      padding-top: 126.762%;
+      position: relative;
+      overflow: hidden;
+      display: block;
+      color: #ffffff!important;
+      &:hover, &:focus, &:active, &:visited{
+        color: #ffffff!important;
+      }
+      @media (max-width: $table){
+        padding-top: 128%;
+      }
+      img.size-service{
+        @extend %absolute;
+        object-fit: cover;
+      }
+      &Wrap{
+        width: 23.2638889vw;
+        margin: 0 10px;
+      }
+      &::before{
+        content: '';
+        @extend %absolute;
+        background: linear-gradient(180deg, rgba(39, 39, 49, 0) 0%, rgba(39, 39, 49, 0.72) 70.69%, rgba(39, 39, 49, 0.95) 100%);
+        z-index: 1;
+      }
+      &Content{
+        @extend %absolute;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 2.5rem 3rem;
+        @media (max-width: 75rem) {
+          @include toRem(padding,30);
+        }
+        &Title{
+          font-weight: 500;
+          @include toRem(font-size,24);
+          @include toRem(margin-bottom,20);
+          line-height: 130%;
+          letter-spacing: -0.015em;
+          @media (max-width: 75rem) {
+            @include toRem(font-size,20);
+            @include toRem(line-height,24);
+            letter-spacing: -0.02em;
+            @include toRem(margin-bottom,5);
+          }
+        }
+        &Info{
+          letter-spacing: -0.005em;
+          @include toRem(margin-bottom,25);
+          @media (max-width: 75rem) {
+            @include toRem(margin-bottom,20);
+          }
+        }
+        &Link{
+          margin-right: auto;
+        }
+      }
+    }
+  }
+}
+.title-center{
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+.services3BlockItemContentLink svg{
+  margin-left: 4px;
+}
+.services3BlockItemContentInfo{
+  font-weight: 400;
+}
+.services3BlockItemContent::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(28, 28, 28, 0) 0%, rgba(25, 25, 25, 0.72) 70.69%, rgba(23, 23, 23, 0.95) 100%);
+  display: block;
+  opacity: 0.5;
+  z-index: 2;
+}
+.services3BlockItemContentTitle{
+  z-index: 3;
+}
+.services3BlockItemContentInfo{
+  z-index: 3;
+}
+.services3BlockItemContentLink{
+  z-index: 3;
+}
+.services3 ul.custom_paging{
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  position: relative;
+  right: 10px;
+  top: 99px!important;
+  padding-left: 20px!important;
+}
+.services3 ul.custom_paging li{
+  display: none;
+}
+@media(max-width: $table){
+  li.slick-active {
+    display: block!important;
+  }
+}
+.services3Block .slick-prev{
+  content: url("img/righti.svg");
+  right: 0!important;
+  z-index: 100;
+  @media(max-width: $table){
+    transform: translate(-70px, 0px)!important;
+
+  }
+}
+.services3Block .slick-next{
+  content: url("img/lefti.svg");
+
+  z-index: 100;
+  @media(max-width: $table){
+    transform: translate(70px, 0px)!important;
+
+  }
+}
+.price-img{
+  height: 100%;
+  max-height: 174px;
+  object-fit: cover;
+  margin-bottom: 40px;
+  width: 100%;
+}
+.price-title{
+  font-size: 24px;
+  font-weight: 500;
+  color: #234255;
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.price-info{
+  font-size: 14px;
+  font-weight: 400;
+  color: #686C77;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.price-content{
+  padding: 0 30px;
+  padding-bottom: 40px;
+}
+.services3BlockItemWrap{
+  border: 1px solid #686C77;
+}
+.price-text{
+  font-size: 14px;
+  font-weight: 500;
+  color: #686C77;
+  display: block;
+  text-align: center;
+}
+.price-num{
+  font-size: 26px;
+  font-weight: 600;
+  color: #B38876;
+
+}
