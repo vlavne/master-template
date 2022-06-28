@@ -18,6 +18,12 @@ $ composer install
 $ npm install
 ```
 
+### Run the application:
+
+$ `npm run watch`
+
+This will generate style.css, that make theme aviable to enabled in wordpress.
+
 ### Available CLI commands
 
 Theme comes packed with CLI commands tailored for WordPress theme development :
