@@ -19,8 +19,9 @@ $ npm install
 ```
 
 ### Run the application:
-
-$ `npm run watch`
+`
+$ npm run watch
+`
 
 This will generate style.css, that make theme aviable to enabled in wordpress.
 
